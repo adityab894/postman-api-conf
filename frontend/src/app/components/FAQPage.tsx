@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline";
-import Navbar from "./Navbar";
+import CustomPillNav from "./CustomPillNav";
 import Footer from "./Footer";
 
 // FAQ Data
@@ -113,7 +113,8 @@ export default function FAQPage() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <Navbar />
+      <div className="fixed top-0 left-0 w-full h-20 bg-white z-[999]"></div>
+      <CustomPillNav />
       
       {/* Header Section */}
       <div className="text-black mt-14">

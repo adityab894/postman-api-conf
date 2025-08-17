@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Navbar from "./Navbar";
+import CustomPillNav from "./CustomPillNav";
 import Footer from "./Footer";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <Navbar />
+      <CustomPillNav />
 
       {/* Hero Section */}
       <section className="relative flex flex-col md:flex-row items-center pl-50 px-10 py-16 overflow-hidden">
