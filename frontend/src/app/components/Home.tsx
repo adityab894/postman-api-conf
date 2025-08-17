@@ -16,12 +16,11 @@ export default function Home() {
         <div className="relative z-10 flex flex-col md:flex-row items-center w-full">
           <div className="flex-1 space-y-6 text-center md:text-left">
             <h1 className="text-5xl font-extrabold leading-tight text-gray-900">
-              API CONFERENCE <br />
+              THE API CONFERENCE, Pune<br />
               <span className="text-blue-600">2025</span>
             </h1>
             <p className="text-gray-600 max-w-lg">
-              Join us for the most comprehensive API development conference of the year. 
-              Learn from industry experts and discover the latest trends in API technology.
+            The API Conf Pune 2025 is the first edition of a community-driven flagship conference, hosted by the Postman Community Pune. Marking the beginning of a new chapter in India’s tech ecosystem, this conference is dedicated to changing the API revolution in India by bringing together developers, architects, product leaders, and technology enthusiasts from across the country. Designed to spark collaboration and knowledge exchange.
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
               <button className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition">
