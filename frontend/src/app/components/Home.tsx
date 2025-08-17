@@ -1,27 +1,11 @@
 import Image from "next/image";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
-                           {/* Navbar */}
-        <header className="flex justify-center items-center px-10 py-6">
-          <nav className="bg-blue-100 rounded-full px-8 py-4 border border-blue-400 shadow-lg flex items-center space-x-8">
-            {/* Pencil Icon */}
-            <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-              <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
-              </svg>
-            </div>
-            
-            {/* Navigation Links */}
-            <a href="#" className="text-gray-800 font-medium hover:text-blue-500 transition-colors">Home</a>
-            <a href="#" className="text-gray-800 font-medium hover:text-blue-500 transition-colors">Speakers</a>
-            <a href="#" className="text-gray-800 font-medium hover:text-blue-500 transition-colors">Sponsors</a>
-            <a href="#" className="text-gray-800 font-medium hover:text-blue-500 transition-colors">Team</a>
-            <a href="#" className="text-gray-800 font-medium hover:text-blue-500 transition-colors">FAQ</a>
-            <a href="#" className="text-gray-800 font-medium hover:text-blue-500 transition-colors">Agenda</a>
-          </nav>
-        </header>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="relative flex flex-col md:flex-row items-center pl-50 px-10 py-16 overflow-hidden">
@@ -95,6 +79,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

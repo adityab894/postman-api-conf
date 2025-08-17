@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "EduTech - Knowledge at Your Fingertips",
+  title: "THE API CONF PUNE",
   description: "Discover the easiest way to learn everything. Our comprehensive e-learning platform brings world-class education directly to your device.",
 };
 

@@ -19,72 +19,30 @@ export default function Navbar() {
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
+            <a href="/" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
               Home
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></div>
             </a>
             
-            {/* Speakers Dropdown */}
-            <div className="relative group">
-              <button className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 flex items-center space-x-1 relative">
-                <span>Speakers</span>
-                <svg className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></div>
-              </button>
-              <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top scale-95 group-hover:scale-100">
-                <div className="py-2">
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">Keynote Speakers</a>
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">Panel Speakers</a>
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">Workshop Leaders</a>
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">Guest Speakers</a>
-                </div>
-              </div>
-            </div>
+            <a href="/speakers" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
+              Speakers
+              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></div>
+            </a>
 
-            {/* Sponsors Dropdown */}
-            <div className="relative group">
-              <button className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 flex items-center space-x-1 relative">
-                <span>Sponsors</span>
-                <svg className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></div>
-              </button>
-              <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top scale-95 group-hover:scale-100">
-                <div className="py-2">
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">Platinum Sponsors</a>
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">Gold Sponsors</a>
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">Silver Sponsors</a>
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">Bronze Sponsors</a>
-                </div>
-              </div>
-            </div>
+            <a href="/sponsors" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
+              Sponsors
+              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></div>
+            </a>
 
             <a href="#" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
               Team
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></div>
             </a>
             
-            {/* FAQ Dropdown */}
-            <div className="relative group">
-              <button className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 flex items-center space-x-1 relative">
-                <span>FAQ</span>
-                <svg className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></div>
-              </button>
-              <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top scale-95 group-hover:scale-100">
-                <div className="py-2">
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">General Questions</a>
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">Registration FAQ</a>
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">Technical Support</a>
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">Contact Support</a>
-                </div>
-              </div>
-            </div>
+            <a href="/faq" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
+              FAQ
+              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></div>
+            </a>
 
             <a href="#" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
               Agenda
