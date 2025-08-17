@@ -7,48 +7,53 @@ export default function Home() {
     <div className="min-h-screen bg-white text-gray-900">
       <CustomPillNav />
 
-      {/* Hero Section */}
       <section className="relative flex flex-col md:flex-row items-center pl-50 px-10 py-16 overflow-hidden">
-        {/* Blur Pastel Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-blue-100 to-indigo-200 opacity-80"></div>
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-blob"></div>
         <div className="absolute top-0 right-0 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-blob animation-delay-2000"></div>
         <div className="absolute -bottom-8 left-0 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-blob animation-delay-4000"></div>
         
-        {/* Content */}
         <div className="relative z-10 flex flex-col md:flex-row items-center w-full">
-        {/* Left Content */}
-        <div className="flex-1 space-y-6 text-center md:text-left">
-          <h1 className="text-5xl font-extrabold leading-tight text-gray-900">
-            API CONFERENCE <br />
-            <span className="text-blue-600">2025</span>
-          </h1>
-          <p className="text-gray-600 max-w-lg">
-            Join us for the most comprehensive API development conference of the year. 
-            Learn from industry experts and discover the latest trends in API technology.
-          </p>
-          <div className="flex flex-wrap justify-center md:justify-start gap-4">
-            <button className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition">
-              Book A Ticket
-            </button>
+          <div className="flex-1 space-y-6 text-center md:text-left">
+            <h1 className="text-5xl font-extrabold leading-tight text-gray-900">
+              API CONFERENCE <br />
+              <span className="text-blue-600">2025</span>
+            </h1>
+            <p className="text-gray-600 max-w-lg">
+              Join us for the most comprehensive API development conference of the year. 
+              Learn from industry experts and discover the latest trends in API technology.
+            </p>
+            <div className="flex flex-wrap justify-center md:justify-start gap-4">
+              <button className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition">
+                Book A Ticket
+              </button>
+            </div>
           </div>
-        </div>
 
-                                   {/* Right Video */}
-          <div className="flex-1 mt-10 md:mt-0 flex justify-center relative">
-            {/* Abstract Background Shapes for Video */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="absolute w-80 h-80 bg-gradient-to-br from-blue-200 to-purple-300 rounded-full opacity-20 transform rotate-12"></div>
-              <div className="absolute w-64 h-64 bg-gradient-to-tr from-orange-200 to-pink-300 rounded-full opacity-25 transform -rotate-12"></div>
-              <div className="absolute w-48 h-48 bg-gradient-to-r from-green-200 to-blue-300 rounded-full opacity-30 transform rotate-45"></div>
-              <div className="absolute w-32 h-32 bg-gradient-to-bl from-purple-200 to-indigo-300 rounded-full opacity-20 transform -rotate-30"></div>
-              <div className="absolute w-24 h-24 bg-gradient-to-tl from-yellow-200 to-orange-300 rounded-full opacity-35 transform rotate-60"></div>
+        <div className="flex-1 mt-10 md:mt-0 flex justify-center relative">
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="relative w-full h-full flex items-center justify-center">
+              
+              <div className="absolute w-96 h-80 bg-gradient-to-br from-blue-200/80 to-purple-300/80 rounded-[120px] transform rotate-45 -translate-x-16 translate-y-8"></div>
+              
+              <div className="absolute w-[400px] h-48 bg-gradient-to-tr from-orange-200/90 to-pink-300/90 rounded-[100px] transform -rotate-12 translate-x-12 -translate-y-20"></div>
+              
+              <div className="absolute w-24 h-80 bg-gradient-to-b from-green-200/70 to-blue-300/70 rounded-[50px] transform rotate-15 -translate-x-40 translate-y-4"></div>
+              
+              <div className="absolute w-56 h-32 bg-gradient-to-tr from-yellow-200/85 to-orange-300/85 rounded-[80px] transform -rotate-30 translate-x-32 translate-y-16"></div>
+              
+              <div className="absolute w-32 h-20 bg-gradient-to-bl from-purple-200/75 to-pink-300/75 rounded-[40px] transform rotate-60 -translate-x-8 -translate-y-32"></div>
+              
+              <div className="absolute w-20 h-48 bg-gradient-to-t from-cyan-200/60 to-blue-300/60 rounded-[30px] transform -rotate-45 translate-x-44 translate-y-24"></div>
+              
+              <div className="absolute w-40 h-24 bg-gradient-to-r from-rose-200/80 to-red-300/80 rounded-[60px] transform rotate-75 -translate-x-32 translate-y-32"></div>
+              
             </div>
           </div>
         </div>
+        </div>
       </section>
 
-             {/* About Section */}
        <section className="px-10 py-16 bg-blue-50">
          <div className="max-w-6xl mx-auto">
            <div className="bg-white rounded-2xl shadow-lg p-12">
