@@ -17,7 +17,7 @@ export default function Home() {
           <div className="flex-1 space-y-6 text-center md:text-left">
             <h1 className="text-4xl font-extrabold leading-tight text-gray-900">
               THE API CONFERENCE,<br />
-              <span className="text-orange-600">Pune 2025</span>
+              <span className="text-blue-600">Pune 2025</span>
             </h1>
             <p className="text-gray-600 max-w-lg">
             The API Conf Pune 2025 is the first edition of a community-driven flagship conference, hosted by the Postman Community Pune. Marking the beginning of a new chapter in India&apos;s tech ecosystem, this conference is dedicated to changing the API revolution in India by bringing together developers, architects, product leaders, and technology enthusiasts from across the country. Designed to spark collaboration and knowledge exchange.
@@ -41,14 +41,14 @@ export default function Home() {
             </div>
           </div>
 
-        <div className="flex-1 mt-10 md:mt-0 flex justify-start relative">
-          <div className="absolute inset-0 flex items-center justify-start">
+        <div className="flex-1 mt-10 md:mt-0 flex justify-center relative">
+          <div className="absolute inset-0 flex items-center justify-center">
           <Image
             src="/API.svg"
             alt="API Illustration"
             width={700}
             height={700}
-            className="object-contain -translate-x-20"
+            className="object-contain"
             priority
           />
           </div>
