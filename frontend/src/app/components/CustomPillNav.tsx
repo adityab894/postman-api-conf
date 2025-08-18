@@ -19,7 +19,7 @@ const CustomPillNav = () => {
 
   return (
     <PillNav
-      logo="/api-conf/postman-logo.png" // You can add your logo here
+      logo="/api-conf/image.png" // You can add your logo here
       logoAlt="Postman API Conf Logo"
       items={navItems}
       activeHref={pathname}
