@@ -16,7 +16,7 @@ export default function Home() {
               <span className="text-blue-600">2025</span>
             </h1>
             <p className="text-gray-600 max-w-lg">
-            The API Conf Pune 2025 is the first edition of a community-driven flagship conference, hosted by the Postman Community Pune. Marking the beginning of a new chapter in India's tech ecosystem, this conference is dedicated to changing the API revolution in India by bringing together developers, architects, product leaders, and technology enthusiasts from across the country. Designed to spark collaboration and knowledge exchange.
+            The API Conf Pune 2025 is the first edition of a community-driven flagship conference, hosted by the Postman Community Pune. Marking the beginning of a new chapter in India&apos;s tech ecosystem, this conference is dedicated to changing the API revolution in India by bringing together developers, architects, product leaders, and technology enthusiasts from across the country. Designed to spark collaboration and knowledge exchange.
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
               <button className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition">
@@ -27,23 +27,14 @@ export default function Home() {
 
         <div className="flex-1 mt-10 md:mt-0 flex justify-center relative">
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="relative w-full h-full flex items-center justify-center">
-              
-              <div className="absolute w-96 h-80 bg-gradient-to-br from-blue-200/80 to-purple-300/80 rounded-[120px] transform rotate-45 -translate-x-16 translate-y-8"></div>
-              
-              <div className="absolute w-[400px] h-48 bg-gradient-to-tr from-orange-200/90 to-pink-300/90 rounded-[100px] transform -rotate-12 translate-x-12 -translate-y-20"></div>
-              
-              <div className="absolute w-24 h-80 bg-gradient-to-b from-green-200/70 to-blue-300/70 rounded-[50px] transform rotate-15 -translate-x-40 translate-y-4"></div>
-              
-              <div className="absolute w-56 h-32 bg-gradient-to-tr from-yellow-200/85 to-orange-300/85 rounded-[80px] transform -rotate-30 translate-x-32 translate-y-16"></div>
-              
-              <div className="absolute w-32 h-20 bg-gradient-to-bl from-purple-200/75 to-pink-300/75 rounded-[40px] transform rotate-60 -translate-x-8 -translate-y-32"></div>
-              
-              <div className="absolute w-20 h-48 bg-gradient-to-t from-cyan-200/60 to-blue-300/60 rounded-[30px] transform -rotate-45 translate-x-44 translate-y-24"></div>
-              
-              <div className="absolute w-40 h-24 bg-gradient-to-r from-rose-200/80 to-red-300/80 rounded-[60px] transform rotate-75 -translate-x-32 translate-y-32"></div>
-              
-            </div>
+          <Image
+            src="/API.svg"
+            alt="API Illustration"
+            width={700}
+            height={700}
+            className="object-contain"
+            priority
+          />
           </div>
         </div>
         </div>
