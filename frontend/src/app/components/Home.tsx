@@ -39,6 +39,79 @@ export default function Home() {
         </div>
         </div>
       </section>
+     
+      {/* Stats Section */}
+      <section className="px-10 pb-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-gray-50 border border-black-200 rounded-3xl p-6 md:p-8">
+            <div className="flex justify-end">
+              {/* SVG Shapes with Text - Positioned close together on the right */}
+              <div className="flex gap-6">
+                {/* 35+ Speakers */}
+                <div className="relative">
+                  <Image
+                    src="/home/3.svg"
+                    alt="Speakers"
+                    width={300}
+                    height={180}
+                    className="w-64 h-40"
+                  />
+                  <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+                    <div className="text-4xl font-extrabold text-gray-900">35+</div>
+                    <div className="text-base font-medium text-gray-700">Speakers</div>
+                  </div>
+                </div>
+                
+                {/* 1000+ Participants */}
+                <div className="relative">
+                  <Image
+                    src="/home/4.svg"
+                    alt="Participants"
+                    width={300}
+                    height={180}
+                    className="w-64 h-40"
+                  />
+                  <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+                    <div className="text-4xl font-extrabold text-gray-900">1000+</div>
+                    <div className="text-base font-medium text-gray-700">Participants</div>
+                  </div>
+                </div>
+                
+                {/* 25+ Sessions */}
+                <div className="relative">
+                  <Image
+                    src="/home/5.svg"
+                    alt="Sessions"
+                    width={300}
+                    height={180}
+                    className="w-64 h-40"
+                  />
+                  <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+                    <div className="text-4xl font-extrabold text-gray-900">25+</div>
+                    <div className="text-base font-medium text-gray-700">Sessions</div>
+                  </div>
+                </div>
+                
+                {/* 1 Day(s) */}
+                <div className="relative">
+                  <Image
+                    src="/home/6.svg"
+                    alt="Days"
+                    width={300}
+                    height={180}
+                    className="w-64 h-40"
+                  />
+                  <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+                    <div className="text-4xl font-extrabold text-gray-900">1</div>
+                    <div className="text-base font-medium text-gray-700">Day(s)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
        <section className="px-10 py-16 bg-white">
          <div className="max-w-6xl mx-auto">
