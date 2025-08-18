@@ -41,14 +41,14 @@ export default function Home() {
             </div>
           </div>
 
-        <div className="flex-1 mt-10 md:mt-0 flex justify-center relative">
-          <div className="absolute inset-0 flex items-center justify-center">
+        <div className="flex-1 mt-10 md:mt-0 flex justify-start relative">
+          <div className="absolute inset-0 flex items-center justify-start">
           <Image
             src="/API.svg"
             alt="API Illustration"
             width={700}
             height={700}
-            className="object-contain"
+            className="object-contain -translate-x-20"
             priority
           />
           </div>
