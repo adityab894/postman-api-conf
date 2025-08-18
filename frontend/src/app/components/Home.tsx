@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import CustomPillNav from "./CustomPillNav";
 import Footer from "./Footer";
+import { BentoGrid } from "./BentoGrid";
 
 export default function Home() {
   const [showModal, setModal] = useState(false);
@@ -14,9 +15,9 @@ export default function Home() {
       <section className="relative flex flex-col md:flex-row items-center pl-50 px-10 py-16 overflow-hidden mt-20">
         <div className="relative z-10 flex flex-col md:flex-row items-center w-full">
           <div className="flex-1 space-y-6 text-center md:text-left">
-            <h1 className="text-5xl font-extrabold leading-tight text-gray-900">
-              THE API CONFERENCE, Pune<br />
-              <span className="text-blue-600">2025</span>
+            <h1 className="text-4xl font-extrabold leading-tight text-gray-900">
+              THE API CONFERENCE,<br />
+              <span className="text-orange-600">Pune 2025</span>
             </h1>
             <p className="text-gray-600 max-w-lg">
             The API Conf Pune 2025 is the first edition of a community-driven flagship conference, hosted by the Postman Community Pune. Marking the beginning of a new chapter in India&apos;s tech ecosystem, this conference is dedicated to changing the API revolution in India by bringing together developers, architects, product leaders, and technology enthusiasts from across the country. Designed to spark collaboration and knowledge exchange.
@@ -40,14 +41,14 @@ export default function Home() {
             </div>
           </div>
 
-        <div className="flex-1 mt-10 md:mt-0 flex justify-center relative">
-          <div className="absolute inset-0 flex items-center justify-center">
+        <div className="flex-1 mt-10 md:mt-0 flex justify-start relative">
+          <div className="absolute inset-0 flex items-center justify-start">
           <Image
             src="/API.svg"
             alt="API Illustration"
             width={700}
             height={700}
-            className="object-contain"
+            className="object-contain -translate-x-20"
             priority
           />
           </div>
@@ -126,6 +127,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+       {/* BentoGrid Section */}
+       <BentoGrid />
 
 
        <section className="px-10 py-16 bg-white">
