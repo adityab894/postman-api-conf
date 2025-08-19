@@ -22,7 +22,7 @@ const sponsorTiers = [
     tier: "diamond",
     sponsors: [
       { 
-        name: "GDG",
+        name: "Google for Developers",
         img: "/api-conf/gdg.png"
       }
     ]
@@ -57,6 +57,10 @@ const sponsorTiers = [
       { 
         name: "DevrelSqaud",
         img: "/api-conf/devrel.png"
+      },
+      { 
+        name: "Civo",
+        img: "/api-conf/civo.png"
       },
     ]
   },
@@ -97,6 +101,16 @@ const sponsorTiers = [
       //   img: "/api-conf/postman.png"
       // },
 
+    ]
+  },
+  {
+    title: "Knowledge Partner",
+    tier: "Knowledge Partner",
+    sponsors: [
+      { 
+        name: "Chipp",
+        img: "/api-conf/chipp.svg"
+      },
     ]
   },
   {

@@ -9,75 +9,147 @@ import Image from "next/image";
 const speakers = [
   {
     id: 1,
-    name: "John Doe",
-    role: "Senior API Architect",
-    company: "TechCorp",
+    name: "Revealing Soon",
+    role: "Revealing Soon",
+    company: "Postman",
     bio: "John is a passionate API enthusiast with over 10 years of experience in designing scalable APIs. He has contributed to various open-source projects and loves sharing knowledge with the community.",
     linkedin: "https://linkedin.com/in/johndoe",
-    image: "/speakers/speaker1.png"
+    image: ""
   },
   {
     id: 2,
-    name: "Jane Smith",
-    role: "Developer Advocate - Aditya bisht postman community pune",
-    company: "DevTools Inc",
+    name: "Revealing Soon",
+    role: "Revealing Soon",
+    company: "Postman",
     bio: "Jane specializes in API documentation and developer experience. She has helped thousands of developers integrate APIs effectively and believes in the power of clear communication.",
     linkedin: "https://linkedin.com/in/janesmith",
-    image: "/speakers/speaker2.png"
+    image: ""
   },
   {
     id: 3,
-    name: "Mike Johnson",
-    role: "API Security Expert",
-    company: "SecureAPI",
-    bio: "Mike is a security researcher focused on API vulnerabilities and best practices. He has discovered critical security flaws in major platforms and advocates for secure API development.",
-    linkedin: "https://linkedin.com/in/mikejohnson",
-    image: "/speakers/speaker3.jpg"
+    name: "Sterling Chin",
+    role: "Senior Developer Advocate ",
+    company: "Postman",
+    bio: "Sterling Chin is a Senior Developer Advocate at Postman, where he focuses on helping developers build smarter and faster with AI-powered tools. With a strong background in software development and a passion for innovation, Sterling has been instrumental in creating resources and experiences that empower developers in their API journey. Always curious and building something new, he brings a unique blend of technical expertise and advocacy to bridge the gap between cutting-edge technology and developer communities.",
+    linkedin: "https://www.linkedin.com/in/sterlingchin/",
+    image: "/speakers/sterling.jpg"
   },
   {
     id: 4,
-    name: "Sarah Wilson",
-    role: "Product Manager",
-    company: "API Solutions",
-    bio: "Sarah leads product strategy for API platforms and has successfully launched multiple developer-focused products. She understands the business value of well-designed APIs.",
-    linkedin: "https://linkedin.com/in/sarahwilson",
-    image: "/speakers/speaker4.jpg"
+    name: "Kunal Kushwaha",
+    role: "Field CTO",
+    company: "CIVO",
+    bio: "Kunal Kushwaha is the Field CTO at Civo, where he helps businesses modernize their infrastructure with cloud-native technologies and AI. He is also the founder of WeMakeDevs, a global community initiative that mentors and empowers developers. With millions reached through his educational YouTube content, Kunal is a passionate advocate for open source and frequently speaks at leading conferences on cloud, AI, and developer growth.",
+    linkedin: "https://www.linkedin.com/in/kunal-kushwaha/",
+    image: "/speakers/kunal.jpg"
   },
   {
     id: 5,
-    name: "David Brown",
-    role: "Full Stack Developer",
-    company: "StartupXYZ",
-    bio: "David is a full-stack developer who has built numerous applications using various APIs. He shares practical insights on API integration and modern development practices.",
-    linkedin: "https://linkedin.com/in/davidbrown",
-    image: "/speakers/speaker5.jpg"
+    name: "Savinder Puri",
+    role: "DevOps Evangelist",
+    company: "Zensar Technologies UK",
+    bio: "Savinder is a DevOps Evangelist at Zensar Technologies, UK. He is passionate about helping Enterprises across industry verticals solve business problems, based off technology solutions. Savinder is a recognised figure in the DevOps space and has been speaking at leading industry events worldwide. He is a Global DevOps Ambassador with DevOps Institute and Continuous Delivery Foundation (CDF) Ambassador. He's also authored the widely popular 'How do I build a career in DevOps A practical handbook to help you start or scale up your career in DevOps', which is available on Amazon worldwide.",
+    linkedin: "https://www.linkedin.com/in/savinderpuri/",
+    image: "/speakers/SavinderPuri.png"
   },
   {
     id: 6,
-    name: "Lisa Chen",
-    role: "API Testing Specialist",
-    company: "QualityFirst",
-    bio: "Lisa specializes in API testing and automation. She has developed comprehensive testing strategies for complex API ecosystems and helps teams deliver reliable APIs.",
-    linkedin: "https://linkedin.com/in/lisachen",
-    image: "/speakers/speaker6.jpg"
+    name: "Mahaveer Muttha",
+    role: "Co-founder",
+    company: "Birdvision",
+    bio: "Mahaveer Muttha is the Director of Information Technology at Birdvision Consulting, leading a team of engineers and consultants to deliver innovative technology solutions across industries. With over 12 years of experience in enterprise software development, Mahaveer Muttha specializes in building scalable mobile and web applications. Passionate about startups, they mentor and advise entrepreneurs on turning ideas into impactful businesses. As an active organizer of Google Developers Group and Chainlink, they foster collaboration and knowledge sharing within the tech community. Their mission is to harness mobile, IoT, and AI technologies to create solutions that solve real-world problems and improve lives.",
+    linkedin: "https://www.linkedin.com/in/mahaveer-muttha/",
+    image: "/speakers/mahaveer.jpg"
   },
   {
     id: 7,
-    name: "Alex Rodriguez",
-    role: "DevOps Engineer",
-    company: "CloudOps",
-    bio: "Alex focuses on API deployment and infrastructure. He has experience with microservices architecture and helps organizations scale their API operations effectively.",
-    linkedin: "https://linkedin.com/in/alexrodriguez",
-    image: "/speakers/speaker7.jpg"
+    name: "Megha Arora",
+    role: "DevRel Strategist & Founder",
+    company: "DevRelSquad",
+    bio: "Megha Arora is the Founder of DevRelSquad, India’s first full-stack Developer Relations execution partner helping tech companies win developers through strategic leadership and impactful programs. With 13+ years of engineering experience and a strong background in developer advocacy, Megha Arora has previously worked with leading companies like MongoDB, Apple, Microsoft, MakeMyTrip, and Samsung. At DevRelSquad, they drive developer engagement through large-scale meetups and hackathons across 13+ cities, practical content platforms, and innovative AI-powered tools like Avocado for event automation. Passionate about strengthening the Indian developer ecosystem, Megha Arora brings a unique blend of technical expertise, community building, and business impact to the stage.",
+    linkedin: "https://www.linkedin.com/in/devrelmegha/",
+    image: "/speakers/megha.jpeg"
   },
   {
     id: 8,
-    name: "Emma Davis",
-    role: "API Designer",
-    company: "Design Systems",
-    bio: "Emma is passionate about API design and user experience. She believes that well-designed APIs should be intuitive and accessible to developers of all skill levels.",
-    linkedin: "https://linkedin.com/in/emmadavis",
-    image: "/speakers/speaker8.jpg"
+    name: "Ali Mustufa",
+    role: "Senior Developer Advocate",
+    company: "Pieces for Developers",
+    bio: "Ali Mustufa is a Senior Developer Advocate at Pieces, a TEDx speaker, and a recognized educator in Generative AI and APIs. With experience delivering corporate trainings for organizations like Rakuten, Infosys, Deloitte, and ADP, Ali has equipped professionals with practical skills in cloud, APIs, and technical leadership. He has reached over 500,000 students across 500+ colleges through workshops and community initiatives, and has played a key role in fostering developer ecosystems, including founding India’s first TensorFlow User Group. A passionate advocate for empowering early-age developers, Ali combines technical expertise, community leadership, and global speaking experience to inspire the next generation of innovators.",
+    linkedin: "https://www.linkedin.com/in/ialimustufa/",
+    image: "/speakers/ali.jpeg"
+  },
+  {
+    id: 9,
+    name: "Pranoti Nandurkar",
+    role: "Technical Architect",
+    company: "Tata consultancy services",
+    bio: "Pranoti is a women Techmakers ambassador and GDG organiser for Pune chapter. She is having around 14 years of experience in tech. She is working Technical Architect at Tata consultancy services. She strongly believe in contributing to communities. In her free time you can find her working closely with tech communities or learning new technology. She also enjoys traveling and spending time in nature.",
+    linkedin: "https://www.linkedin.com/in/pranoti-nandurkar-170021b/",
+    image: "/speakers/pranoti.jpeg"
+  },
+  {
+    id: 10,
+    name: "Sakshi Nasha",
+    role: "Software Engineer",
+    company: "Cohesity",
+    bio: "Sakshi Nasha is a Senior Software Engineer at Cohesity, where they bring together technical curiosity and a passion for building software that drives real impact. With a strong belief in technology's power to create meaningful change, they love exploring complex systems and solving challenging problems. A strong advocate for diversity in tech, Sakshi Nasha actively leads initiatives to empower women in technology. As an international speaker, they've shared experiences and learnings at conferences worldwide, connecting with vibrant developer communities. Outside of work, they're an athlete at heart—whether trekking through the outdoors or cycling through the city, they seek energy and balance beyond the keyboard.",
+    linkedin: "https://www.linkedin.com/in/sakshi-nasha/",
+    image: "/speakers/sakshinasha.jpeg"
+  },
+  {
+    id: 11,
+    name: "Nikhilesh Tayal",
+    role: "Founder and Teacher",
+    company: "AIMLetc.com",
+    bio: "Saurav Jain is the Senior Developer Community Manager at Apify, where he advocates for open source, AI agents, and web scraping technologies. A Docker Captain and passionate community builder, Saurav creates impactful content that bridges developers with modern tools and practices. With expertise in Python, Node.js, and public speaking, he actively champions developer growth and knowledge sharing. Beyond tech, he is also an advocate for actor development, bringing creativity and communication together to empower diverse communities.",
+    linkedin: "https://www.linkedin.com/in/nikhileshtayal/",
+    image: "/speakers/nikhilesh.jpg"
+  },
+  {
+    id: 12,
+    name: "Saurav Jain",
+    role: "Senior Developer Community Manager",
+    company: "Apify",
+    bio: "Saurav Jain is the Senior Developer Community Manager at Apify, where he advocates for open source, AI agents, and web scraping technologies. A Docker Captain and passionate community builder, Saurav creates impactful content that bridges developers with modern tools and practices. With expertise in Python, Node.js, and public speaking, he actively champions developer growth and knowledge sharing. Beyond tech, he is also an advocate for actor development, bringing creativity and communication together to empower diverse communities.",
+    linkedin: "https://www.linkedin.com/in/sauain/",
+    image: "/speakers/sauravjain.jpeg"
+  },
+  {
+    id: 13,
+    name: "Srushti Raybhoge",
+    role: "Software Engineer 2",
+    company: "Addepar",
+    bio: "Software Engineer learning and exploring new technologies while growing to be a versatile individual. Enthusiastic in frontend and backend development with JavaScript and TypeScript-based frameworks and libraries. Aim to solve complex problems and develop simple solutions.",
+    linkedin: "https://www.linkedin.com/in/srushti-raybhoge/",
+    image: "/speakers/srushtidi.jpg"
+  },
+  {
+    id: 14,
+    name: "Bhawna Chauhan",
+    role: "Developer Relations Engineer",
+    company: "QuillAI Network",
+    bio: "Hi, I'm Bhawna, currently working as a Developer Relations Engineer at QuillAI Network, where we're focused on building the security & verification layer for the ecosystem. I'm passionate about open source & community. I've had the opportunity to contribute to projects like Harbor, Near Protocol, MonadoXR, and Radarbase through programs such as MLH Fellowship, LFX Mentorship, and more. Beyond that, I'm an avid hackathon enthusiast with over 40 hackathons under my belt and 20+ wins along the way.",
+    linkedin: "https://www.linkedin.com/in/connectbhawna/",
+    image: "/speakers/bhawna.jpeg"
+  },
+  {
+    id: 15,
+    name: "Abhishek Mankuskar",
+    role: "Creator & Lead - SWOC",
+    company: "Social Winter of Code",
+    bio: "Abhishek Mankuskar is a Frontend Developer, Open Source Enthusiast, and community builder. As the Founding Organizer of Social Winter of Code (SWOC), they led the initiative's strategy, operations, and platform development, fostering sustainable open-source contributions. Currently an Associate Software Engineer at Coditas, they specialize in React.js and modern frontend practices. A frequent speaker at events like Google DevFest and Google Developer Student Clubs, Abhishek Mankuskar actively advocates for open source and community-driven innovation.",
+    linkedin: "hhttps://www.linkedin.com/in/abhishek-mankuskar-03790018b/",
+    image: "/speakers/abhishek.jpg"
+  },
+  {
+    id: 16,
+    name: "Saurabh Mishra",
+    role: "DevOps Lead",
+    company: "TSYS",
+    bio: "Saurabh is a Cloud Architect with a deep passion for DevOps and automation. Saurabh actively engages with the tech community, sharing insights on cloud-native technologies, security, and multi-cloud strategies. As a speaker at various conferences, meetups, and workshops, Saurabh helps teams enhance their cloud adoption and optimization efforts.",
+    linkedin: "https://www.linkedin.com/in/connectsaurabhmishra/",
+    image: "/speakers/saurabhmishra.png"
   }
 ];
 

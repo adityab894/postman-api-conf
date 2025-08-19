@@ -40,7 +40,7 @@ const teamLeads = [
     role: "Media Lead",
     bio: "I'm the Head of Media at Postman Community Pune where I lead content and campaigns that build real connections with the tech community. I've managed cultural festivals and college events that drew large participation and strong engagement OF 1M+ impressions in just span of 30 days. Before that, I grew a fan page for actor Prasad Oak to 20K+ followers which taught me how to build and maintain an active audience. I enjoy working at the intersection of creativity and strategy. Right now I'm pursuing my Degree in Information Technology and exploring opportunities to help brands and communities grow.",
     linkedin: "https://www.linkedin.com/in/kunal-gavit-1504gk/",
-    image: "/team/kunal.jpg"
+    image: "/team/kunal.png"
   },
   {
     id: 3,
@@ -104,7 +104,7 @@ const teamLeads = [
     role: "Content Lead",
     bio: "I'm Alice, a Content Lead and Community Builder, passionate about creating engaging narratives and fostering collaboration in tech communities. At Postman Community Pune, I focus on driving impactful content, strengthening connections, and enabling knowledge-sharing among developers. With a strong interest in storytelling, event engagement, and community growth, I aim to empower individuals through meaningful conversations and resources that help them thrive in the developer ecosystem.",
     linkedin: "https://www.linkedin.com/in/alice-chauhan-661305288",
-    image: "/team/alice.jpg"
+    image: "/team/alice.png"
   },
   {
     id: 11,
