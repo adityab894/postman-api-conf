@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "THE API CONF PUNE",
   description: "Discover the easiest way to learn everything. Our comprehensive e-learning platform brings world-class education directly to your device.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
