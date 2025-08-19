@@ -235,7 +235,7 @@ export default function SpeakersPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-left">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              The API CONF Pune 2025 Speakers
+              OUR SPEAKERS
             </h1>
             <p className="text-xl text-left text-gray-600 max-w-9xl">
               Our speakers are influential leaders and allies actively involved in various communities within their organizations, cities, countries, and beyond, making a significant impact through their contributions and support.

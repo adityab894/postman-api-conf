@@ -11,7 +11,7 @@ const organizingTeam = [
     id: 1,
     name: "Shrawan Saproo",
     role: "Organizer",
-    bio: "I’m Shrawan, a Community Builder, DevRel Leader, Technical Content Creator, and Region Lead at AI Camp, passionate about empowering developers and building thriving ecosystems. Currently leading Postman Community Pune and serving as a DigitalOcean Wavemaker, I bring 2+ years of experience in developer relations, community growth, and event management.",
+    bio: "I'm Shrawan, a Community Builder, DevRel Leader, Technical Content Creator, and Region Lead at AI Camp, passionate about empowering developers and building thriving ecosystems. Currently leading Postman Community Pune and serving as a DigitalOcean Wavemaker, I bring 2+ years of experience in developer relations, community growth, and event management.",
     linkedin: "https://www.linkedin.com/in/shrawan513/",
     image: "/team/shrawan.jpg"
   },
@@ -19,7 +19,7 @@ const organizingTeam = [
     id: 2,
     name: "Aditya Bisht",
     role: "Organizer",
-    bio: "Sarah specializes in event planning and community engagement. She ensures smooth execution of community events and creates meaningful experiences for all participants.",
+    bio: "Hi, I'm Aditya Bisht, a curious and committed engineering student pursued B.E. in Robotics and Automation, with a passion for software development and community-driven tech innovation. With a strong foundation in C/C++, Python, JavaScript, and modern frameworks like React, Node.js, and Next.js, I thrive at the intersection of software and hardware. I enjoy exploring both front-end and back-end technologies, crafting solutions that are not only functional but also meaningful. Beyond development, I'm deeply invested in community building. I co-founded the Postman Community Pune, organizing 10+ events to foster collaboration and API literacy among developers. As a competitive programmer, I've consistently sharpened my algorithmic thinking, ranking among the Top 11K globally in Google Kickstart and mentoring over 80+ students in Data Structures & Algorithms. My passion for learning and teaching is what fuels me every day.I'm currently diving deeper into DevOps, automation, and cloud-native tools, with a long-term vision to innovate at the intersection of AI and real-world problem-solving. When I'm not coding, you'll find me reading about aviation, defense tech, Geopolitics or playing badminton. I believe in the power of curiosity, code, and community to create meaningful change.",
     linkedin: "https://www.linkedin.com/in/aditya894/",
     image: "/team/aditya.jpg"
   }
@@ -30,209 +30,209 @@ const teamLeads = [
     id: 1,
     name: "Nilanjan Paul",
     role: "Technical Lead",
-    bio: "Michael is a seasoned technical leader with expertise in API development and architecture. He mentors community members and guides them through complex technical challenges.",
-    linkedin: "https://linkedin.com/in/michaelchen",
+    bio: "An attentive and agile learner with a diverse foundation of the tech industry platform experiences such as cloud, Bq, application development, security analysis, AI ML, language processing, QA. Also, an Engineer who has very strong organizational and communicative abilities equipped with technical abilities and a decisive nature necessary for a successful job",
+    linkedin: "https://www.linkedin.com/in/nilanjan-paul21/",
     image: "/team/nilanjan.jpg"
   },
   {
     id: 2,
     name: "Kunal Gavit",
     role: "Media Lead",
-    bio: "Priya excels in community building and strategic planning. She empowers team members with the resources and guidance needed to achieve their goals.",
-    linkedin: "https://linkedin.com/in/priyasharma",
+    bio: "I'm the Head of Media at Postman Community Pune where I lead content and campaigns that build real connections with the tech community. I've managed cultural festivals and college events that drew large participation and strong engagement OF 1M+ impressions in just span of 30 days. Before that, I grew a fan page for actor Prasad Oak to 20K+ followers which taught me how to build and maintain an active audience. I enjoy working at the intersection of creativity and strategy. Right now I'm pursuing my Degree in Information Technology and exploring opportunities to help brands and communities grow.",
+    linkedin: "https://www.linkedin.com/in/kunal-gavit-1504gk/",
     image: "/team/kunal.jpg"
   },
   {
     id: 3,
     name: "Aman Mogal",
     role: "Growth Lead",
-    bio: "David oversees operational excellence and ensures smooth execution of all community initiatives. His strategic thinking drives continuous improvement.",
-    linkedin: "https://linkedin.com/in/davidwilson",
+    bio: "Aman Mogal is an AI & DevOps Engineer and Founder of localDev, passionate about automating intelligence in the cloud. As an open-source enthusiast and Community Representative at Postman Community Pune, he focuses on growth management, community relations, and driving impactful developer experiences. Currently pursuing his degree at MCOE (Class of 2026), Aman actively contributes to fostering collaboration and innovation in tech communities.",
+    linkedin: "https://www.linkedin.com/in/aman-mogal-b7773b246/",
     image: "/team/aman.jpg"
   },
   {
     id: 4,
     name: "Namrata Bhalerao",
     role: "Design Lead",
-    bio: "Lisa manages content strategy and ensures high-quality educational materials for the community. She creates engaging learning experiences.",
-    linkedin: "https://linkedin.com/in/lisarodriguez",
+    bio: "I'm Namrata, an Electronics & Telecommunication student with a enthusiasm for visual story telling, UI frameworks and crafting intuitive digital experiences. At Postman Community Pune, I bring my skills as a designer. I focus on shaping our visual presence and ensuring consistent aesthetics across platforms. With a keen eye for design and creativity, I lead the creation of engaging social media visuals and community-driven designs that reflect our vibrant spirit. My goal is to merge technology with creativity.",
+    linkedin: "https://in.linkedin.com/in/namrata-bhalerao-66417a244",
     image: "/team/namrata.jpg"
   },
   {
     id: 5,
     name: "Atharva Wani",
     role: "Design Lead",
-    bio: "Alex drives community growth through strategic marketing initiatives and partnerships. He connects with developers worldwide.",
-    linkedin: "https://linkedin.com/in/alexkumar",
+    bio: "Atharva Wani is the Design Lead for Postman Community Pune, where he drives engaging designs and impactful storytelling to bring developer communities together. With a keen eye for creativity and detail, he ensures that every campaign, event, and initiative reflects innovation and inclusivity. Passionate about design, tech, and collaboration, Atharva plays a key role in shaping the community's identity and inspiring developers to connect, learn, and grow.",
+    linkedin: "https://www.behance.net/waniatharva",
     image: "/team/atharvaw.jpg"
   },
   {
     id: 6,
     name: "Alisha Sapkal",
     role: "Web Lead",
-    bio: "Emma coordinates all community events and workshops. She ensures seamless execution and memorable experiences.",
-    linkedin: "https://linkedin.com/in/emmathompson",
+    bio: "I'm a passionate Software Developer, skilled in UI frameworks building scalable websites, user-focused applications, I combine strong problem-solving skills with a creative approach to design and development. With hands-on experience in database and node, I thrive on turning complex ideas into impactful digital solutions. Beyond academics, I actively contribute to tech communities and mentor peers, driven by curiosity, adaptability, and a commitment to continuous learning, currently a Web Lead at Postman Community Pune. My goal is to create seamless, performance-optimized experiences that make technology more accessible and meaningful.",
+    linkedin: "https://www.linkedin.com/in/alisha-sapkal/",
     image: "/team/alisha.jpg"
   },
   {
     id: 7,
     name: "Arjun Khadse",
     role: "Operations Lead",
-    bio: "Raj builds relationships with developers and advocates for the community. He represents the voice of developers.",
-    linkedin: "https://linkedin.com/in/rajpatel",
+    bio: "I'm a creative Full-Stack Developer and Designer with expertise in modern JavaScript frameworks and libraries. Passionate about crafting intuitive, scalable, and visually engaging digital experiences, I seamlessly blend design with functionality to bring ideas to life. Skilled in custom visual effects, animations, and performance optimization, I specialize in building user-focused applications that leave a lasting impact. Driven by curiosity and continuous learning, I thrive on exploring new technologies, solving complex challenges, and collaborating to transform ideas into reality.",
+    linkedin: "https://www.linkedin.com/in/arjunkh",
     image: "/team/arjun.jpg"
   },
   {
     id: 8,
     name: "Ritika Pasari",
     role: "Operations Lead",
-    bio: "Sophie designs and delivers hands-on workshops. She makes complex topics accessible to developers of all levels.",
-    linkedin: "https://linkedin.com/in/sophielee",
+    bio: "Building tech, growing communities, and creating impact. I'm Ritika Pasari — a Software Engineer and Community Builder passionate about blending technology with collaboration. With experience in AI, microservices, and AI full-stack development, I enjoy turning ideas into impactful solutions. Beyond code, I actively contribute to developer communities, fostering growth, knowledge-sharing, and meaningful connections. Driven by curiosity and creativity, I thrive on building both products and people.",
+    linkedin: "https://www.linkedin.com/in/ritika-pasari-225139225",
     image: "/team/ritika.jpg"
   },
   {
     id: 9,
     name: "Eric Fernandes",
     role: "Support Lead",
-    bio: "Carlos expands community reach through strategic partnerships and collaborations with other tech communities.",
-    linkedin: "https://linkedin.com/in/carlosmendez",
+    bio: "Eric Fernandes is a Graduate Engineer Trainee at iTech Robotics & Automation, working on robotics programming and computer vision. Alongside this, he serves as Community Support Manager at Postman Community Pune, where he contributes to community growth, developer support, and technical advocacy. Passionate about AI, automation, and open-source, Eric is building a career at the intersection of technology",
+    linkedin: "https://www.linkedin.com/in/ericfernandes1681/",
     image: "/team/eric.jpg"
   },
   {
     id: 10,
     name: "Alice Chauhan",
     role: "Content Lead",
-    bio: "Anita coordinates mentorship programs and helps developers grow their skills through guided learning.",
-    linkedin: "https://linkedin.com/in/anitasingh",
+    bio: "I'm Alice, a Content Lead and Community Builder, passionate about creating engaging narratives and fostering collaboration in tech communities. At Postman Community Pune, I focus on driving impactful content, strengthening connections, and enabling knowledge-sharing among developers. With a strong interest in storytelling, event engagement, and community growth, I aim to empower individuals through meaningful conversations and resources that help them thrive in the developer ecosystem.",
+    linkedin: "https://www.linkedin.com/in/alice-chauhan-661305288",
     image: "/team/alice.jpg"
   },
   {
     id: 11,
     name: "Hariprasad Sakhare",
     role: "Support Lead",
-    bio: "Tom ensures comprehensive documentation and resources are available for community members.",
-    linkedin: "https://linkedin.com/in/tomanderson",
+    bio: "As a recent engineering graduate with a passion for software development, I am eager to leverage my skills in data analysis to solve real-world problems. I excel in problem-solving and possess strong management and communication abilities, which I believe are essential in today's collaborative work environment. My academic background and hands-on projects have equipped me with a solid foundation in technical skills, and I am enthusiastic about applying my knowledge to innovative initiatives. I am actively seeking opportunities where I can contribute to meaningful projects and further develop my expertise",
+    linkedin: "https://www.linkedin.com/in/hariprasad-sakhare-8b6834230",
     image: "/team/hariprasad.jpg"
   },
   {
     id: 12,
     name: "Suresh Chaudhary",
     role: "Creative Lead",
-    bio: "Maria manages social media presence and engages with the community across various platforms.",
-    linkedin: "https://linkedin.com/in/mariagarcia",
+    bio: "I'm Suresh, a self-proclaimed 'noob' coder and a curious, crazy designer at heart. As a dedicated night owl, I thrive on transforming complex and messy work into clean user experiences. Currently, I'm contributing my skills as a Seasonal Software Developer at koiamor and also guide the creative vision as the Creative Lead for the Postman Pune community. I'm always learning and am a passionate developer.",
+    linkedin: "https://www.linkedin.com/in/sschoudhary30/",
     image: "/team/suresh.jpg"
   },
   {
     id: 13,
     name: "Asmita Khuspe",
     role: "Anchors Lead",
-    bio: "James coordinates volunteer efforts and ensures smooth operations during events and meetups.",
-    linkedin: "https://linkedin.com/in/jameswilson",
+    bio: "I'm a passionate technologist with a strong foundation in C, C++, Java, and Python, and a growing expertise in cloud technologies like AWS, GCP, Azure, DevOps, and system administration. I enjoy solving complex problems, exploring new tools, and bringing efficiency to the projects I work on. Currently preparing to pursue an MS in Cloud Computing abroad, I'm eager to deepen my knowledge and contribute meaningfully to the evolving tech landscape. Beyond coding, I love mentoring, public speaking, and guiding aspiring professionals, as I believe sharing knowledge is just as important as gaining it. At heart, I'm curious, collaborative, and always open to learning.",
+    linkedin: "https://www.linkedin.com/in/asmita-khuspe/",
     image: "/team/asmita.jpg"
   },
   {
     id: 14,
     name: "Rooheni Naraynkar",
     role: " Anchors Lead",
-    bio: "Nina builds strategic partnerships with companies and organizations to support community initiatives.",
-    linkedin: "https://linkedin.com/in/ninachen",
+    bio: "I'm Roheeni, currently a Full-Time Technology Analyst at Citi Bank and proud Citi Bridge Grad'24. I have held diverse roles such as Mentor, PR, Developer, and Editor in clubs like Vinidra Satellite Club and Kshitij during my college years. My internship experience spans Reknot Solution, Citi Bank, and a research role at my college. Alongside my career, I'm active in both social and tech volunteering initiatives, serving as an anchor for Postman Community Pune and volunteering at Bhumi.",
+    linkedin: "http://www.linkedin.com/in/roheeni-narayankar-a7bb49199",
     image: "/team/roheeni.jpg"
   },
   {
     id: 15,
     name: "Nikhil Rajpurohit",
     role: "Growth Co-Lead",
-    bio: "Ryan creates technical content and tutorials to help developers master API development.",
-    linkedin: "https://linkedin.com/in/ryanoconnor",
+    bio: "I'm Nikhil Rajpurohit, a Fullstack Web3 Developer driven by a passion for building scalable applications and decentralized solutions. For me, problem-solving isn't just a skill it's a mindset. Whether it's building with communities, contributing to open-source, or collaborating with innovators who share a vision for the future, I thrive on creating meaningful digital experiences that grow with people and technology.",
+    linkedin: "https://www.linkedin.com/in/nikhil-rajpurohit-05b39734a/",
     image: "/team/nikhil.jpg"
   },
   {
     id: 16,
     name: "Janhavi Dahatonde",
     role: "Technical Co-Lead",
-    bio: "Zara manages day-to-day community operations and ensures a welcoming environment for all members.",
-    linkedin: "https://linkedin.com/in/zaraahmed",
+    bio: " A passionate software engineer with strengths in problem-solving, adaptability, and creating user-focused, scalable solutions. Thrives in tackling complex challenges, optimizing performance, and turning ideas into impactful products. Driven by curiosity, continuous learning, and a commitment to delivering excellence.",
+    linkedin: "https://www.linkedin.com/in/janhavi2409/",
     image: "/team/janhavi.jpg"
   },
   {
     id: 17,
     name: "Khushi Jamale",
     role: "Growth Team",
-    bio: "Zara manages day-to-day community operations and ensures a welcoming environment for all members.",
-    linkedin: "https://linkedin.com/in/zaraahmed",
+    bio: "Turning curiosity into code and conversations🌟. Hey! I'm Khushi Jamale — an Electronics & Telecommunication Engineering student passionate about cloud computing and APIs. With a curiosity for scalable technologies and innovative solutions, I enjoy blending technical problem-solving with people-centric skills. Beyond code, I'm driven by meaningful interactions, collaboration, and honing my management abilities to create impact.",
+    linkedin: "https://www.linkedin.com/in/khushi-jamale-051a492b6",
     image: "/team/khushi.jpg"
   },
   {
     id: 18,
     name: "Sakshi Sonawane",
     role: "Media Co-Lead",
-    bio: "Kevin explores emerging technologies and brings innovative ideas to the community.",
-    linkedin: "https://linkedin.com/in/kevinpark",
+    bio: "Hi there! I'm Sakshi, a passionate Data Science and Machine Learning enthusiast specialising in developing Python-based solutions to solve complex problems. With hands-on experience in building AI chatbots and creating robust ML pipelines, I am proficient in SQL and Power BI for data analysis and visualisation. I am actively seeking opportunities in Data Analytics and AI to apply my skills and contribute to innovative projects. Let's connect and drive data-driven success together!",
+    linkedin: "https://www.linkedin.com/in/sakshi-s-284233206/",
     image: "/team/sakshi.jpg"
   },
   {
     id: 19,
     name: "Adhishri Kore",
     role: "Designer",
-    bio: "Sara ensures high standards in all community initiatives and maintains quality across programs.",
-    linkedin: "https://linkedin.com/in/sarajohnson",
+    bio: "I'm Adhishri Kore, a final-year student, Designer, and Technology Explorer driven by creativity, innovation, and community spirit. With a background in technology and a strong inclination toward visual storytelling, I specialize in transforming ideas into impactful designs that connect with people. Currently contributing at Postman Community Pune, I blend design thinking with technical insight to create meaningful experiences. Passionate about continuous learning and collaboration, I thrive on exploring new possibilities and adding value to communities that foster growth and knowledge sharing.",
+    linkedin: "https://www.linkedin.com/in/adhishri-kore-31b174296",
     image: "/team/adhishri.jpg"
   },
   {
     id: 20,
     name: "Ankit Mishra",
     role: "Designer",
-    bio: "Daniel conducts research on developer needs and trends to inform community strategy.",
-    linkedin: "https://linkedin.com/in/danielkim",
+    bio: "I'm Ankit, a Tech Explorer passionate about open-source, developer communities, and practical software development. I enjoy working on projects that build my skills in programming, development, and collaboration. Currently, I'm contributing to the Design Team at Postman Community Pune, where I blend creativity with technology to support community initiatives. Outside tech, I explore creativity through designing and editing, bringing fresh perspectives to my work while contributing to thriving communities.",
+    linkedin: "https://www.linkedin.com/in/ankit-mishra-56b941282/",
     image: "/team/ankit.jpg"
   },
   {
     id: 21,
     name: "Saloni Pawar",
     role: "Designer",
-    bio: "Rachel collects and analyzes community feedback to continuously improve our programs and initiatives.",
-    linkedin: "https://linkedin.com/in/rachelgreen",
+    bio: "I'm Saloni Pawar  an engineer who traded circuits for creativity. While my degree says engineering, my passion drives storytelling, design, and digital strategy. I bring ideas to life as a social media, content creator, and graphic designer, crafting digital experiences that make people stop, think, and connect. I thrive at the intersection of creativity and strategy shaping brand presence, curating stories that resonate, and designing visuals that speak with clarity and style. Currently, I'm working with Postman Community Pune a vibrant hub of innovators, developers, and API enthusiasts where technology meets creativity and community.",
+    linkedin: "http://linkedin.com/in/saloni-pawar-949aa1178",
     image: "/team/saloni.jpg"
   },
   {
     id: 22,
     name: "Sakshi Chaudhary",
     role: "Designer",
-    bio: "Rachel collects and analyzes community feedback to continuously improve our programs and initiatives.",
-    linkedin: "https://linkedin.com/in/rachelgreen",
+    bio: "Hi, I'm Sakshi Chaudhari. I'm a 3rd-year student passionate about AI, Data Science, and Full-Stack Development, blending technology with creativity to build digital solutions that are impactful and user-friendly. As a software developer and designer, I work with React, Node.js, Express, MySQL, and MongoDB to create scalable applications. Alongside tech, I contribute as a designer at Postman Community Pune, shaping its visual identity and crafting engaging designs that reflect its innovative spirit.I thrive at the intersection of code and creativity—developing web, curating stories, and designing visuals that connect with people.My goal is to grow as a full-stack developer and creative designer, crafting seamless, performance-optimized experiences that inspire and engage",
+    linkedin: "http://www.linkedin.com/in/sakshichaudhari0606",
     image: "/team/sakshichaudhari.jpg"
   },
   {
     id: 23,
     name: "Pratyush Panda",
     role: "Video Editor",
-    bio: "Rachel collects and analyzes community feedback to continuously improve our programs and initiatives.",
-    linkedin: "https://linkedin.com/in/rachelgreen",
+    bio: "Hey! I'm Pratyush Panda, a pre-final year Computer Engineering student who enjoys working at the crossroads of technology and creativity. I am currently working with Postman Community Pune as an Editor, where I craft engaging tech reels and event highlights that capture knowledge and community spirit. I also serve as the Content & Community Lead at GDG BVP Pune, where I combine my skills in web development, DSA, and video editing to build content that informs, inspires, and connects. For me, it's all about turning ideas into experiences—whether through code or through storytelling.🚀",
+    linkedin: "https://www.linkedin.com/in/pratyush-panda-a50382329",
     image: "/team/pratyush.jpg"
   },
   {
     id: 24,
     name: "Rutuja",
     role: "Video Editor",
-    bio: "Rachel collects and analyzes community feedback to continuously improve our programs and initiatives.",
-    linkedin: "https://linkedin.com/in/rachelgreen",
+    bio: " Aspiring Software Developer passionate about building scalable applications and solving problems through C, C++, and DSA. Currently learning Full Stack Development while contributing to Postman Community Pune as part of the Media & Event team. I enjoy blending technical skills with creative storytelling  from writing code to designing event content. My goal is to grow as a developer while actively contributing to impactful communities.",
+    linkedin: "https://www.linkedin.com/in/rutuja-parde-41478a325",
     image: "/team/rutuja.jpg"
   },
   {
     id: 25,
-    name: "Prathmesh Wagh",
-    role: "Videographer",
-    bio: "Rachel collects and analyzes community feedback to continuously improve our programs and initiatives.",
-    linkedin: "https://linkedin.com/in/rachelgreen",
-    image: "/team/prathmeshx.jpg"
+    name: "Prisha Shah",
+    role: "Photographer",
+    bio: "Hey,I'm Prisha Shah. An AI & Data Science student and a passionate Software Developer, skilled in front end technologies,React, Node.js, MongoDB, and MySQL. I enjoy building scalable websites and user-focused applications, combining strong problem-solving abilities with creativity in design and development.With hands-on experience in databases, backend systems, and frontend frameworks, I thrive on transforming complex ideas into meaningful digital solutions. Beyond academics, I'm an active member of the Postman Community Pune and a photographer, where I channel the same attention to detail and storytelling that I apply in tech projects.Driven by curiosity, adaptability, and continuous learning, my goal is to grow as a full-stack developer and contribute to creating seamless, performance-optimized experiences that make technology more impactful and accessible.",
+    linkedin: "https://www.linkedin.com/in/prisha-shah-085438257",
+    image: "/team/prisha.jpg"
   },
   {
     id: 26,
-    name: "Prisha Shah",
-    role: "Photographer",
-    bio: "Rachel collects and analyzes community feedback to continuously improve our programs and initiatives.",
-    linkedin: "https://linkedin.com/in/rachelgreen",
-    image: "/team/prisha.jpg"
+    name: "Sachin Parihar",
+    role: "Volunteer",
+    bio: "Hi, I'm Sachin Parihar — a Fullstack Developer based in Pune and the founder of Cresta Studio. I specialize in design-driven development, building digital experiences that seamlessly blend form and function. My expertise spans HTML, JavaScript, React.js, Firebase, Python, and more—bringing clean, intuitive interfaces to life with performance and creativity",
+    linkedin: "https://www.linkedin.com/in/sachin-parihar-008180264",
+    image: "/team/sachin.jpg"
   },
 
 ];

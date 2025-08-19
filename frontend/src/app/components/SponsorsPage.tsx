@@ -12,13 +12,13 @@ const sponsorTiers = [
     tier: "title",
     sponsors: [
       { 
-        name: "Postman Community Pune",
+        name: "Postman",
         img: "/api-conf/postman.png"
       }
     ]
   },
   {
-    title: "Diamond Sponsor",
+    title: "Gold Sponsor",
     tier: "diamond",
     sponsors: [
       { 
@@ -28,20 +28,35 @@ const sponsorTiers = [
     ]
   },
   {
+    title: "Associate Sponsor",
+    tier: "diamond",
+    sponsors: [
+      { 
+        name: "Github Education",
+        img: "/api-conf/github.png"
+      }
+    ]
+  },
+  {
     title: "Booth Partners",
     tier: "booth",
     sponsors: [
       { 
-        name: "Technologies",
-        img: "/api-conf/technogies.png"
+        name: "Postman",
+        img: "/api-conf/postman.png"
+      },
+      
+      { 
+        name: "We Make Devs",
+        img: "/api-conf/WeMakeDevs.png"
       },
       { 
-        name: "Winjit",
-        img: "/api-conf/winjit.jpeg"
+        name: "Apify",
+        img: "/api-conf/apify.png"
       },
       { 
-        name: "Contentstack",
-        img: "/api-conf/contentstack.png"
+        name: "DevrelSqaud",
+        img: "/api-conf/devrel.png"
       },
     ]
   },
@@ -50,8 +65,47 @@ const sponsorTiers = [
     tier: "community",
     sponsors: [
       { 
-        name: "Postman Community",
-        img: "/api-conf/postman.png"
+        name: "AWS User Group Pune",
+        img: "/api-conf/aws.jpg"
+      },
+      { 
+        name: "Cloud Native Community Group Pune",
+        img: "/api-conf/cncg.png"
+      },
+      { 
+        name: "Docker Community Pune",
+        img: "/api-conf/docker.png"
+      },
+      { 
+        name: "Googel Developer Group Cloud Pune",
+        img: "/api-conf/gdgcloud.png"
+      },
+      { 
+        name: "Girls Leading Tech",
+        img: "/api-conf/girls.png"
+      },
+      { 
+        name: "Social Winter of Code",
+        img: "/api-conf/swoc.png"
+      },
+      { 
+        name: "Postman Community Kolkata",
+        img: "/api-conf/kolkata.png"
+      },
+      // { 
+      //   name: "Postman Community",
+      //   img: "/api-conf/postman.png"
+      // },
+
+    ]
+  },
+  {
+    title: "CFP Partners",
+    tier: "CFP",
+    sponsors: [
+      { 
+        name: "Sessionize",
+        img: "/api-conf/sessionize.png"
       },
     ]
   },

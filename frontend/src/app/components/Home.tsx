@@ -63,7 +63,7 @@ export default function Home() {
                     className="w-64 h-40"
                   />
                   <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-                    <div className="text-4xl font-extrabold text-gray-900">35+</div>
+                    <div className="text-4xl font-extrabold text-gray-900">25+</div>
                     <div className="text-base font-medium text-gray-700">Speakers</div>
                   </div>
                 </div>
@@ -78,7 +78,7 @@ export default function Home() {
                     className="w-64 h-40"
                   />
                   <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-                    <div className="text-4xl font-extrabold text-gray-900">1000+</div>
+                    <div className="text-4xl font-extrabold text-gray-900">500+</div>
                     <div className="text-base font-medium text-gray-700">Participants</div>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ export default function Home() {
                     className="w-64 h-40"
                   />
                   <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-                    <div className="text-4xl font-extrabold text-gray-900">25+</div>
+                    <div className="text-4xl font-extrabold text-gray-900">15+</div>
                     <div className="text-base font-medium text-gray-700">Sessions</div>
                   </div>
                 </div>
@@ -128,25 +128,25 @@ export default function Home() {
              <div className="grid md:grid-cols-2 gap-12">
                {/* Left Section */}
                <div className="space-y-6">
-                 <h2 className="text-4xl font-bold text-blue-600">
-                   About API Conf 2025
+                 <h2 className="text-6xl font-bold text-gray-600">
+                   ABOUT API
                  </h2>
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  At KoiAmor, we believe that true well-being begins with remembering who you are — beneath the noise, the roles, and the expectations.
-                </p>
+                 <h4 className="text-6xl font-bold text-gray-700">
+                 CONF PUNE 2025
+                 </h4>
               </div>
 
               {/* Right Section */}
               <div className="space-y-6">
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  We were born not out of a business plan, but a lived experience: the ache of burnout, the silence around mental health, the disconnection from the body, and the longing for something deeper.
+                API Conf Pune was not created as just another tech event. It grew out of a genuine need to close the gaps in how we build, connect and scale with APIs. It reflects a shared commitment to collaboration that goes beyond boundaries and a vision for an ecosystem where ideas not only move but also grow, spark and multiply.
                 </p>
                 <p className="text-lg font-semibold text-gray-700 italic">
-                  KoiAmor is a return — to your rhythm, your truth, and your wholeness.
+                It’s a return to innovation, to community, and to the future of APIs.
                 </p>
-                <p className="text-gray-700 text-lg leading-relaxed">
+                {/* <p className="text-gray-700 text-lg leading-relaxed">
                   We&apos;re here to create experiences that don&apos;t just inform, <span className="font-bold">but transform</span>.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

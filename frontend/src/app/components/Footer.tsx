@@ -29,12 +29,14 @@ const Footer = () => (
       <div className="w-full flex flex-col md:flex-row flex-wrap items-center md:items-start justify-between text-center md:text-left pt-16 pb-6 gap-2">
         <div className="max-w-xs mb-8 md:mb-0">
           <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
+            {/* Footer Logo
             <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
               <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
               </svg>
-            </div>
+            </div> */}
+
             <h2 className="text-xl font-bold">Postman Community Pune</h2>
           </div>
           <p className="text-sm font-semibold">
