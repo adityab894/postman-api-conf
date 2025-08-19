@@ -86,12 +86,12 @@ const SpeakerCard = ({ speaker, onClick }: { speaker: typeof speakers[0]; onClic
   <div className="group cursor-pointer transform transition-all duration-300 hover:scale-105" onClick={onClick}>
     <div className="flex flex-col items-center space-y-4">
       {/* Speaker Image */}
-      <div className="w-32 h-32 flex items-center justify-center bg-gray-100 rounded-full overflow-hidden border-2 border-gray-200">
+      <div className="w-60 h-60 flex items-center justify-center bg-gray-100 rounded-full overflow-hidden border-2 border-gray-200">
         <Image
           src={speaker.image}
           alt={speaker.name}
-          width={128}
-          height={128}
+          width={180}
+          height={180}
           className="w-full h-full object-cover"
           onError={(e) => {
             // Fallback to placeholder if image fails to load

@@ -228,6 +228,15 @@ const teamLeads = [
   },
   {
     id: 26,
+    name: "Manasi Barge",
+    role: "Volunteer",
+    bio: "I'm Manasi Barge, a software developer passionate about building impactful projects and strengthening my skills. I worked on full-stack development using Java, Spring Boot, Angular, and MongoDB, contributing to real-world applications. I love collaborating on projects, exploring new technologies, and creating solutions that make a difference. For me, it's all about learning, building, and turning ideas into meaningful digital experiences.",
+    linkedin: "https://www.linkedin.com/in/manasi-barge/",
+    image: "/team/manasi.jpg"
+  },
+
+  {
+    id: 27,
     name: "Sachin Parihar",
     role: "Volunteer",
     bio: "Hi, I'm Sachin Parihar — a Fullstack Developer based in Pune and the founder of Cresta Studio. I specialize in design-driven development, building digital experiences that seamlessly blend form and function. My expertise spans HTML, JavaScript, React.js, Firebase, Python, and more—bringing clean, intuitive interfaces to life with performance and creativity",
@@ -242,12 +251,12 @@ const TeamMemberCard = ({ member, onClick }: { member: typeof organizingTeam[0] 
   <div className="group cursor-pointer transform transition-all duration-300 hover:scale-105" onClick={onClick}>
     <div className="flex flex-col items-center space-y-4">
       {/* Team Member Image */}
-      <div className="w-32 h-32 flex items-center justify-center bg-gray-100 rounded-full overflow-hidden border-2 border-gray-200">
+      <div className="w-60 h-60 flex items-center justify-center bg-gray-100 rounded-full overflow-hidden border-2 border-gray-200">
         <Image
           src={member.image}
           alt={member.name}
-          width={128}
-          height={128}
+          width={180}
+          height={180}
           className="w-full h-full object-cover"
           onError={(e) => {
             // Fallback to placeholder if image fails to load
