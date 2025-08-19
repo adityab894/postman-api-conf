@@ -104,7 +104,7 @@ const speakers = [
     company: "AIMLetc.com",
     bio: "Saurav Jain is the Senior Developer Community Manager at Apify, where he advocates for open source, AI agents, and web scraping technologies. A Docker Captain and passionate community builder, Saurav creates impactful content that bridges developers with modern tools and practices. With expertise in Python, Node.js, and public speaking, he actively champions developer growth and knowledge sharing. Beyond tech, he is also an advocate for actor development, bringing creativity and communication together to empower diverse communities.",
     linkedin: "https://www.linkedin.com/in/nikhileshtayal/",
-    image: "/speakers/nikhilesh.jpg"
+    image: "/speakers/nikhilesh.png"
   },
   {
     id: 12,
@@ -140,7 +140,7 @@ const speakers = [
     company: "Social Winter of Code",
     bio: "Abhishek Mankuskar is a Frontend Developer, Open Source Enthusiast, and community builder. As the Founding Organizer of Social Winter of Code (SWOC), they led the initiative's strategy, operations, and platform development, fostering sustainable open-source contributions. Currently an Associate Software Engineer at Coditas, they specialize in React.js and modern frontend practices. A frequent speaker at events like Google DevFest and Google Developer Student Clubs, Abhishek Mankuskar actively advocates for open source and community-driven innovation.",
     linkedin: "hhttps://www.linkedin.com/in/abhishek-mankuskar-03790018b/",
-    image: "/speakers/abhishek.jpg"
+    image: "/speakers/abhishek.png"
   },
   {
     id: 16,
