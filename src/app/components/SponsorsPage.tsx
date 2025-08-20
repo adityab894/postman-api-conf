@@ -17,8 +17,18 @@ const sponsorTiers = [
       }
     ]
   },
+  // {
+  //   title: "Gold Sponsor",
+  //   tier: "diamond",
+  //   sponsors: [
+  //     { 
+  //       name: "Google for Developers",
+  //       img: "/api-conf/gdg.png"
+  //     }
+  //   ]
+  // },
   {
-    title: "Gold Sponsor",
+    title: "Associate Sponsor",
     tier: "diamond",
     sponsors: [
       { 
