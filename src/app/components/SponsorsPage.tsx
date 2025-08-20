@@ -13,7 +13,8 @@ const sponsorTiers = [
     sponsors: [
       { 
         name: "Postman",
-        img: "/api-conf/postman.png"
+        img: "/api-conf/postman.png",
+        url: "https://www.postman.com/"
       }
     ]
   },
@@ -29,21 +30,33 @@ const sponsorTiers = [
   // },
   {
     title: "Associate Sponsor",
-    tier: "diamond",
+    tier: "associate",
     sponsors: [
       { 
         name: "Google for Developers",
-        img: "/api-conf/gdg.png"
-      }
+        img: "/api-conf/gdg.png",
+        url: "https://developers.google.com/"
+      },
+      { 
+        name: "Github Education",
+        img: "/api-conf/github.png",
+        url: "https://education.github.com/"
+      } 
     ]
   },
   {
-    title: "Associate Sponsor",
-    tier: "diamond",
+    title: "In Kind Sponsor",
+    tier: "inkind",
     sponsors: [
       { 
-        name: "Github Education",
-        img: "/api-conf/github.png"
+        name: "Pieces",
+        img: "/api-conf/pieces.png",
+        url: "https://pieces.app/"
+      },
+      { 
+        name: "Keploy",
+        img: "/api-conf/keploy.png",
+        url: "https://keploy.io/"
       }
     ]
   },
@@ -53,24 +66,29 @@ const sponsorTiers = [
     sponsors: [
       { 
         name: "Postman",
-        img: "/api-conf/postman.png"
+        img: "/api-conf/postman.png",
+        url: "https://www.postman.com/"
       },
       
       { 
         name: "We Make Devs",
-        img: "/api-conf/WeMakeDevs.png"
+        img: "/api-conf/WeMakeDevs.png",
+        url: "https://wemakedevs.org/"
       },
       { 
         name: "Apify",
-        img: "/api-conf/apify.png"
+        img: "/api-conf/apify.png",
+        url: "https://apify.com/"
       },
       { 
         name: "DevrelSqaud",
-        img: "/api-conf/devrel.png"
+        img: "/api-conf/devrel.png",
+        url: "https://devrelsquad.com/"
       },
       { 
         name: "Civo",
-        img: "/api-conf/civo.png"
+        img: "/api-conf/civo.png",
+        url: "https://www.civo.com/"
       },
     ]
   },
@@ -80,31 +98,38 @@ const sponsorTiers = [
     sponsors: [
       { 
         name: "AWS User Group Pune",
-        img: "/api-conf/aws.jpg"
+        img: "/api-conf/aws.jpg",
+        url: ""
       },
       { 
         name: "Cloud Native Community Group Pune",
-        img: "/api-conf/cncg.png"
+        img: "/api-conf/cncg.png",
+        url: ""
       },
       { 
         name: "Docker Community Pune",
-        img: "/api-conf/docker.png"
+        img: "/api-conf/docker.png",
+        url: ""
       },
       { 
-        name: "Googel Developer Group Cloud Pune",
-        img: "/api-conf/gdgcloud.png"
+        name: "Google Developer Group Cloud Pune",
+        img: "/api-conf/gdgcloud.png",
+        url: ""
       },
       { 
         name: "Girls Leading Tech",
-        img: "/api-conf/girls.png"
+        img: "/api-conf/girls.png",
+        url: ""
       },
       { 
         name: "Social Winter of Code",
-        img: "/api-conf/swoc.png"
+        img: "/api-conf/swoc.png",
+        url: ""
       },
       { 
         name: "Postman Community Kolkata",
-        img: "/api-conf/kolkata.png"
+        img: "/api-conf/kolkata.png",
+        url: ""
       },
       // { 
       //   name: "Postman Community",
@@ -115,11 +140,17 @@ const sponsorTiers = [
   },
   {
     title: "Knowledge Partner",
-    tier: "Knowledge Partner",
+    tier: "Knowledge",
     sponsors: [
       { 
         name: "Chipp",
-        img: "/api-conf/chipp.svg"
+        img: "/api-conf/chipp.svg",
+        url: "https://chipp.ai/"
+      },
+      { 
+        name: "Jet Brains",
+        img: "/api-conf/jetbrains.png",
+        url: "https://www.jetbrains.com/"
       },
     ]
   },
@@ -129,7 +160,8 @@ const sponsorTiers = [
     sponsors: [
       { 
         name: "Sessionize",
-        img: "/api-conf/sessionize.png"
+        img: "/api-conf/sessionize.png",
+        url: "https://sessionize.com/"
       },
     ]
   },
@@ -139,7 +171,8 @@ const sponsorTiers = [
     sponsors: [
       { 
         name: "Konfhub",
-        img: "/api-conf/konfhub.png"
+        img: "/api-conf/konfhub.png",
+        url: "https://konfhub.com/"
       },
     ]
   }
@@ -149,15 +182,19 @@ const sponsorTiers = [
 const getSponsorSize = (tier: string) => {
   switch (tier) {
     case 'title':
+      return 'w-64 h-32';
+    case 'associate':
+    case 'inkind':
+    case 'Knowledge':
+    case 'CFP':
+    case 'ticket':
       return 'w-48 h-24';
-    case 'diamond':
-      return 'w-40 h-20';
-    case 'bronze':
-      return 'w-36 h-18';
     case 'booth':
-      return 'w-32 h-16';
+      return 'w-48 h-24';
+    case 'community':
+      return 'w-48 h-24';
     default:
-      return 'w-40 h-20';
+      return 'w-48 h-24';
   }
 };
 
@@ -166,10 +203,15 @@ const SponsorCard = ({
   sponsor, 
   tier 
 }: { 
-  sponsor: { name: string; img: string }; 
+  sponsor: { name: string; img: string; url: string }; 
   tier: string; 
 }) => (
-  <div className="group cursor-pointer transform transition-all duration-300 hover:scale-105">
+  <a 
+    href={sponsor.url} 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="group cursor-pointer transform transition-all duration-300 hover:scale-105 block"
+  >
     <div className="bg-white rounded-xl shadow-lg hover:shadow-xl p-6 border border-gray-200 group-hover:border-blue-300">
       <div className="flex flex-col items-center space-y-4">
         {/* Image Container */}
@@ -209,7 +251,7 @@ const SponsorCard = ({
         </div>
       </div>
     </div>
-  </div>
+  </a>
 );
 
 // Main Sponsors Page Component
@@ -237,28 +279,42 @@ export default function SponsorsPage() {
       {/* Sponsors Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {sponsorTiers.map((tierGroup, index) => (
-          <div key={index} className="mb-16">
+          <div key={index} className={`${
+            // Reduce spacing between "Associate Sponsor", "In Kind Sponsor", and "Knowledge Partner"
+            tierGroup.title === "Associate Sponsor" || 
+            tierGroup.title === "In Kind Sponsor" || 
+            tierGroup.title === "Knowledge Partner" ? "mb-8" : "mb-16"
+          }`}>
             <div className="text-start mb-8">
               <div className="inline-flex items-start px-6 py-3 rounded-full text-black font-semibold text-lg">
                 {tierGroup.title}
               </div>
             </div>
 
-            <div className={`grid gap-8 justify-items-start ${
-              tierGroup.sponsors.length === 1 
-                ? 'grid-cols-1' 
-                : tierGroup.sponsors.length === 2 
-                ? 'grid-cols-1 md:grid-cols-2' 
-                : tierGroup.sponsors.length <= 4 
-                ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-4' 
-                : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5'
-            }`}>
+            <div className="flex flex-wrap gap-4 justify-start">
               {tierGroup.sponsors.map((sponsor, sponsorIndex) => (
-                <SponsorCard
-                  key={sponsorIndex}
-                  sponsor={sponsor}
-                  tier={tierGroup.tier}
-                />
+                <div className={`${
+                  // Reduce width for Associate, In Kind, Knowledge, CFP, and Ticket sponsors
+                  tierGroup.title === "Associate Sponsor" || 
+                  tierGroup.title === "In Kind Sponsor" || 
+                  tierGroup.title === "Knowledge Partner" ||
+                  tierGroup.title === "CFP Partners" ||
+                  tierGroup.title === "Ticket Partners"
+                    ? 'w-full sm:w-1/2 lg:w-1/4 max-w-xs' 
+                    : tierGroup.sponsors.length === 1 
+                    ? 'w-full max-w-xs' 
+                    : tierGroup.sponsors.length === 2 
+                    ? 'w-full sm:w-1/2 lg:w-1/3' 
+                    : tierGroup.sponsors.length <= 4 
+                    ? 'w-full sm:w-1/2 lg:w-1/4' 
+                    : 'w-full sm:w-1/2 lg:w-1/3 xl:w-1/5'
+                }`}>
+                  <SponsorCard
+                    key={sponsorIndex}
+                    sponsor={sponsor}
+                    tier={tierGroup.tier}
+                  />
+                </div>
               ))}
             </div>
           </div>
