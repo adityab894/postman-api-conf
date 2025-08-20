@@ -293,7 +293,7 @@ export default function SponsorsPage() {
 
             <div className="flex flex-wrap gap-4 justify-start">
               {tierGroup.sponsors.map((sponsor, sponsorIndex) => (
-                <div className={`${
+                <div key={sponsorIndex} className={`${
                   // Reduce width for Associate, In Kind, Knowledge, CFP, and Ticket sponsors
                   tierGroup.title === "Associate Sponsor" || 
                   tierGroup.title === "In Kind Sponsor" || 
@@ -310,7 +310,6 @@ export default function SponsorsPage() {
                     : 'w-full sm:w-1/2 lg:w-1/3 xl:w-1/5'
                 }`}>
                   <SponsorCard
-                    key={sponsorIndex}
                     sponsor={sponsor}
                     tier={tierGroup.tier}
                   />
