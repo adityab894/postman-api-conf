@@ -34,7 +34,7 @@ const sponsorTiers = [
     sponsors: [
       { 
         name: "Google for Developers",
-        img: "/api-conf/gdg.png",
+        img: "/api-conf/google.png",
         url: "https://developers.google.com/"
       },
       { 
@@ -66,13 +66,13 @@ const sponsorTiers = [
   sponsors: [
     { 
       name: "GDG Pune",
-      img: "/api-conf/gdgune.jpeg",
+      img: "/api-conf/gdg.png",
       url: "https://gdg.community.dev/gdg-pune/"
     },
     { 
       name: "Avocado",
       img: "/api-conf/avocado.png",
-      url: "https://www.devrelsquad.com/"
+      url: "https://avocadoaiwebtest.z30.web.core.windows.net/"
     }
   ]
   },
