@@ -61,6 +61,22 @@ const sponsorTiers = [
     ]
   },
   {
+  title: "Ecosystem Partner",
+  tier: "ecosystem",
+  sponsors: [
+    { 
+      name: "GDG Pune",
+      img: "/api-conf/gdgune.jpeg",
+      url: "https://gdg.community.dev/gdg-pune/"
+    },
+    { 
+      name: "Avocado",
+      img: "/api-conf/avocado.png",
+      url: "https://www.devrelsquad.com/"
+    }
+  ]
+  },
+  {
     title: "Booth Partners",
     tier: "booth",
     sponsors: [
@@ -81,7 +97,7 @@ const sponsorTiers = [
         url: "https://apify.com/"
       },
       { 
-        name: "DevrelSqaud",
+        name: "DevRelSqaud",
         img: "/api-conf/devrel.png",
         url: "https://devrelsquad.com/"
       },
@@ -99,37 +115,37 @@ const sponsorTiers = [
       { 
         name: "AWS User Group Pune",
         img: "/api-conf/aws.jpg",
-        url: ""
+        url: "https://www.linkedin.com/company/aws-user-group-pune/"
       },
       { 
         name: "Cloud Native Community Group Pune",
         img: "/api-conf/cncg.png",
-        url: ""
+        url: "https://community.cncf.io/cloud-native-pune/"
       },
       { 
         name: "Docker Community Pune",
         img: "/api-conf/docker.png",
-        url: ""
+        url: "https://www.linkedin.com/company/docker-community-pune/"
       },
       { 
         name: "Google Developer Group Cloud Pune",
         img: "/api-conf/gdgcloud.png",
-        url: ""
+        url: "https://gdg.community.dev/gdg-cloud-pune/"
       },
       { 
         name: "Girls Leading Tech",
         img: "/api-conf/girls.png",
-        url: ""
+        url: "https://www.linkedin.com/company/girlsleadingtech"
       },
       { 
         name: "Social Winter of Code",
         img: "/api-conf/swoc.png",
-        url: ""
+        url: "https://www.socialwinterofcode.com/"
       },
       { 
         name: "Postman Community Kolkata",
         img: "/api-conf/kolkata.png",
-        url: ""
+        url: "https://www.linkedin.com/company/postmancomkol/"
       },
       // { 
       //   name: "Postman Community",
