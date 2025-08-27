@@ -209,7 +209,6 @@ const SpeakerCard = ({
 );
 
 // Speaker Modal Component
-// Speaker Modal Component
 const SpeakerModal = ({
   speaker,
   isOpen,
@@ -262,7 +261,7 @@ const SpeakerModal = ({
 
           {/* Modal Body */}
           <div className="p-6 md:p-8">
-            <div className="flex flex-row md:flex-row gap-6 md:gap-8">
+            <div className="flex flex-col md:flex-row gap-6 md:gap-8">
               {/* Left Side - Image */}
               <div className="flex-shrink-0">
                 <div className="w-36 h-36 md:w-48 md:h-48 flex items-center justify-center bg-gray-100 rounded-full overflow-hidden border-4 border-gray-200">
@@ -295,41 +294,30 @@ const SpeakerModal = ({
               </div>
 
               {/* Right Side - Content */}
-              <div className="flex-1 mt-3 sm:mt-6 px-2 sm:px-4">
-                <h2 className="text-lg sm:text-2xl md:text-3xl font-bold text-gray-900 mb-1 sm:mb-2 text-center sm:text-left">
-                  {speaker.name}
-                </h2>
-                <p className="text-sm sm:text-lg md:text-xl font-semibold text-blue-600 mb-1 text-center sm:text-left">
-                  {speaker.role}
-                </p>
-                <p className="text-xs sm:text-base md:text-lg text-gray-600 mb-4 sm:mb-6 text-center sm:text-left">
+              <div className="flex-1">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">{speaker.name}</h2>
+              <p className="text-lg md:text-xl font-semibold text-blue-600 mb-1">{speaker.role}</p>
+              <p className="text-md sm:text-base md:text-lg text-gray-600 mb-4 sm:mb-6 text-start sm:text-left">
                   {speaker.company}
                 </p>
-                <div className="mb-4 sm:mb-6">
-                  <h3 className="text-sm sm:text-base md:text-lg font-semibold text-gray-800 mb-1 sm:mb-2 text-center sm:text-left">
-                    About
-                  </h3>
-                  <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed text-justify sm:text-left">
-                    {speaker.bio}
-                  </p>
-                </div>
-                <div className="flex justify-center sm:justify-start">
-                  <a
-                    href={speaker.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition-colors"
-                  >
-                    <svg
-                      className="w-4 h-4 sm:w-5 sm:h-5"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                    </svg>
-                  </a>
-                </div>
+              <div className="mb-6">
+                <h3 className="text-base md:text-lg font-semibold text-gray-800 mb-2">About</h3>
+                <p className="text-sm md:text-base text-gray-700 leading-relaxed">{speaker.bio}</p>
               </div>
+              <div className="flex items-center">
+                <a
+                  href={speaker.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-10 h-10 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition-colors"
+                >
+                  {/* LinkedIn SVG */}
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -337,6 +325,7 @@ const SpeakerModal = ({
     </div>
   );
 };
+
 
 
 // Main Speakers Page Component
