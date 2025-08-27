@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useMemo, useState } from "react";
 import CustomPillNav from "./CustomPillNav";
@@ -9,28 +9,64 @@ const EVENT_TIMELINE = [
   {
     start: "10:30",
     end: "11:00",
-    title: "The AI Catalyst: Transforming SDLC with Agent-driven Efficiency and Accuracy",
+    title:
+      "The AI Catalyst: Transforming SDLC with Agent-driven Efficiency and Accuracy",
     speaker: "Vishal Virani",
     org: "DhiWise",
     room: "Main Stage",
   },
-  { start: "17:30", end: "18:00", title: "Closing Announcements", room: "Main Stage" },
+  {
+    start: "17:30",
+    end: "18:00",
+    title: "Closing Announcements",
+    room: "Main Stage",
+  },
 ];
 
 const TRACK_1 = [
-  { start: "11:15", end: "12:00", title: "Session A", room: "Track 1", speaker: "TBA" },
+  {
+    start: "11:15",
+    end: "12:00",
+    title: "Session A",
+    room: "Track 1",
+    speaker: "TBA",
+  },
 ];
 const TRACK_2 = [
-  { start: "12:15", end: "13:00", title: "Session B", room: "Track 2", speaker: "TBA" },
+  {
+    start: "12:15",
+    end: "13:00",
+    title: "Session B",
+    room: "Track 2",
+    speaker: "TBA",
+  },
 ];
 const TRACK_3 = [
-  { start: "14:00", end: "14:45", title: "Session C", room: "Track 3", speaker: "TBA" },
+  {
+    start: "14:00",
+    end: "14:45",
+    title: "Session C",
+    room: "Track 3",
+    speaker: "TBA",
+  },
 ];
 const LIGHTNING_TALKS = [
-  { start: "15:00", end: "16:00", title: "Lightning Talks Round", room: "Lightning Talks", speaker: "Multiple" },
+  {
+    start: "15:00",
+    end: "16:00",
+    title: "Lightning Talks Round",
+    room: "Lightning Talks",
+    speaker: "Multiple",
+  },
 ];
 const CAREER_COMPASS = [
-  { start: "16:15", end: "17:00", title: "Career Compass: AMA", room: "Career Compass", speaker: "TBA" },
+  {
+    start: "16:15",
+    end: "17:00",
+    title: "Career Compass: AMA",
+    room: "Career Compass",
+    speaker: "TBA",
+  },
 ];
 
 type ScheduleItem = {
@@ -61,18 +97,34 @@ const SCHEDULES = {
 
 type TabKey = keyof typeof SCHEDULES;
 
-function TimelineItem({ item, isLast }: { item: ScheduleItem; isLast: boolean }) {
+function TimelineItem({
+  item,
+  isLast,
+}: {
+  item: ScheduleItem;
+  isLast: boolean;
+}) {
   return (
     <div className="relative grid grid-cols-[90px_1fr] md:grid-cols-[120px_1fr] gap-4 md:gap-6">
       <div className="text-right pr-2 md:pr-4">
         <div className="inline-flex items-center gap-1 md:gap-2 rounded-full bg-white border border-gray-200 px-2 py-1 shadow-sm">
-          <span className="text-xs md:text-sm font-semibold text-gray-800">{item.start}</span>
+          <span className="text-xs md:text-sm font-semibold text-gray-800">
+            {item.start}
+          </span>
           <span className="text-[10px] md:text-xs text-gray-500">–</span>
-          <span className="text-xs md:text-sm font-semibold text-gray-800">{item.end}</span>
+          <span className="text-xs md:text-sm font-semibold text-gray-800">
+            {item.end}
+          </span>
         </div>
       </div>
       <div className="relative pb-8">
-        <div className={`absolute -left-4 md:-left-6 top-0 h-full w-px ${isLast ? "bg-gradient-to-b from-orange-300 to-transparent" : "bg-gradient-to-b from-orange-300 via-orange-400 to-orange-300"}`} />
+        <div
+          className={`absolute -left-4 md:-left-6 top-0 h-full w-px ${
+            isLast
+              ? "bg-gradient-to-b from-orange-300 to-transparent"
+              : "bg-gradient-to-b from-orange-300 via-orange-400 to-orange-300"
+          }`}
+        />
         <div className="absolute -left-[18px] md:-left-[26px] top-1 h-3 w-3 md:h-3.5 md:w-3.5 rounded-full bg-white ring-4 ring-orange-200 shadow-sm">
           <div className="h-full w-full rounded-full bg-orange-500" />
         </div>
@@ -84,7 +136,9 @@ function TimelineItem({ item, isLast }: { item: ScheduleItem; isLast: boolean })
               </span>
             )}
           </div>
-          <h3 className="mt-2 text-base md:text-lg font-semibold text-gray-900">{item.title}</h3>
+          <h3 className="mt-2 text-base md:text-lg font-semibold text-gray-900">
+            {item.title}
+          </h3>
           {(item.speaker || item.org) && (
             <p className="mt-1 text-sm text-gray-600">
               {item.speaker ? item.speaker : ""}
@@ -92,7 +146,9 @@ function TimelineItem({ item, isLast }: { item: ScheduleItem; isLast: boolean })
               {item.org ? item.org : ""}
             </p>
           )}
-          {item.desc && <p className="mt-2 text-sm text-gray-600">{item.desc}</p>}
+          {item.desc && (
+            <p className="mt-2 text-sm text-gray-600">{item.desc}</p>
+          )}
         </div>
       </div>
     </div>
@@ -113,7 +169,9 @@ function Timeline({ items }: { items: ScheduleItem[] }) {
         <div className="mt-10 flex justify-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-black px-4 py-2 bg-white">
             <span className="inline-block h-2 w-2 rounded-full bg-orange-500"></span>
-            <span className="text-sm font-medium text-gray-800">Coming Soon</span>
+            <span className="text-sm font-medium text-gray-800">
+              Coming Soon
+            </span>
           </div>
         </div>
       </div>
@@ -135,18 +193,24 @@ function Timeline({ items }: { items: ScheduleItem[] }) {
 
 export default function Agenda() {
   const [activeTab, setActiveTab] = useState<TabKey>("track1");
-  const activeItems = useMemo<ScheduleItem[]>(() => SCHEDULES[activeTab] ?? [], [activeTab]);
+  const activeItems = useMemo<ScheduleItem[]>(
+    () => SCHEDULES[activeTab] ?? [],
+    [activeTab]
+  );
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-
-      <section className="relative px-6 sm:px-8 md:px-10 py-12 overflow-hidden">
+      <div className="fixed top-0 left-0 w-full h-20 bg-white z-[999]"></div>
+      <CustomPillNav />
+      <section className="relative px-6 sm:px-8 md:px-10 py-20 overflow-hidden">
         <div className="max-w-6xl mx-auto text-start">
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-gray-900 mb-4">
             Agenda
           </h1>
           <p className="text-lg text-gray-600 mb-10">
-            Follow code demonstrations by our expert speakers on different tracks. Check out the schedule below and don&apos;t forget to mark your calendar so that you don&apos;t miss out on any sessions.
+            Follow code demonstrations by our expert speakers on different
+            tracks. Check out the schedule below and don&apos;t forget to mark
+            your calendar so that you don&apos;t miss out on any sessions.
           </p>
         </div>
 
@@ -154,14 +218,18 @@ export default function Agenda() {
           <div className="mb-6">
             <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 border border-orange-200 px-3 py-1.5">
               <span className="inline-block h-2 w-2 rounded-full bg-orange-500" />
-              <span className="text-xs md:text-sm font-semibold text-orange-700">Event Timeline</span>
+              <span className="text-xs md:text-sm font-semibold text-orange-700">
+                Event Timeline
+              </span>
             </div>
           </div>
           <Timeline items={EVENT_TIMELINE} />
         </div>
 
         <div className="max-w-4xl mx-auto mt-12">
-          <h3 className="text-lg font-semibold text-gray-900 mb-3 text-start">Tracks</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-3 text-start">
+            Tracks
+          </h3>
 
           <div
             role="tablist"
@@ -180,7 +248,9 @@ export default function Agenda() {
                   onClick={() => setActiveTab(t.key)}
                   className={[
                     "px-4 py-2 rounded-full text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500",
-                    isActive ? "bg-white text-gray-900 shadow-sm" : "text-gray-600 hover:text-gray-900",
+                    isActive
+                      ? "bg-white text-gray-900 shadow-sm"
+                      : "text-gray-600 hover:text-gray-900",
                   ].join(" ")}
                 >
                   {t.label}
@@ -189,7 +259,11 @@ export default function Agenda() {
             })}
           </div>
 
-          <div role="tabpanel" id={`panel-${activeTab}`} aria-labelledby={`tab-${activeTab}`}>
+          <div
+            role="tabpanel"
+            id={`panel-${activeTab}`}
+            aria-labelledby={`tab-${activeTab}`}
+          >
             <Timeline items={activeItems} />
           </div>
         </div>
