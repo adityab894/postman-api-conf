@@ -1,7 +1,6 @@
 "use client";
 
 import React from 'react';
-import CustomPillNav from "./CustomPillNav";
 import Footer from "./Footer";
 import Image from "next/image";
 
@@ -274,19 +273,16 @@ const SponsorCard = ({
 export default function SponsorsPage() {
   return (
     <div className="min-h-screen bg-white">
-      <div className="fixed top-0 left-0 w-full h-20 bg-white z-[999]"></div>
-      <CustomPillNav />
-      
       {/* Header Section */}
       <div className="bg-white shadow-sm mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="text-center">
+          <div className="text-left">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              Our Sponsors
+              OUR SPONSORS
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Sponsors dedicated to building remarkable experience! Thank you to all our partners 
-              who make The API Conf Pune 2025 possible.
+            <p className="text-xl text-left text-gray-600 max-w-9xl">
+              We extend our heartfelt gratitude to our sponsors whose generous support makes this conference possible. 
+              Their commitment to fostering innovation and community growth enables us to create an exceptional experience for all participants.
             </p>
           </div>
         </div>

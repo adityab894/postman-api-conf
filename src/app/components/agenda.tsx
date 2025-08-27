@@ -1,7 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import CustomPillNav from "./CustomPillNav";
+import { useMemo, useState, useCallback, memo } from "react";
 import Footer from "./Footer";
 
 const EVENT_TIMELINE = [
@@ -138,8 +137,8 @@ const SCHEDULES = {
 
 type TabKey = keyof typeof SCHEDULES;
 
-// Event Detail Dialog Component
-function EventDetailDialog({ 
+// Event Detail Dialog Component - Memoized to prevent re-renders
+const EventDetailDialog = memo(({ 
   item, 
   isOpen, 
   onClose 
@@ -147,7 +146,7 @@ function EventDetailDialog({
   item: ScheduleItem | null; 
   isOpen: boolean; 
   onClose: () => void; 
-}) {
+}) => {
   if (!item || !isOpen) return null;
 
   return (
@@ -225,9 +224,12 @@ function EventDetailDialog({
       </div>
     </>
   );
-}
+});
 
-function TimelineItem({
+EventDetailDialog.displayName = 'EventDetailDialog';
+
+// Memoized TimelineItem to prevent unnecessary re-renders
+const TimelineItem = memo(({
   item,
   isLast,
   onItemClick,
@@ -235,7 +237,11 @@ function TimelineItem({
   item: ScheduleItem;
   isLast: boolean;
   onItemClick: (item: ScheduleItem) => void;
-}) {
+}) => {
+  const handleClick = useCallback(() => {
+    onItemClick(item);
+  }, [item, onItemClick]);
+
   return (
     <div className="relative grid grid-cols-[90px_1fr] md:grid-cols-[120px_1fr] gap-4 md:gap-6">
       <div className="text-right pr-2 md:pr-4">
@@ -262,7 +268,7 @@ function TimelineItem({
         </div>
         <div 
           className="rounded-xl border border-gray-200 bg-white p-4 md:p-5 shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer hover:scale-[1.02]"
-          onClick={() => onItemClick(item)}
+          onClick={handleClick}
         >
           <div className="flex flex-wrap items-center gap-2">
             {item.room && (
@@ -288,9 +294,12 @@ function TimelineItem({
       </div>
     </div>
   );
-}
+});
 
-function Timeline({ items, onItemClick }: { items: ScheduleItem[]; onItemClick: (item: ScheduleItem) => void }) {
+TimelineItem.displayName = 'TimelineItem';
+
+// Memoized Timeline component
+const Timeline = memo(({ items, onItemClick }: { items: ScheduleItem[]; onItemClick: (item: ScheduleItem) => void }) => {
   const hasItems = Array.isArray(items) && items.length > 0;
 
   if (!hasItems) {
@@ -325,7 +334,9 @@ function Timeline({ items, onItemClick }: { items: ScheduleItem[]; onItemClick: 
       ))}
     </div>
   );
-}
+});
+
+Timeline.displayName = 'Timeline';
 
 export default function Agenda() {
   const [activeTab, setActiveTab] = useState<TabKey>("track1");
@@ -337,20 +348,18 @@ export default function Agenda() {
     [activeTab]
   );
 
-  const handleEventClick = (item: ScheduleItem) => {
+  const handleEventClick = useCallback((item: ScheduleItem) => {
     setSelectedEvent(item);
     setIsDialogOpen(true);
-  };
+  }, []);
 
-  const handleCloseDialog = () => {
+  const handleCloseDialog = useCallback(() => {
     setIsDialogOpen(false);
     setTimeout(() => setSelectedEvent(null), 300); // Wait for animation to complete
-  };
+  }, []);
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <div className="fixed top-0 left-0 w-full h-20 bg-white z-[999]"></div>
-      <CustomPillNav />
       <section className="relative px-6 sm:px-8 md:px-10 py-20 overflow-hidden">
         <div className="max-w-6xl mx-auto text-start">
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-gray-900 mb-4">

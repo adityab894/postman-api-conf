@@ -1,16 +1,12 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import CustomPillNav from "./CustomPillNav";
 import Footer from "./Footer";
 import { BentoGrid } from "./BentoGrid";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <div className="fixed top-0 left-0 w-full h-20 bg-white z-[999]"></div>
-      <CustomPillNav />
-
       <section className="relative flex flex-col md:flex-row items-center px-4 sm:px-6 lg:px-10 py-12 md:py-16 overflow-hidden mt-24 md:mt-20">
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-center w-full max-w-6xl mx-auto gap-10 md:gap-16">
           <div className="flex-1 space-y-6 max-w-2xl mx-auto">
@@ -108,7 +104,7 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
                     <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900">1</div>
-                    <div className="text-sm sm:text-base font-medium text-gray-700">Day(s)</div>
+                    <div className="text-sm sm:text-base font-medium text-gray-700">Day</div>
                   </div>
                 </div>
               </div>
@@ -117,42 +113,9 @@ export default function Home() {
         </div>
       </section>
 
-       {/* BentoGrid Section */}
-       <BentoGrid />
+      {/* Bento Grid Section */}
+      <BentoGrid />
 
-
-       <section className="px-4 sm:px-6 lg:px-10 py-12 md:py-16 bg-white">
-         <div className="max-w-6xl mx-auto">
-           <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 md:p-12">
-             <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-               {/* Left Section */}
-               <div className="space-y-6">
-                 <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-600">
-                   ABOUT API
-                 </h2>
-                 <h4 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-700">
-                 CONF PUNE 2025
-                 </h4>
-              </div>
-
-              {/* Right Section */}
-              <div className="space-y-6">
-                <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
-                API Conf Pune was not created as just another tech event. It grew out of a genuine need to close the gaps in how we build, connect and scale with APIs. It reflects a shared commitment to collaboration that goes beyond boundaries and a vision for an ecosystem where ideas not only move but also grow, spark and multiply.
-                </p>
-                <p className="text-base sm:text-lg font-semibold text-gray-700 italic">
-                It’s a return to innovation, to community, and to the future of APIs.
-                </p>
-                {/* <p className="text-gray-700 text-lg leading-relaxed">
-                  We&apos;re here to create experiences that don&apos;t just inform, <span className="font-bold">but transform</span>.
-                </p> */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Footer */}
       <Footer />
     </div>
   );
