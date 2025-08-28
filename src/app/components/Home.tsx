@@ -19,7 +19,7 @@ export default function Home() {
               <span className="text-orange-600">PUNE 2025</span>
             </h1>
             <p className="text-justify text-gray-600 max-w-xl mx-auto md:mx-0 text-base sm:text-lg">
-            The API Conf Pune 2025 is the first edition of a community-driven flagship conference, hosted by the Postman Community Pune. Marking the beginning of a new chapter in India&apos;s tech ecosystem, this conference is dedicated to changing the API revolution in India by bringing together developers, architects, product leaders, and technology enthusiasts from across the country. Designed to spark collaboration and knowledge exchange.
+            The API Conf Pune 2025 is the first edition of a community-driven flagship conference, hosted by the API Community India. Marking the beginning of a new chapter in India&apos;s tech ecosystem, this conference is dedicated to changing the API revolution in India by bringing together developers, architects, product leaders, and technology enthusiasts from across the country. Designed to spark collaboration and knowledge exchange.
             </p>
             <div className="flex flex-wrap justify-start md:justify-start gap-4">
               <Link 

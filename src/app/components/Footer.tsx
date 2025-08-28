@@ -37,11 +37,10 @@ const Footer = () => (
               </svg>
             </div> */}
 
-            <h2 className="text-xl font-bold">Postman Community Pune</h2>
+            <h2 className="text-xl font-bold">THE API CONF PUNE 2025</h2>
           </div>
           <p className="text-sm font-semibold">
-            A vibrant community of API enthusiasts in Pune, dedicated to
-            knowledge sharing, collaboration, and advancing the API ecosystem.
+          The API Conf Pune 2025 is a community-driven, one-day conference bringing together 500+ developers, architects, and tech leaders to explore the future of APIs.
           </p>
         </div>
 
@@ -99,7 +98,7 @@ const Footer = () => (
             <div
               className="flex flex-row gap-2 cursor-pointer"
               onClick={() =>
-                window.open("https://github.com/postmanapipune", "_blank")
+                window.open("https://github.com/", "_blank")
               }
             >
               <Github />
@@ -109,7 +108,7 @@ const Footer = () => (
               className="flex flex-row gap-2 cursor-pointer"
               onClick={() =>
                 window.open(
-                  "https://www.instagram.com/postman_pune/",
+                  "https://www.instagram.com/",
                   "_blank"
                 )
               }
@@ -121,7 +120,7 @@ const Footer = () => (
               className="flex flex-row gap-2 cursor-pointer"
               onClick={() =>
                 window.open(
-                  "https://www.linkedin.com/company/postmanapipune/",
+                  "https://www.linkedin.com/company/",
                   "_blank"
                 )
               }
@@ -133,7 +132,7 @@ const Footer = () => (
               className="flex flex-row gap-2 cursor-pointer"
               onClick={() =>
                 window.open(
-                  "https://x.com/PostmanPune",
+                  "https://x.com/",
                   "_blank"
                 )
               }
@@ -151,7 +150,7 @@ const Footer = () => (
 
       <div className="w-full mt-auto border-t-1 border-gray-300">
         <div className="text-center text-sm py-4">
-          © {new Date().getFullYear()} Postman Community Pune. All rights
+          © {new Date().getFullYear()} THE API CONF PUNE. All rights
           reserved.
         </div>
       </div>
