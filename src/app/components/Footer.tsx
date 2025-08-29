@@ -3,7 +3,8 @@
 import React from "react";
 import Link from "next/link";
 import Wave from "react-wavify";
-import { Linkedin, Instagram, Github, Twitter } from "lucide-react";
+import { Linkedin, Instagram, Github } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => (
   <footer className="w-full relative overflow-hidden text-black">
@@ -137,7 +138,7 @@ const Footer = () => (
                 )
               }
             >
-              <Twitter className="h-5 w-5"/>
+              <FaXTwitter className="h-5 w-5"/>
               <p>Twitter</p>
             </div>
           </div>
