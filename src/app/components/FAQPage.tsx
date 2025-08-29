@@ -9,12 +9,12 @@ const faqData = [
   {
     question: "What is API Conf 2025?",
     answer:
-      "API Conf 2025 is a global community-driven tech conference, hosted by the Postman Community Pune. This API Conf event is India&apos;s premier API conference, powered by Postman. This event aims to bring together developers, tech enthusiasts, and industry leaders to explore the latest in API technologies.",
+      "API Conf 2025 is a global community-driven tech conference, hosted by the Postman Community Pune. This API Conf event is India's premier API conference, powered by Postman. This event aims to bring together developers, tech enthusiasts, and industry leaders to explore the latest in API technologies.",
   },
   {
     question: "Who can register for API Conf 2025?",
     answer:
-      "API Conf 2025 is open to all developers, technologists, students, tech professionals, and anyone interested in learning about API, Postman tools. Whether you&apos;re a beginner or an experienced developer, everyone is welcome to join and participate in the event.",
+      "API Conf 2025 is open to all developers, technologists, students, tech professionals, and anyone interested in learning about API, Postman tools. Whether you're a beginner or an experienced developer, everyone is welcome to join and participate in the event.",
   },
   {
     question: "Is it mandatory to register to participate in the event?",
@@ -24,12 +24,12 @@ const faqData = [
   {
     question: "I'm a beginner in programming. Can I still register?",
     answer:
-      "Absolutely! API Conf 2025 welcomes developers of all skill levels, including beginners. The event features sessions ranging from introductory topics to advanced technical content. It&apos;s a great opportunity for beginners to learn, network with experienced developers, and get inspired to continue their programming journey.",
+      "Absolutely! API Conf 2025 welcomes developers of all skill levels, including beginners. The event features sessions ranging from introductory topics to advanced technical content. It's a great opportunity for beginners to learn, network with experienced developers, and get inspired to continue their programming journey.",
   },
   {
     question: "What will attendees get by participating in the event?",
     answer:
-      "Attendees will gain access to technical sessions, workshops, networking opportunities, hands-on experiences with Postman tools, learning about the latest trends in API development, and more. You&apos;ll also receive swags, have opportunities to connect with industry experts, and potentially win prizes during various activities.",
+      "Attendees will gain access to technical sessions, workshops, networking opportunities, hands-on experiences with Postman tools, learning about the latest trends in API development, and more. You'll also receive swags, have opportunities to connect with industry experts, and potentially win prizes during various activities.",
   },
   {
     question: "How can I communicate my queries?",
@@ -48,7 +48,7 @@ const faqData = [
   {
     question: "Can I speak at API Conf 2025?",
     answer:
-      "Yes! If you&apos;re interested in speaking at API Conf 2025, you can contact the local GDG chapter to learn about speaking opportunities. The Call for Papers (CFP) is typically announced several months before the event, allowing community members to submit their talk proposals.",
+      "Yes! If you're interested in speaking at API Conf 2025, you can contact the local GDG chapter to learn about speaking opportunities. The Call for Papers (CFP) is typically announced several months before the event, allowing community members to submit their talk proposals.",
   },
   {
     question: "Are there student discounts available?",
@@ -127,24 +127,13 @@ const FAQSection = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="mailto:info@apiconfpune.com"
+            href="mailto:community@apiconfpune.com"
             className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition-colors"
           >
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
             Email Us
-          </a>
-          <a
-            href="https://t.me/postmancommunitypune"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-6 py-3 bg-gray-600 text-white font-medium rounded-lg shadow hover:bg-gray-700 transition-colors"
-          >
-            <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-            </svg>
-            Telegram
           </a>
         </div>
       </div>
