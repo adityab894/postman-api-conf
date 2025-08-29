@@ -85,7 +85,6 @@ const FAQItem = ({
       </div>
     </button>
 
-    {/* Animated Section */}
     <div
       className={`transition-all duration-300 ease-in-out overflow-hidden ${
         isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
@@ -98,15 +97,30 @@ const FAQItem = ({
   </div>
 );
 
-
-// Main FAQ Page Component
-export default function FAQPage() {
+const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleItem = (index: number) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
+  return (
+    <div className="max-w-4xl mx-auto p-4 bg-gray-200 rounded-2xl mb-16">
+      {faqData.map((item, index) => (
+        <FAQItem
+          key={index}
+          question={item.question}
+          answer={item.answer}
+          isOpen={openIndex === index}
+          onToggle={() => toggleItem(index)}
+        />
+      ))}
+    </div>
+  );
+};
+
+// Main FAQ Page Component
+export default function FAQPage() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <div className="fixed top-0 left-0 w-full h-20 bg-white z-[999]"></div>
@@ -126,17 +140,7 @@ export default function FAQPage() {
       </div>
 
       {/* FAQ Section */}
-      <div className="max-w-4xl mx-auto p-4 bg-gray-200 rounded-2xl mb-16">
-        {faqData.map((item, index) => (
-          <FAQItem
-            key={index}
-            question={item.question}
-            answer={item.answer}
-            isOpen={openIndex === index}
-            onToggle={() => toggleItem(index)}
-          />
-        ))}
-      </div>
+      <FAQSection />
 
       <Footer />
     </div>
