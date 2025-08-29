@@ -9,12 +9,12 @@ const faqData = [
   {
     question: "What is API Conf 2025?",
     answer:
-      "API Conf 2025 is a global community-driven tech conference, hosted by The API Community India. This API Conf event is India's premier API conference, powered by Postman. This event aims to bring together developers, tech enthusiasts, and industry leaders to explore the latest in API technologies.",
+      "API Conf 2025 is a global community-driven tech conference, hosted by the Postman Community Pune. This API Conf event is India&apos;s premier API conference, powered by Postman. This event aims to bring together developers, tech enthusiasts, and industry leaders to explore the latest in API technologies.",
   },
   {
     question: "Who can register for API Conf 2025?",
     answer:
-      "API Conf 2025 is open to all developers, technologists, students, tech professionals, and anyone interested in learning about API, Postman tools. Whether you're a beginner or an experienced developer, everyone is welcome to join and participate in the event.",
+      "API Conf 2025 is open to all developers, technologists, students, tech professionals, and anyone interested in learning about API, Postman tools. Whether you&apos;re a beginner or an experienced developer, everyone is welcome to join and participate in the event.",
   },
   {
     question: "Is it mandatory to register to participate in the event?",
@@ -24,12 +24,12 @@ const faqData = [
   {
     question: "I'm a beginner in programming. Can I still register?",
     answer:
-      "Absolutely! API Conf 2025 welcomes developers of all skill levels, including beginners. The event features sessions ranging from introductory topics to advanced technical content. It's a great opportunity for beginners to learn, network with experienced developers, and get inspired to continue their programming journey.",
+      "Absolutely! API Conf 2025 welcomes developers of all skill levels, including beginners. The event features sessions ranging from introductory topics to advanced technical content. It&apos;s a great opportunity for beginners to learn, network with experienced developers, and get inspired to continue their programming journey.",
   },
   {
     question: "What will attendees get by participating in the event?",
     answer:
-      "Attendees will gain access to technical sessions, workshops, networking opportunities, hands-on experiences with Postman tools, learning about the latest trends in API development, and more. You'll also receive swags, have opportunities to connect with industry experts, and potentially win prizes during various activities.",
+      "Attendees will gain access to technical sessions, workshops, networking opportunities, hands-on experiences with Postman tools, learning about the latest trends in API development, and more. You&apos;ll also receive swags, have opportunities to connect with industry experts, and potentially win prizes during various activities.",
   },
   {
     question: "How can I communicate my queries?",
@@ -48,7 +48,7 @@ const faqData = [
   {
     question: "Can I speak at API Conf 2025?",
     answer:
-      "Yes! If you're interested in speaking at API Conf 2025, you can contact the local GDG chapter to learn about speaking opportunities. The Call for Papers (CFP) is typically announced several months before the event, allowing community members to submit their talk proposals.",
+      "Yes! If you&apos;re interested in speaking at API Conf 2025, you can contact the local GDG chapter to learn about speaking opportunities. The Call for Papers (CFP) is typically announced several months before the event, allowing community members to submit their talk proposals.",
   },
   {
     question: "Are there student discounts available?",
@@ -123,7 +123,7 @@ const FAQSection = () => {
           Still Have Questions?
         </h2>
         <p className="text-gray-600 mb-6">
-          Can't find the answer you're looking for? We're here to help!
+          Can&apos;t find the answer you&apos;re looking for? We&apos;re here to help!
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
@@ -165,7 +165,7 @@ export default function FAQPage() {
             </h1>
             <p className="text-xl text-left text-gray-600 max-w-9xl">
               Find answers to common questions about THE API CONFERENCE, PUNE 2025. 
-              If you don't see what you're looking for, feel free to reach out to us.
+              If you don&apos;t see what you&apos;re looking for, feel free to reach out to us.
             </p>
           </div>
         </div>
