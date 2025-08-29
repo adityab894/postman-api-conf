@@ -44,8 +44,7 @@ const faqData = [
   },
   {
     question: "Will the event be in-person or virtual?",
-    answer:
-      "API Conf 2025 is an in-person event held at Pune, Maharashtra.",
+    answer: "API Conf 2025 is an in-person event held at Pune, Maharashtra.",
   },
   {
     question: "Can I speak at API Conf 2025?",
@@ -60,25 +59,23 @@ const faqData = [
 ];
 
 // FAQ Item Component
-const FAQItem = ({ 
-  question, 
-  answer, 
-  isOpen, 
-  onToggle 
-}: { 
-  question: string; 
-  answer: string; 
-  isOpen: boolean; 
-  onToggle: () => void; 
+const FAQItem = ({
+  question,
+  answer,
+  isOpen,
+  onToggle,
+}: {
+  question: string;
+  answer: string;
+  isOpen: boolean;
+  onToggle: () => void;
 }) => (
   <div className="bg-gray-200 rounded-lg overflow-hidden">
     <button
       className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-100 focus:outline-none transition-colors duration-200"
       onClick={onToggle}
     >
-      <h3 className="text-md text-gray-900 pr-4">
-        {question}
-      </h3>
+      <h3 className="text-md text-gray-900 pr-4">{question}</h3>
       <div className="flex-shrink-0">
         {isOpen ? (
           <ChevronUpIcon className="h-4 w-4 text-gray-500" />
@@ -88,34 +85,33 @@ const FAQItem = ({
       </div>
     </button>
 
-    {isOpen && (
-      <div className="px-6 pb-5">
-        <div className="pt-2">
-          <p className="text-gray-700 leading-relaxed">
-            {answer}
-          </p>
-        </div>
+    {/* Animated Section */}
+    <div
+      className={`transition-all duration-300 ease-in-out overflow-hidden ${
+        isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+      }`}
+    >
+      <div className="px-6 pb-5 pt-2">
+        <p className="text-gray-700 leading-relaxed">{answer}</p>
       </div>
-    )}
+    </div>
   </div>
 );
 
+
 // Main FAQ Page Component
 export default function FAQPage() {
-  const [openItems, setOpenItems] = useState<{ [key: number]: boolean }>({});
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleItem = (index: number) => {
-    setOpenItems((prev) => ({
-      ...prev,
-      [index]: !prev[index],
-    }));
+    setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <div className="fixed top-0 left-0 w-full h-20 bg-white z-[999]"></div>
       <CustomPillNav />
-      
+
       {/* Header Section */}
       <div className="text-black mt-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-start">
@@ -123,7 +119,8 @@ export default function FAQPage() {
             Frequently Asked Questions
           </h1>
           <h4 className="text-xl opacity-90 max-w-2xl text-start">
-            Need Answers? Everything you need to know about The API Conf Pune 2025
+            Need Answers? Everything you need to know about The API Conf Pune
+            2025
           </h4>
         </div>
       </div>
@@ -135,12 +132,12 @@ export default function FAQPage() {
             key={index}
             question={item.question}
             answer={item.answer}
-            isOpen={!!openItems[index]}
+            isOpen={openIndex === index}
             onToggle={() => toggleItem(index)}
           />
         ))}
       </div>
-      
+
       <Footer />
     </div>
   );
