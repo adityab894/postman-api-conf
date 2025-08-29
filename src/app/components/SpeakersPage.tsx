@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
-import CustomPillNav from "./CustomPillNav";
+import React, { useState, useCallback, memo } from "react";
 import Footer from "./Footer";
 import Image from "next/image";
 
@@ -153,63 +152,71 @@ const speakers = [
   },
 ];
 
-// Speaker Card Component
-const SpeakerCard = ({
+// Speaker Card Component - Memoized to prevent re-renders
+const SpeakerCard = memo(({
   speaker,
   onClick,
 }: {
   speaker: (typeof speakers)[0];
   onClick: () => void;
-}) => (
-  <div
-    className="group cursor-pointer transform transition-all duration-300 hover:scale-105"
-    onClick={onClick}
-  >
-    <div className="flex flex-col items-center space-y-4">
-      {/* Speaker Image */}
-      <div className="w-40 h-40 sm:w-52 sm:h-52 md:w-60 md:h-60 flex items-center justify-center bg-gray-100 rounded-full overflow-hidden border-2 border-gray-200">
-        <Image
-          src={speaker.image}
-          alt={speaker.name}
-          width={240}
-          height={240}
-          className="w-full h-full object-cover"
-          onError={(e) => {
-            // Fallback to placeholder if image fails to load
-            const target = e.target as HTMLImageElement;
-            target.style.display = "none";
-            const parent = target.parentElement;
-            if (parent) {
-              parent.innerHTML = `
-                <div class="w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center rounded-full">
-                  <div class="text-center">
-                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-2 flex items-center justify-center">
-                      <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
-                      </svg>
+}) => {
+  const handleClick = useCallback(() => {
+    onClick();
+  }, [onClick]);
+
+  return (
+    <div
+      className="group cursor-pointer transform transition-all duration-300 hover:scale-105"
+      onClick={handleClick}
+    >
+      <div className="flex flex-col items-center space-y-4">
+        {/* Speaker Image */}
+        <div className="w-40 h-40 sm:w-52 sm:h-52 md:w-60 md:h-60 flex items-center justify-center bg-gray-100 rounded-full overflow-hidden border-2 border-gray-200">
+          <Image
+            src={speaker.image}
+            alt={speaker.name}
+            width={240}
+            height={240}
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              // Fallback to placeholder if image fails to load
+              const target = e.target as HTMLImageElement;
+              target.style.display = "none";
+              const parent = target.parentElement;
+              if (parent) {
+                parent.innerHTML = `
+                  <div class="w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center rounded-full">
+                    <div class="text-center">
+                      <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-2 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
                     </div>
                   </div>
-                </div>
-              `;
-            }
-          }}
-        />
-      </div>
+                `;
+              }
+            }}
+          />
+        </div>
 
-      {/* Speaker Info */}
-      <div className="text-center">
-        <h3 className="text-lg font-bold text-gray-800 mb-1">{speaker.name}</h3>
-        <p className="text-sm font-semibold text-blue-600 mb-1">
-          {speaker.role}
-        </p>
-        <p className="text-sm text-gray-600">{speaker.company}</p>
+        {/* Speaker Info */}
+        <div className="text-center">
+          <h3 className="text-lg font-bold text-gray-800 mb-1">{speaker.name}</h3>
+          <p className="text-sm font-semibold text-blue-600 mb-1">
+            {speaker.role}
+          </p>
+          <p className="text-sm text-gray-600">{speaker.company}</p>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+});
 
-// Speaker Modal Component
-const SpeakerModal = ({
+SpeakerCard.displayName = 'SpeakerCard';
+
+// Speaker Modal Component - Memoized to prevent re-renders
+const SpeakerModal = memo(({
   speaker,
   isOpen,
   onClose,
@@ -324,9 +331,9 @@ const SpeakerModal = ({
       </div>
     </div>
   );
-};
+});
 
-
+SpeakerModal.displayName = 'SpeakerModal';
 
 // Main Speakers Page Component
 export default function SpeakersPage() {
@@ -335,21 +342,18 @@ export default function SpeakersPage() {
   >(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleSpeakerClick = (speaker: (typeof speakers)[0]) => {
+  const handleSpeakerClick = useCallback((speaker: (typeof speakers)[0]) => {
     setSelectedSpeaker(speaker);
     setIsModalOpen(true);
-  };
+  }, []);
 
-  const handleCloseModal = () => {
+  const handleCloseModal = useCallback(() => {
     setIsModalOpen(false);
     setSelectedSpeaker(null);
-  };
+  }, []);
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="fixed top-0 left-0 w-full h-20 bg-white z-[999]"></div>
-      <CustomPillNav />
-
       {/* Header Section */}
       <div className="bg-white shadow-sm mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

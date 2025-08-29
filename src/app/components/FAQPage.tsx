@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline";
-import CustomPillNav from "./CustomPillNav";
 import Footer from "./Footer";
 
 // FAQ Data
@@ -100,21 +99,55 @@ const FAQItem = ({
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const toggleItem = (index: number) => {
-    setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
+  const toggleFAQ = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-4 bg-gray-200 rounded-2xl mb-16">
-      {faqData.map((item, index) => (
-        <FAQItem
-          key={index}
-          question={item.question}
-          answer={item.answer}
-          isOpen={openIndex === index}
-          onToggle={() => toggleItem(index)}
-        />
-      ))}
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="space-y-4">
+        {faqData.map((faq, index) => (
+          <FAQItem
+            key={index}
+            question={faq.question}
+            answer={faq.answer}
+            isOpen={openIndex === index}
+            onToggle={() => toggleFAQ(index)}
+          />
+        ))}
+      </div>
+
+      {/* Contact Section */}
+      <div className="mt-12 text-center">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          Still Have Questions?
+        </h2>
+        <p className="text-gray-600 mb-6">
+          Can't find the answer you're looking for? We're here to help!
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="mailto:info@apiconfpune.com"
+            className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition-colors"
+          >
+            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            Email Us
+          </a>
+          <a
+            href="https://t.me/postmancommunitypune"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-6 py-3 bg-gray-600 text-white font-medium rounded-lg shadow hover:bg-gray-700 transition-colors"
+          >
+            <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            </svg>
+            Telegram
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
@@ -122,20 +155,19 @@ const FAQSection = () => {
 // Main FAQ Page Component
 export default function FAQPage() {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
-      <div className="fixed top-0 left-0 w-full h-20 bg-white z-[999]"></div>
-      <CustomPillNav />
-
+    <div className="min-h-screen bg-white">
       {/* Header Section */}
-      <div className="text-black mt-14">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-start">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Frequently Asked Questions
-          </h1>
-          <h4 className="text-xl opacity-90 max-w-2xl text-start">
-            Need Answers? Everything you need to know about The API Conf Pune
-            2025
-          </h4>
+      <div className="bg-white shadow-sm mt-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="text-left">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              FREQUENTLY ASKED QUESTIONS
+            </h1>
+            <p className="text-xl text-left text-gray-600 max-w-9xl">
+              Find answers to common questions about THE API CONFERENCE, PUNE 2025. 
+              If you don't see what you're looking for, feel free to reach out to us.
+            </p>
+          </div>
         </div>
       </div>
 
