@@ -60,7 +60,7 @@ const items = [
   {
     title: "Community Building",
     description: 
-      "Be part of something bigger than yourself by engaging with the Postman Community and like-minded tech enthusiasts. Share knowledge, collaborate on projects, and contribute to building an inclusive ecosystem that supports growth, innovation, and collective learning.",
+      "Be part of something bigger than yourself by engaging with The API Community and like-minded tech enthusiasts. Share knowledge, collaborate on projects, and contribute to building an inclusive ecosystem that supports growth, innovation, and collective learning.",
     icon: <Globe className="h-5 w-5" />,
     backgroundClassName: "bg-indigo-100",
   },
