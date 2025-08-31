@@ -137,7 +137,6 @@ const SCHEDULES = {
 
 type TabKey = keyof typeof SCHEDULES;
 
-// Event Detail Dialog Component - Memoized to prevent re-renders
 const EventDetailDialog = memo(({ 
   item, 
   isOpen, 
@@ -151,7 +150,6 @@ const EventDetailDialog = memo(({
 
   return (
     <>
-      {/* Backdrop with blur effect */}
       <div 
         className={`fixed inset-0 bg-black/20 backdrop-blur-sm z-50 transition-opacity duration-300 ${
           isOpen ? 'opacity-100' : 'opacity-0'
@@ -159,20 +157,17 @@ const EventDetailDialog = memo(({
         onClick={onClose}
       />
       
-      {/* Dialog */}
       <div 
         className={`fixed inset-0 z-50 flex items-center justify-center p-4 transition-all duration-300 ${
           isOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
         }`}
       >
         <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto">
-          {/* Header */}
           <div className="p-6 border-b border-gray-100">
             <h2 className="text-xl font-bold text-gray-900 mb-4">
               {item.title} Details
             </h2>
             
-            {/* Schedule Info */}
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -196,14 +191,12 @@ const EventDetailDialog = memo(({
             </div>
           </div>
           
-          {/* Content */}
           <div className="p-6">
             <div className="mb-4">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Overview</h3>
               <p className="text-gray-700">{item.overview}</p>
             </div>
             
-            {/* Category Tag */}
             <div className="inline-block">
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
                 {item.category}
@@ -211,7 +204,6 @@ const EventDetailDialog = memo(({
             </div>
           </div>
           
-          {/* Footer */}
           <div className="p-6 border-t border-gray-100 flex justify-end">
             <button
               onClick={onClose}
@@ -228,7 +220,6 @@ const EventDetailDialog = memo(({
 
 EventDetailDialog.displayName = 'EventDetailDialog';
 
-// Memoized TimelineItem to prevent unnecessary re-renders
 const TimelineItem = memo(({
   item,
   isLast,
@@ -298,7 +289,6 @@ const TimelineItem = memo(({
 
 TimelineItem.displayName = 'TimelineItem';
 
-// Memoized Timeline component
 const Timeline = memo(({ items, onItemClick }: { items: ScheduleItem[]; onItemClick: (item: ScheduleItem) => void }) => {
   const hasItems = Array.isArray(items) && items.length > 0;
 
@@ -355,7 +345,7 @@ export default function Agenda() {
 
   const handleCloseDialog = useCallback(() => {
     setIsDialogOpen(false);
-    setTimeout(() => setSelectedEvent(null), 300); // Wait for animation to complete
+    setTimeout(() => setSelectedEvent(null), 300);
   }, []);
 
   return (
@@ -384,7 +374,7 @@ export default function Agenda() {
           <Timeline items={EVENT_TIMELINE} onItemClick={handleEventClick} />
         </div>
 
-        <div className="max-w-4xl mx-auto mt-12">
+        {/* <div className="max-w-4xl mx-auto mt-12">
           <h3 className="text-lg font-semibold text-gray-900 mb-3 text-start">
             Tracks
           </h3>
@@ -424,10 +414,9 @@ export default function Agenda() {
           >
             <Timeline items={activeItems} onItemClick={handleEventClick} />
           </div>
-        </div>
+        </div> */}
       </section>
 
-      {/* Event Detail Dialog */}
       <EventDetailDialog
         item={selectedEvent}
         isOpen={isDialogOpen}
