@@ -69,7 +69,7 @@ const sponsorTiers = [
       url: "https://gdg.community.dev/gdg-pune/"
     },
     { 
-      name: "Avocado",
+      name: "GoAvo",
       img: "/api-conf/avocado.png",
       url: "https://avocadoaiwebtest.z30.web.core.windows.net/"
     }
