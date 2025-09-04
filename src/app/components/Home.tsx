@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "./Footer";
 import { BentoGrid } from "./BentoGrid";
+import EventCountdown from "./EventCountdown";
 
 export default function Home() {
   return (
@@ -112,6 +113,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <EventCountdown targetDate="2025-09-21T09:00:00" title="The API Conf Countdown" />
 
       {/* Bento Grid Section */}
       <BentoGrid />
