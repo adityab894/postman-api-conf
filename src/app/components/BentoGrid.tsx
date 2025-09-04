@@ -65,16 +65,15 @@ const items = [
     backgroundClassName: "bg-indigo-100",
   },
   {
-    // Replaced with Stats.svg graphic
     header: (
       <div className="w-full flex items-center justify-center">
-        <Image
-          src="/Stats-cropped.svg"
-          alt="Conference Stats"
-          width={320}
-          height={320}
-          className="w-48 h-48 md:w-64 md:h-54"
-        />
+        <div className="relative w-full max-w-md rounded-xl border border-orange-200 bg-white/70 backdrop-blur px-6 py-8 shadow-sm">
+          <p className="text-sm uppercase tracking-widest text-orange-500 mb-2">Event Date</p>
+          <p className="text-3xl md:text-4xl font-extrabold text-gray-900">Sept 21, 2025</p>
+          <div className="mt-6 h-px w-full bg-gradient-to-r from-orange-400/40 via-amber-400/40 to-teal-400/40" />
+          <p className="mt-6 text-sm uppercase tracking-widest text-orange-500 mb-2">Venue</p>
+          <p className="text-lg md:text-xl font-semibold text-gray-800">Pune, Maharashtra</p>
+        </div>
       </div>
     ),
     backgroundClassName: "bg-orange-100",
