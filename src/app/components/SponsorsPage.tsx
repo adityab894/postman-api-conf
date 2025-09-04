@@ -6,17 +6,17 @@ import Image from "next/image";
 
 // Sponsor data with image paths
 const sponsorTiers = [
-  {
-    title: "Title Sponsor",
-    tier: "title",
-    sponsors: [
-      { 
-        name: "Postman",
-        img: "/api-conf/postman.png",
-        url: "https://www.postman.com/"
-      }
-    ]
-  },
+  // {
+  //   title: "Title Sponsor",
+  //   tier: "title",
+  //   sponsors: [
+  //     { 
+  //       name: "Postman",
+  //       img: "/api-conf/postman.png",
+  //       url: "https://www.postman.com/"
+  //     }
+  //   ]
+  // },
   // {
   //   title: "Gold Sponsor",
   //   tier: "diamond",
@@ -79,11 +79,11 @@ const sponsorTiers = [
     title: "Booth Partners",
     tier: "booth",
     sponsors: [
-      { 
-        name: "Postman",
-        img: "/api-conf/postman.png",
-        url: "https://www.postman.com/"
-      },
+      // { 
+      //   name: "Postman",
+      //   img: "/api-conf/postman.png",
+      //   url: "https://www.postman.com/"
+      // },
       
       { 
         name: "We Make Devs",
