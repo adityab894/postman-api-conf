@@ -144,9 +144,9 @@ const Footer = () => (
           </div>
         </div>
 
-        <div className="hidden md:block relative">
+        {/* <div className="hidden md:block relative">
           <div className="w-50 h-50 bg-gradient-to-br from-blue-200 to-purple-300 rounded-full opacity-20"></div>
-        </div>
+        </div> */}
       </div>
 
       <div className="w-full mt-auto border-t-1 border-gray-300">

@@ -241,7 +241,7 @@ const SponsorCard = ({
     <div className="bg-white rounded-xl shadow-lg hover:shadow-xl p-6 border border-gray-200 group-hover:border-blue-300">
       <div className="flex flex-col items-center space-y-4">
         {/* Image Container */}
-        <div className={`${getSponsorSize(tier)} flex items-center justify-center bg-white rounded-lg overflow-hidden border border-gray-100`}>
+        <div className={`${getSponsorSize(tier)} flex flex-row items-center justify-center bg-white rounded-lg overflow-hidden border border-gray-100`}>
           <Image 
             src={sponsor.img}
             alt={sponsor.name}
@@ -314,31 +314,43 @@ export default function SponsorsPage() {
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-4 justify-start">
-              {tierGroup.sponsors.map((sponsor, sponsorIndex) => (
-                <div key={sponsorIndex} className={`${
-                  // Reduce width for Associate, In Kind, Knowledge, CFP, and Ticket sponsors
-                  tierGroup.title === "Associate Sponsor" || 
-                  tierGroup.title === "In Kind Sponsor" || 
-                  tierGroup.title === "Knowledge Partner" ||
-                  tierGroup.title === "CFP Partners" ||
-                  tierGroup.title === "Ticket Partners"
-                    ? 'w-full sm:w-1/2 lg:w-1/4 max-w-xs' 
-                    : tierGroup.sponsors.length === 1 
-                    ? 'w-full max-w-xs' 
-                    : tierGroup.sponsors.length === 2 
-                    ? 'w-full sm:w-1/2 lg:w-1/3' 
-                    : tierGroup.sponsors.length <= 4 
-                    ? 'w-full sm:w-1/2 lg:w-1/4' 
-                    : 'w-full sm:w-1/2 lg:w-1/3 xl:w-1/5'
-                }`}>
-                  <SponsorCard
-                    sponsor={sponsor}
-                    tier={tierGroup.tier}
-                  />
-                </div>
-              ))}
-            </div>
+            {tierGroup.title === "Booth Partners" ? (
+              <div className="flex flex-row gap-4 overflow-x-auto pb-4">
+                {tierGroup.sponsors.map((sponsor, sponsorIndex) => (
+                  <div
+                    key={sponsorIndex}
+                    className="min-w-[220px] w-56 flex-shrink-0"
+                  >
+                    <SponsorCard sponsor={sponsor} tier={tierGroup.tier} />
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="flex flex-wrap gap-4 justify-start">
+                {tierGroup.sponsors.map((sponsor, sponsorIndex) => (
+                  <div key={sponsorIndex} className={`${
+                    tierGroup.title === "Associate Sponsor" || 
+                    tierGroup.title === "In Kind Sponsor" || 
+                    tierGroup.title === "Knowledge Partner" ||
+                    tierGroup.title === "CFP Partners" ||
+                    tierGroup.title === "Ticket Partners"
+                      ? 'w-full sm:w-1/2 lg:w-1/4 max-w-xs' 
+                      : tierGroup.sponsors.length === 1 
+                      ? 'w-full max-w-xs' 
+                      : tierGroup.sponsors.length === 2 
+                      ? 'w-full sm:w-1/2 lg:w-1/3' 
+                      : tierGroup.sponsors.length <= 4 
+                      ? 'w-full sm:w-1/2 lg:w-1/4' 
+                      : 'w-full sm:w-1/2 lg:w-1/3 xl:w-1/5'
+                  }`}>
+                    <SponsorCard
+                      sponsor={sponsor}
+                      tier={tierGroup.tier}
+                    />
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         ))}
       </div>
