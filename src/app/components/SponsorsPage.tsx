@@ -6,17 +6,17 @@ import Image from "next/image";
 
 // Sponsor data with image paths
 const sponsorTiers = [
-  // {
-  //   title: "Title Sponsor",
-  //   tier: "title",
-  //   sponsors: [
-  //     { 
-  //       name: "Postman",
-  //       img: "/api-conf/postman.png",
-  //       url: "https://www.postman.com/"
-  //     }
-  //   ]
-  // },
+  {
+    title: "Title Sponsor",
+    tier: "title",
+    sponsors: [
+      { 
+        name: "THE API COMMUNITY",
+        img: "/tacp.png",
+        url: ""
+      }
+    ]
+  },
   // {
   //   title: "Gold Sponsor",
   //   tier: "diamond",
@@ -84,7 +84,11 @@ const sponsorTiers = [
       //   img: "/api-conf/postman.png",
       //   url: "https://www.postman.com/"
       // },
-      
+      { 
+        name: "Civo",
+        img: "/api-conf/civo.png",
+        url: "https://www.civo.com/"
+      },
       { 
         name: "We Make Devs",
         img: "/api-conf/WeMakeDevs.png",
@@ -99,11 +103,6 @@ const sponsorTiers = [
         name: "DevRelSqaud",
         img: "/api-conf/devrel.png",
         url: "https://devrelsquad.com/"
-      },
-      { 
-        name: "Civo",
-        img: "/api-conf/civo.png",
-        url: "https://www.civo.com/"
       },
     ]
   },
@@ -151,6 +150,17 @@ const sponsorTiers = [
       //   img: "/api-conf/postman.png"
       // },
 
+    ]
+  },
+  {
+    title: "Media Partners",
+    tier: "media",
+    sponsors: [
+      { 
+        name: "Reedy Arts Media",
+        img: "/api-conf/reddy.png",
+        url: "https://reddyartsmedia.in/"
+      },
     ]
   },
   {
@@ -202,6 +212,7 @@ const getSponsorSize = (tier: string) => {
     case 'inkind':
     case 'Knowledge':
     case 'CFP':
+    case 'media':
     case 'ticket':
       return 'w-48 h-24';
     case 'booth':
