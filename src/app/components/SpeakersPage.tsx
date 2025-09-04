@@ -101,7 +101,7 @@ const speakers = [
     name: "Nikhilesh Tayal",
     role: "Founder and Teacher",
     company: "AIMLetc.com",
-    bio: "Saurav Jain is the Senior Developer Community Manager at Apify, where he advocates for open source, AI agents, and web scraping technologies. A Docker Captain and passionate community builder, Saurav creates impactful content that bridges developers with modern tools and practices. With expertise in Python, Node.js, and public speaking, he actively champions developer growth and knowledge sharing. Beyond tech, he is also an advocate for actor development, bringing creativity and communication together to empower diverse communities.",
+    bio: "Nikhilesh is an entrepreneur, teacher and tech nerd. He is an IIT Kharagpur alumnus. He is also a Google Developer Expert for AI and has 13000+ followers on LinkedIn. Currently, he runs AI ML etc. - an AI-enabled personalised teacher with self-managing memory. He has 20+ years of work experience, of which 14+ is in entrepreneurship. Previously he had built 2 startups. He raised funds for his previous startup - CvBhejo (a mobile-based recruitment platform) and then got a successful exit. He started his career with Infosys and worked as an AI team lead at iViZ Security. He is also felicitated by the Chief Minister of Rajasthan for his contribution to startups and education.",
     linkedin: "https://www.linkedin.com/in/nikhileshtayal/",
     image: "/speakers/nikhilesh.png",
   },
