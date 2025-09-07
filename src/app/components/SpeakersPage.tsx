@@ -3,6 +3,7 @@
 import React, { useState, useCallback, memo } from "react";
 import Footer from "./Footer";
 import Image from "next/image";
+import simon from '../../../public/speakers/simon.png';
 
 // Speaker data
 const speakers = [
@@ -35,12 +36,12 @@ const speakers = [
   // },
   {
     id: 4,
-    name: "Kunal Kushwaha",
-    role: "Field CTO",
+    name: "Simon Hansford",
+    role: "Chief Commercial Officer",
     company: "CIVO",
-    bio: "Kunal Kushwaha is the Field CTO at Civo, where he helps businesses modernize their infrastructure with cloud-native technologies and AI. He is also the founder of WeMakeDevs, a global community initiative that mentors and empowers developers. With millions reached through his educational YouTube content, Kunal is a passionate advocate for open source and frequently speaks at leading conferences on cloud, AI, and developer growth.",
-    linkedin: "https://www.linkedin.com/in/kunal-kushwaha/",
-    image: "/speakers/kunal.jpg",
+    bio: "Simon Hansford is a tech entrepreneur and leader with deep expertise in Cloud, SaaS, and IT Managed Services. He has successfully founded and scaled technology businesses, led high-performing teams, and driven global go-to-market strategies. With experience as a Director and NED, Simon works closely with customers, investors, and boards, bringing significant insight into VC, PE, and M&A opportunities.",
+    linkedin: "https://www.linkedin.com/in/simonhansford/",
+    image: "/speakers/simon.png",
   },
   {
     id: 5,
