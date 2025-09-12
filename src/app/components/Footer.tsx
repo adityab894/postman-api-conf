@@ -37,6 +37,7 @@ const Footer = () => (
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
               </svg>
             </div> */}
+            <img src='/image.png' alt="" className="h-10 w-10"/>
 
             <h2 className="text-xl font-bold">THE API CONF PUNE 2025</h2>
           </div>
@@ -144,9 +145,13 @@ const Footer = () => (
           </div>
         </div>
 
-        {/* <div className="hidden md:block relative">
-          <div className="w-50 h-50 bg-gradient-to-br from-blue-200 to-purple-300 rounded-full opacity-20"></div>
-        </div> */}
+        <div className="hidden md:block relative">
+          <img 
+            src="/panda.svg" 
+            alt="Panda mascot" 
+            className="w-38 h-38 mt-8"
+          />
+        </div>
       </div>
 
       <div className="w-full mt-auto border-t-1 border-gray-300">
