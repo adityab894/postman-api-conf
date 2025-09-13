@@ -35,16 +35,7 @@ const speakers = [
   //   image: "/speakers/sterling.jpg",
   // },
   {
-    id: 4,
-    name: "Simon Hansford",
-    role: "Chief Commercial Officer",
-    company: "CIVO",
-    bio: "Simon Hansford is a tech entrepreneur and leader with deep expertise in Cloud, SaaS, and IT Managed Services. He has successfully founded and scaled technology businesses, led high-performing teams, and driven global go-to-market strategies. With experience as a Director and NED, Simon works closely with customers, investors, and boards, bringing significant insight into VC, PE, and M&A opportunities.",
-    linkedin: "https://www.linkedin.com/in/simonhansford/",
-    image: "/speakers/simon.png",
-  },
-  {
-    id: 5,
+    id: 1,
     name: "Savinder Puri",
     role: "DevOps Evangelist",
     company: "Zensar Technologies UK",
@@ -53,7 +44,7 @@ const speakers = [
     image: "/speakers/SavinderPuri.png",
   },
   {
-    id: 6,
+    id: 2,
     name: "Mahaveer Muttha",
     role: "Co-founder",
     company: "Birdvision",
@@ -62,7 +53,7 @@ const speakers = [
     image: "/speakers/mahaveer.jpg",
   },
   {
-    id: 7,
+    id: 3,
     name: "Megha Arora",
     role: "DevRel Strategist & Founder",
     company: "DevRelSquad",
@@ -71,7 +62,7 @@ const speakers = [
     image: "/speakers/megha.jpeg",
   },
   {
-    id: 8,
+    id: 4,
     name: "Ali Mustufa",
     role: "Senior Developer Advocate",
     company: "Pieces for Developers",
@@ -80,7 +71,7 @@ const speakers = [
     image: "/speakers/ali.jpeg",
   },
   {
-    id: 9,
+    id: 5,
     name: "Pranoti Nandurkar",
     role: "Technical Architect",
     company: "Tata consultancy services",
@@ -89,7 +80,7 @@ const speakers = [
     image: "/speakers/pranoti.jpeg",
   },
   {
-    id: 10,
+    id: 6,
     name: "Sakshi Nasha",
     role: "Software Engineer",
     company: "Cohesity",
@@ -98,7 +89,7 @@ const speakers = [
     image: "/speakers/sakshinasha.jpeg",
   },
   {
-    id: 11,
+    id: 7,
     name: "Nikhilesh Tayal",
     role: "Founder and Teacher",
     company: "AIMLetc.com",
@@ -107,7 +98,7 @@ const speakers = [
     image: "/speakers/nikhilesh.png",
   },
   {
-    id: 12,
+    id: 8,
     name: "Saurav Jain",
     role: "Senior Developer Community Manager",
     company: "Apify",
@@ -116,7 +107,7 @@ const speakers = [
     image: "/speakers/sauravjain.jpeg",
   },
   {
-    id: 13,
+    id: 9,
     name: "Srushti Raybhoge",
     role: "Software Engineer 2",
     company: "Addepar",
@@ -125,7 +116,7 @@ const speakers = [
     image: "/speakers/srushtidi.jpg",
   },
   {
-    id: 14,
+    id: 10,
     name: "Bhawna Chauhan",
     role: "Developer Relations Engineer",
     company: "QuillAI Network",
@@ -134,7 +125,7 @@ const speakers = [
     image: "/speakers/bhawna.jpeg",
   },
   {
-    id: 15,
+    id: 11,
     name: "Abhishek Mankuskar",
     role: "Creator & Lead - SWOC",
     company: "Social Winter of Code",
@@ -143,13 +134,40 @@ const speakers = [
     image: "/speakers/abhishek.png",
   },
   {
-    id: 16,
+    id: 12,
     name: "Saurabh Mishra",
     role: "DevOps Lead",
     company: "TSYS",
     bio: "Saurabh is a Cloud Architect with a deep passion for DevOps and automation. Saurabh actively engages with the tech community, sharing insights on cloud-native technologies, security, and multi-cloud strategies. As a speaker at various conferences, meetups, and workshops, Saurabh helps teams enhance their cloud adoption and optimization efforts.",
     linkedin: "https://www.linkedin.com/in/connectsaurabhmishra/",
     image: "/speakers/saurabhmishra.png",
+  },
+  {
+    id: 13,
+    name: "Simon Hansford",
+    role: "Chief Commercial Officer",
+    company: "CIVO",
+    bio: "Simon Hansford is a tech entrepreneur and leader with deep expertise in Cloud, SaaS, and IT Managed Services. He has successfully founded and scaled technology businesses, led high-performing teams, and driven global go-to-market strategies. With experience as a Director and NED, Simon works closely with customers, investors, and boards, bringing significant insight into VC, PE, and M&A opportunities.",
+    linkedin: "https://www.linkedin.com/in/simonhansford/",
+    image: "/speakers/simon.png",
+  },
+  {
+    id: 14,
+    name: "Shagufta Bangi",
+    role: "DevOps Lead",
+    company: "TSYS",
+    bio: "Shagufta is a Google Cloud, AWS, and Oracle Certified Solutions Architect and Cloud Specialist with extensive experience in IT infrastructure and services. As a Cloud Consultant, Shagufta has a strong track record in designing and delivering solutions across IaaS, PaaS, and SaaS platforms. Skilled in customer service, strategic planning, and public speaking, Shagufta helps organizations harness the power of cloud technology to scale and innovate.",
+    linkedin: "https://www.linkedin.com/in/shagufta-bangi",
+    image: "/speakers/shagufta.png",
+  },
+  {
+    id: 15,
+    name: "Subhasmita Swain",
+    role: "DevOps Lead",
+    company: "TSYS",
+    bio: "Subhasmita is a Site Reliability Engineer at Civo, passionate about automation and building code-driven solutions for diverse challenges. With hands-on experience through internships at Outreachy and the Linux Foundation’s Kubernetes project, she has a proven track record in advancing open-source initiatives. As a Kubernetes Release Shadow, Subhasmita actively contributes to community growth while advocating for environmental sustainability in technology.",
+    linkedin: "https://www.linkedin.com/in/subhasmita-swain",
+    image: "/speakers/subhasmita.png",
   },
 ];
 
