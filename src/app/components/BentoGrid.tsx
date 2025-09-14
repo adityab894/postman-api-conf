@@ -72,7 +72,7 @@ const items = [
           <p className="text-3xl md:text-4xl font-extrabold text-gray-900">Sept 21, 2025</p>
           <div className="mt-6 h-px w-full bg-gradient-to-r from-orange-500/40 via-amber-400/40 to-rose-500/40" />
           <p className="mt-6 text-sm uppercase tracking-widest text-orange-500 mb-2">Venue</p>
-          <p className="text-lg md:text-xl font-semibold text-gray-800">Pune, Maharashtra</p>
+          <p className="text-lg md:text-xl font-semibold text-gray-800">Infosys, Hinjwadi, Phase-2, Pune, Maharashtra</p>
         </div>
       </div>
     ),
