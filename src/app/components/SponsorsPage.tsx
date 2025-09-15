@@ -17,6 +17,17 @@ const sponsorTiers = [
       }
     ]
   },
+  {
+    title: "Gold Sponsor",
+    tier: "gold",
+    sponsors: [
+      { 
+        name: "POSTMAN",
+        img: "/api-conf/postman.png",
+        url: ""
+      }
+    ]
+  },
   // {
   //   title: "Gold Sponsor",
   //   tier: "diamond",
@@ -152,17 +163,17 @@ const sponsorTiers = [
 
     ]
   },
-  {
-    title: "Media Partners",
-    tier: "media",
-    sponsors: [
-      { 
-        name: "Reedy Arts Media",
-        img: "/api-conf/reddy.png",
-        url: "https://reddyartsmedia.in/"
-      },
-    ]
-  },
+  // {
+  //   title: "Media Partners",
+  //   tier: "media",
+  //   sponsors: [
+  //     { 
+  //       name: "Reedy Arts Media",
+  //       img: "/api-conf/reddy.png",
+  //       url: "https://reddyartsmedia.in/"
+  //     },
+  //   ]
+  // },
   {
     title: "Knowledge Partner",
     tier: "Knowledge",
@@ -208,6 +219,7 @@ const getSponsorSize = (tier: string) => {
   switch (tier) {
     case 'title':
       return 'w-64 h-32';
+    case 'gold':
     case 'associate':
     case 'inkind':
     case 'Knowledge':
