@@ -154,8 +154,8 @@ const speakers = [
   {
     id: 14,
     name: "Shagufta Bangi",
-    role: "DevOps Lead",
-    company: "TSYS",
+    role: "Customer Engineer Infrastructure Modernisation",
+    company: "Google",
     bio: "Shagufta is a Google Cloud, AWS, and Oracle Certified Solutions Architect and Cloud Specialist with extensive experience in IT infrastructure and services. As a Cloud Consultant, Shagufta has a strong track record in designing and delivering solutions across IaaS, PaaS, and SaaS platforms. Skilled in customer service, strategic planning, and public speaking, Shagufta helps organizations harness the power of cloud technology to scale and innovate.",
     linkedin: "https://www.linkedin.com/in/shagufta-bangi",
     image: "/speakers/shagufta.png",
@@ -163,8 +163,8 @@ const speakers = [
   {
     id: 15,
     name: "Subhasmita Swain",
-    role: "DevOps Lead",
-    company: "TSYS",
+    role: "R&D",
+    company: "CIVO",
     bio: "Subhasmita is a Site Reliability Engineer at Civo, passionate about automation and building code-driven solutions for diverse challenges. With hands-on experience through internships at Outreachy and the Linux Foundation’s Kubernetes project, she has a proven track record in advancing open-source initiatives. As a Kubernetes Release Shadow, Subhasmita actively contributes to community growth while advocating for environmental sustainability in technology.",
     linkedin: "https://www.linkedin.com/in/subhasmita-swain",
     image: "/speakers/subhasmita.png",
