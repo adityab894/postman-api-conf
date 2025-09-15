@@ -110,7 +110,7 @@ const Footer = () => (
               className="flex flex-row gap-2 cursor-pointer"
               onClick={() =>
                 window.open(
-                  "https://www.instagram.com/",
+                  "https://www.instagram.com/theapicommunity/",
                   "_blank"
                 )
               }
@@ -122,7 +122,7 @@ const Footer = () => (
               className="flex flex-row gap-2 cursor-pointer"
               onClick={() =>
                 window.open(
-                  "https://www.linkedin.com/company/",
+                  "https://www.linkedin.com/company/theapicommunity/",
                   "_blank"
                 )
               }
@@ -134,7 +134,7 @@ const Footer = () => (
               className="flex flex-row gap-2 cursor-pointer"
               onClick={() =>
                 window.open(
-                  "https://x.com/",
+                  "https://x.com/community_api",
                   "_blank"
                 )
               }
