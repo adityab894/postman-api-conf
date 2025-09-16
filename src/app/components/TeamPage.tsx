@@ -29,7 +29,7 @@ const teamLeads = [
     id: 1,
     name: "Nilanjan Paul",
     role: "Technical Lead",
-    bio: "An attentive and agile learner with a diverse foundation of the tech industry platform experiences such as cloud, Bq, application development, security analysis, AI ML, language processing, QA. Also, an Engineer who has very strong organizational and communicative abilities equipped with technical abilities and a decisive nature necessary for a successful job",
+    bio: "An attentive and agile learner with a diverse foundation of the tech industry platform experiences such as cloud, Bq, application development, security analysis, AI ML, language processing, QA. Also, an Engineer who has very strong organizational and communicative abilities equipped with technical abilities and a decisive nature necessary for a successful job",
     linkedin: "https://www.linkedin.com/in/nilanjan-paul21/",
     image: "/team/nilanjan.jpg"
   },
@@ -59,14 +59,6 @@ const teamLeads = [
   },
   {
     id: 5,
-    name: "Atharva Wani",
-    role: "Design Lead",
-    bio: "Atharva Wani is the Design Lead for the API Community India, where he drives engaging designs and impactful storytelling to bring developer communities together. With a keen eye for creativity and detail, he ensures that every campaign, event, and initiative reflects innovation and inclusivity. Passionate about design, tech, and collaboration, Atharva plays a key role in shaping the community's identity and inspiring developers to connect, learn, and grow.",
-    linkedin: "https://www.behance.net/waniatharva",
-    image: "/team/atharvaw.jpg"
-  },
-  {
-    id: 6,
     name: "Alisha Sapkal",
     role: "Web Lead",
     bio: "I'm a passionate Software Developer, skilled in UI frameworks building scalable websites, user-focused applications, I combine strong problem-solving skills with a creative approach to design and development. With hands-on experience in database and node, I thrive on turning complex ideas into impactful digital solutions. Beyond academics, I actively contribute to tech communities and mentor peers, driven by curiosity, adaptability, and a commitment to continuous learning, currently a Web Lead at the API Community India. My goal is to create seamless, performance-optimized experiences that make technology more accessible and meaningful.",
@@ -74,7 +66,7 @@ const teamLeads = [
     image: "/team/alisha.jpg"
   },
   {
-    id: 7,
+    id: 6,
     name: "Arjun Khadse",
     role: "Operations Lead",
     bio: "I'm a creative Full-Stack Developer and Designer with expertise in modern JavaScript frameworks and libraries. Passionate about crafting intuitive, scalable, and visually engaging digital experiences, I seamlessly blend design with functionality to bring ideas to life. Skilled in custom visual effects, animations, and performance optimization, I specialize in building user-focused applications that leave a lasting impact. Driven by curiosity and continuous learning, I thrive on exploring new technologies, solving complex challenges, and collaborating to transform ideas into reality.",
@@ -82,7 +74,7 @@ const teamLeads = [
     image: "/team/arjun.jpg"
   },
   {
-    id: 8,
+    id: 7,
     name: "Ritika Pasari",
     role: "Operations Lead",
     bio: "Building tech, growing communities, and creating impact. I'm Ritika Pasari — a Software Engineer and Community Builder passionate about blending technology with collaboration. With experience in AI, microservices, and AI full-stack development, I enjoy turning ideas into impactful solutions. Beyond code, I actively contribute to developer communities, fostering growth, knowledge-sharing, and meaningful connections. Driven by curiosity and creativity, I thrive on building both products and people.",
@@ -90,7 +82,7 @@ const teamLeads = [
     image: "/team/ritika.jpg"
   },
   {
-    id: 9,
+    id: 8,
     name: "Eric Fernandes",
     role: "Support Lead",
     bio: "Eric Fernandes is a Graduate Engineer Trainee at iTech Robotics & Automation, working on robotics programming and computer vision. Alongside this, he serves as Community Support Manager at the API Community India, where he contributes to community growth, developer support, and technical advocacy. Passionate about AI, automation, and open-source, Eric is building a career at the intersection of technology",
@@ -98,7 +90,7 @@ const teamLeads = [
     image: "/team/eric.jpg"
   },
   {
-    id: 10,
+    id: 9,
     name: "Alice Chauhan",
     role: "Content Lead",
     bio: "I'm Alice, a Content Lead and Community Builder, passionate about creating engaging narratives and fostering collaboration in tech communities. At the API Community India, I focus on driving impactful content, strengthening connections, and enabling knowledge-sharing among developers. With a strong interest in storytelling, event engagement, and community growth, I aim to empower individuals through meaningful conversations and resources that help them thrive in the developer ecosystem.",
@@ -106,7 +98,7 @@ const teamLeads = [
     image: "/team/alice.png"
   },
   {
-    id: 11,
+    id: 10,
     name: "Hariprasad Sakhare",
     role: "Support Lead",
     bio: "As a recent engineering graduate with a passion for software development, I am eager to leverage my skills in data analysis to solve real-world problems. I excel in problem-solving and possess strong management and communication abilities, which I believe are essential in today's collaborative work environment. My academic background and hands-on projects have equipped me with a solid foundation in technical skills, and I am enthusiastic about applying my knowledge to innovative initiatives. I am actively seeking opportunities where I can contribute to meaningful projects and further develop my expertise",
@@ -114,7 +106,7 @@ const teamLeads = [
     image: "/team/hariprasad.jpg"
   },
   {
-    id: 12,
+    id: 11,
     name: "Suresh Chaudhary",
     role: "Creative Lead",
     bio: "I'm Suresh, a self-proclaimed 'noob' coder and a curious, crazy designer at heart. As a dedicated night owl, I thrive on transforming complex and messy work into clean user experiences. Currently, I'm contributing my skills as a Seasonal Software Developer at koiamor and also guide the creative vision as the Creative Lead for the API Community.India I'm always learning and am a passionate developer.",
@@ -122,7 +114,7 @@ const teamLeads = [
     image: "/team/suresh.jpg"
   },
   {
-    id: 13,
+    id: 12,
     name: "Asmita Khuspe",
     role: "Anchors Lead",
     bio: "I'm a passionate technologist with a strong foundation in C, C++, Java, and Python, and a growing expertise in cloud technologies like AWS, GCP, Azure, DevOps, and system administration. I enjoy solving complex problems, exploring new tools, and bringing efficiency to the projects I work on. Currently preparing to pursue an MS in Cloud Computing abroad, I'm eager to deepen my knowledge and contribute meaningfully to the evolving tech landscape. Beyond coding, I love mentoring, public speaking, and guiding aspiring professionals, as I believe sharing knowledge is just as important as gaining it. At heart, I'm curious, collaborative, and always open to learning.",
@@ -130,7 +122,7 @@ const teamLeads = [
     image: "/team/asmita.jpg"
   },
   {
-    id: 14,
+    id: 13,
     name: "Rooheni Naraynkar",
     role: " Anchors Lead",
     bio: "I'm Roheeni, currently a Full-Time Technology Analyst at Citi Bank and proud Citi Bridge Grad'24. I have held diverse roles such as Mentor, PR, Developer, and Editor in clubs like Vinidra Satellite Club and Kshitij during my college years. My internship experience spans Reknot Solution, Citi Bank, and a research role at my college. Alongside my career, I'm active in both social and tech volunteering initiatives, serving as an anchor for the API Community India and volunteering at Bhumi.",
@@ -138,7 +130,7 @@ const teamLeads = [
     image: "/team/roheeni.jpg"
   },
   {
-    id: 15,
+    id: 14,
     name: "Nikhil Rajpurohit",
     role: "Growth Co-Lead",
     bio: "I'm Nikhil Rajpurohit, a Fullstack Web3 Developer driven by a passion for building scalable applications and decentralized solutions. For me, problem-solving isn't just a skill it's a mindset. Whether it's building with communities, contributing to open-source, or collaborating with innovators who share a vision for the future, I thrive on creating meaningful digital experiences that grow with people and technology.",
@@ -146,15 +138,7 @@ const teamLeads = [
     image: "/team/nikhil.jpg"
   },
   {
-    id: 16,
-    name: "Janhavi Dahatonde",
-    role: "Technical Co-Lead",
-    bio: " A passionate software engineer with strengths in problem-solving, adaptability, and creating user-focused, scalable solutions. Thrives in tackling complex challenges, optimizing performance, and turning ideas into impactful products. Driven by curiosity, continuous learning, and a commitment to delivering excellence.",
-    linkedin: "https://www.linkedin.com/in/janhavi2409/",
-    image: "/team/janhavi.jpg"
-  },
-  {
-    id: 17,
+    id: 15,
     name: "Khushi Jamale",
     role: "Growth Team",
     bio: "Turning curiosity into code and conversations🌟. Hey! I'm Khushi Jamale — an Electronics & Telecommunication Engineering student passionate about cloud computing and APIs. With a curiosity for scalable technologies and innovative solutions, I enjoy blending technical problem-solving with people-centric skills. Beyond code, I'm driven by meaningful interactions, collaboration, and honing my management abilities to create impact.",
@@ -162,7 +146,7 @@ const teamLeads = [
     image: "/team/khushi.jpg"
   },
   {
-    id: 18,
+    id: 16,
     name: "Sakshi Sonawane",
     role: "Media Co-Lead",
     bio: "Hi there! I'm Sakshi, a passionate Data Science and Machine Learning enthusiast specialising in developing Python-based solutions to solve complex problems. With hands-on experience in building AI chatbots and creating robust ML pipelines, I am proficient in SQL and Power BI for data analysis and visualisation. I am actively seeking opportunities in Data Analytics and AI to apply my skills and contribute to innovative projects. Let's connect and drive data-driven success together!",
@@ -170,7 +154,7 @@ const teamLeads = [
     image: "/team/sakshi.jpg"
   },
   {
-    id: 19,
+    id: 17,
     name: "Adhishri Kore",
     role: "Designer",
     bio: "I'm Adhishri Kore, a final-year student, Designer, and Technology Explorer driven by creativity, innovation, and community spirit. With a background in technology and a strong inclination toward visual storytelling, I specialize in transforming ideas into impactful designs that connect with people. Currently contributing at the API Community India, I blend design thinking with technical insight to create meaningful experiences. Passionate about continuous learning and collaboration, I thrive on exploring new possibilities and adding value to communities that foster growth and knowledge sharing.",
@@ -178,7 +162,7 @@ const teamLeads = [
     image: "/team/adhishri.jpg"
   },
   {
-    id: 20,
+    id: 18,
     name: "Ankit Mishra",
     role: "Designer",
     bio: "I'm Ankit, a Tech Explorer passionate about open-source, developer communities, and practical software development. I enjoy working on projects that build my skills in programming, development, and collaboration. Currently, I'm contributing to the Design Team at the API Community India, where I blend creativity with technology to support community initiatives. Outside tech, I explore creativity through designing and editing, bringing fresh perspectives to my work while contributing to thriving communities.",
@@ -186,7 +170,7 @@ const teamLeads = [
     image: "/team/ankit.jpg"
   },
   {
-    id: 21,
+    id: 19,
     name: "Saloni Pawar",
     role: "Designer",
     bio: "I'm Saloni Pawar  an engineer who traded circuits for creativity. While my degree says engineering, my passion drives storytelling, design, and digital strategy. I bring ideas to life as a social media, content creator, and graphic designer, crafting digital experiences that make people stop, think, and connect. I thrive at the intersection of creativity and strategy shaping brand presence, curating stories that resonate, and designing visuals that speak with clarity and style. Currently, I'm working with the API Community India a vibrant hub of innovators, developers, and API enthusiasts where technology meets creativity and community.",
@@ -194,15 +178,7 @@ const teamLeads = [
     image: "/team/saloni.jpg"
   },
   {
-    id: 22,
-    name: "Sakshi Chaudhary",
-    role: "Designer",
-    bio: "Hi, I'm Sakshi Chaudhari. I'm a 3rd-year student passionate about AI, Data Science, and Full-Stack Development, blending technology with creativity to build digital solutions that are impactful and user-friendly. As a software developer and designer, I work with React, Node.js, Express, MySQL, and MongoDB to create scalable applications. Alongside tech, I contribute as a designer at the API Community India, shaping its visual identity and crafting engaging designs that reflect its innovative spirit.I thrive at the intersection of code and creativity—developing web, curating stories, and designing visuals that connect with people.My goal is to grow as a full-stack developer and creative designer, crafting seamless, performance-optimized experiences that inspire and engage",
-    linkedin: "http://www.linkedin.com/in/sakshichaudhari0606",
-    image: "/team/sakshichaudhari.jpg"
-  },
-  {
-    id: 23,
+    id: 20,
     name: "Pratyush Panda",
     role: "Video Editor",
     bio: "Hey! I'm Pratyush Panda, a pre-final year Computer Engineering student who enjoys working at the crossroads of technology and creativity. I am currently working with the API Community India as an Editor, where I craft engaging tech reels and event highlights that capture knowledge and community spirit. I also serve as the Content & Community Lead at GDG BVP Pune, where I combine my skills in web development, DSA, and video editing to build content that informs, inspires, and connects. For me, it's all about turning ideas into experiences—whether through code or through storytelling.🚀",
@@ -210,7 +186,7 @@ const teamLeads = [
     image: "/team/pratyush.jpg"
   },
   {
-    id: 24,
+    id: 21,
     name: "Rutuja",
     role: "Video Editor",
     bio: " Aspiring Software Developer passionate about building scalable applications and solving problems through C, C++, and DSA. Currently learning Full Stack Development while contributing to the API Community India as part of the Media & Event team. I enjoy blending technical skills with creative storytelling  from writing code to designing event content. My goal is to grow as a developer while actively contributing to impactful communities.",
@@ -218,7 +194,7 @@ const teamLeads = [
     image: "/team/rutuja.jpg"
   },
   {
-    id: 25,
+    id: 22,
     name: "Prisha Shah",
     role: "Photographer",
     bio: "Hey,I'm Prisha Shah. An AI & Data Science student and a passionate Software Developer, skilled in front end technologies,React, Node.js, MongoDB, and MySQL. I enjoy building scalable websites and user-focused applications, combining strong problem-solving abilities with creativity in design and development.With hands-on experience in databases, backend systems, and frontend frameworks, I thrive on transforming complex ideas into meaningful digital solutions. Beyond academics, I'm an active member of the API Community India and a photographer, where I channel the same attention to detail and storytelling that I apply in tech projects.Driven by curiosity, adaptability, and continuous learning, my goal is to grow as a full-stack developer and contribute to creating seamless, performance-optimized experiences that make technology more impactful and accessible.",
@@ -226,23 +202,21 @@ const teamLeads = [
     image: "/team/prisha.jpg"
   },
   {
-    id: 26,
+    id: 23,
     name: "Manasi Barge",
     role: "Volunteer",
     bio: "I'm Manasi Barge, a software developer passionate about building impactful projects and strengthening my skills. I worked on full-stack development using Java, Spring Boot, Angular, and MongoDB, contributing to real-world applications. I love collaborating on projects, exploring new technologies, and creating solutions that make a difference. For me, it's all about learning, building, and turning ideas into meaningful digital experiences.",
     linkedin: "https://www.linkedin.com/in/manasi-barge/",
     image: "/team/manasi.jpg"
   },
-
   {
-    id: 27,
-    name: "Sachin Parihar",
-    role: "Volunteer",
-    bio: "Hi, I'm Sachin Parihar — a Fullstack Developer based in Pune and the founder of Cresta Studio. I specialize in design-driven development, building digital experiences that seamlessly blend form and function. My expertise spans HTML, JavaScript, React.js, Firebase, Python, and more—bringing clean, intuitive interfaces to life with performance and creativity",
-    linkedin: "https://www.linkedin.com/in/sachin-parihar-008180264",
-    image: "/team/sachin.jpg"
+    id: 23,
+    name: "Nikita Desale",
+    role: "SM & Content ",
+    bio: "Nikita Desale is a developer by profession and a storyteller at heart. She works in content and social media, blending creativity with strategy to build meaningful digital experiences. Outside of work, she's an avid traveler, blogger, and creator, sharing her journeys and inspirations with a vibrant community.",
+    linkedin: "https://www.linkedin.com/in/nikita-desale-387a0b20a",
+    image: "/team/nikita.jpg"
   },
-
 ];
 
 // Team Member Card Component - Memoized to prevent re-renders

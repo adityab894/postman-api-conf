@@ -23,8 +23,8 @@ const sponsorTiers = [
     sponsors: [
       { 
         name: "POSTMAN",
-        img: "/api-conf/postman.png",
-        url: ""
+        img: "/Postman-logo.png",
+        url: "https://www.postman.com/"
       }
     ]
   },
