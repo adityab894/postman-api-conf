@@ -5,35 +5,45 @@ import Footer from "./Footer";
 
 const EVENT_TIMELINE = [
   { 
-    start: "09:30", 
-    end: "10:00", 
-    title: "Welcome Note", 
+    start: "10:00", 
+    end: "10:20", 
+    title: "Megha Arora", 
     room: "Main Stage",
-    date: "Nov 30, 2024",
-    duration: "30 Min",
-    overview: "Official welcome to DevFest Pune 2024",
+    date: "Sept 21, 2025",
+    duration: "20 Min",
+    overview: "Agentic AI for developer, communites & everything in between",
     category: "Main Event"
   },
   {
-    start: "10:30",
-    end: "11:00",
+    start: "10:20",
+    end: "10:45",
     title:
       "The AI Catalyst: Transforming SDLC with Agent-driven Efficiency and Accuracy",
-    speaker: "Vishal Virani",
+    speaker: "Aanchal Mishra",
     org: "DhiWise",
     room: "Main Stage",
-    date: "Nov 30, 2024",
-    duration: "30 Min",
+    date: "Sept 21, 2025",
+    duration: "25 Min",
     overview: "Explore how AI agents are revolutionizing software development lifecycle with enhanced efficiency and accuracy.",
     category: "Technical Session"
   },
   {
-    start: "17:30",
-    end: "18:00",
-    title: "Closing Announcements",
+    start: "10:50",
+    end: "11:15",
+    title: "Saurav Jain",
     room: "Main Stage",
-    date: "Nov 30, 2024",
-    duration: "30 Min",
+    date: "Sept 21, 2025",
+    duration: "25 Min",
+    overview: "Final announcements and closing remarks for DevFest Pune 2024.",
+    category: "Main Event"
+  },
+  {
+    start: "11:20",
+    end: "11:40",
+    title: "Bhawna Chauhan",
+    room: "Main Stage",
+    date: "Sept 21, 2025",
+    duration: "25 Min",
     overview: "Final announcements and closing remarks for DevFest Pune 2024.",
     category: "Main Event"
   },
