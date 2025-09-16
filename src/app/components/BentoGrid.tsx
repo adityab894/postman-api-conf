@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { BentoGrid as BentoGridComponent, BentoGridItem } from "./ui/bento-grid";
 import { Mic, Users, Rocket, Globe } from "lucide-react";
 

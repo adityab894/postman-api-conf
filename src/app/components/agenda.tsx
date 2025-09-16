@@ -2,8 +2,6 @@
 
 import { useMemo, useState, useCallback, memo } from "react";
 import Footer from "./Footer";
-import { Speaker } from "lucide-react";
-import { title } from "process";
 
 const EVENT_TIMELINE = [
   { 
@@ -184,18 +182,17 @@ const EVENT_TIMELINE = [
   },
 ];
 
-
 const TRACK_1 = [
   {
     start: "02:30",
     end: "03:15",
-    title: "",
+    title: "Google Cloud APIs Workshop",
     room: "Workshop Room A",
     speaker: "Shagufta Bangi",
     org: "Google",
     date: "Sept 21, 2025",
     duration: "45 Min",
-    overview: "Hands-on workshop covering API development using Postman Collections. Learn to create, organize, and automate API workflows with practical exercises.",
+    overview: "Hands-on workshop covering Google Cloud APIs and best practices. Learn to integrate and optimize Google Cloud services in your applications.",
     category: "Workshop"
   },
 ];
@@ -203,17 +200,16 @@ const TRACK_2 = [
   {
     start: "03:15",
     end: "04:00",
-    title: "",
+    title: "Postman API Development Workshop",
     room: "Workshop Room B",
     speaker: "Sristi Rajbhoge",
-    org: "AIMLetc.com",
+    org: "Postman",
     date: "Sept 21, 2025",
     duration: "45 Min",
-    overview: "Explore how AI can enhance API development workflows. Learn to leverage AI tools for code generation, testing, and documentation.",
+    overview: "Master Postman for API development and testing. Learn advanced features, automation, and collaboration techniques for efficient API workflows.",
     category: "Workshop"
   },
 ];
-
 
 type ScheduleItem = {
   start: string;
@@ -461,8 +457,8 @@ export default function Agenda() {
           </h1>
           <p className="text-lg text-gray-600 mb-10">
             Follow code demonstrations by our expert speakers on different
-            tracks. Check out the schedule below and don't forget to mark
-            your calendar so that you don't miss out on any sessions.
+            tracks. Check out the schedule below and don&apos;t forget to mark
+            your calendar so that you don&apos;t miss out on any sessions.
           </p>
         </div>
 
