@@ -13,18 +13,18 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "20 Min",
     overview: "Agentic AI for developer, communites & everything in between",
-    category: "Main Event"
+    category: "Opening Keynote"
   },
   {
     start: "10:20",
     end: "10:45",
-    title: "",
+    title: "You Can’t Do AI Without Quality APIs: The MCP Evolution with Postman.",
     speaker: "Aanchal Mishra",
     org: "Postman",
     date: "Sept 21, 2025",
     duration: "25 Min",
-    overview: "",
-    category: "Technical Session"
+    overview: "You Can’t Do AI Without Quality APIs: The MCP Evolution with Postman.",
+    category: "Session"
   },
   {
     start: "10:50",
@@ -34,8 +34,8 @@ const EVENT_TIMELINE = [
     org: "Apify",
     date: "Sept 21, 2025",
     duration: "25 Min",
-    overview: "Final announcements and closing remarks for DevFest Pune 2024.",
-    category: "Main Event"
+    overview: "Build, Deploy, Monetize: The Future of the Developer Economy with APIFY",
+    category: "Session"
   },
   {
     start: "11:20",
@@ -45,19 +45,19 @@ const EVENT_TIMELINE = [
     org: "QuillAI Network",
     date: "Sept 21, 2025",
     duration: "20 Min",
-    overview: "Final announcements and closing remarks for DevFest Pune 2024.",
-    category: "Main Event"
+    overview: "Build the Future with AI! Lets Vibe-Code a Web App using GitHub.",
+    category: "Session"
   },
   {
     start: "11:40",
     end: "12:00",
-    title: "Lightning Talks",
+    title: "From Spec to Visuals: Rapid API Testing with Postman",
     speaker: "Sakshi Nasha",
     org: "Cohesity",
     date: "Sept 21, 2025",
     duration: "20 Min",
-    overview: "",
-    category: "Main Event"
+    overview: "From Spec to Visuals: Rapid API Testing with Postman",
+    category: "Lightning Talk"
   },
   {
     start: "12:00",
@@ -73,13 +73,13 @@ const EVENT_TIMELINE = [
   {
     start: "01:20",
     end: "01:50",
-    title: "",
+    title: "Building Smarter Apps with RelaxAI API – Practical Use Cases and Multi-LLM Examples.",
     speaker: "Simon Hansford",
     org: "Civo",
     date: "Sept 21, 2025",
     duration: "30 Min",
-    overview: "",
-    category: "Main Event"
+    overview: "Building Smarter Apps with RelaxAI API – Practical Use Cases and Multi-LLM Examples.",
+    category: "Session"
   },
   {
     start: "01:50",
@@ -101,7 +101,7 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "25 Min",
     overview: "Spiritual design patterns for APIs: Applying Ancient Wisdom to modern interfaces",
-    category: "Main Event"
+    category: "Session"
   },
   {
     start: "02:30",
@@ -112,7 +112,7 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "25 Min",
     overview: "AI Agents with self-managing memory",
-    category: "Main Event"
+    category: "Session"
   },
   {
     start: "02:55",
@@ -123,7 +123,7 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "20 Min",
     overview: "Long-term memory in LLMs.",
-    category: "Main Event"
+    category: "Lightning Talk"
   },
   {
     start: "03:20",
@@ -134,18 +134,18 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "20 Min",
     overview: "Building Resilient APIs: Automated Testing and Monitoring in Cloud-Native Environments.",
-    category: "Main Event"
+    category: "Lightning Talk"
   },
   {
     start: "03:40",
     end: "04:00",
-    title: "",
+    title: "Beyond the Spec – Making OpenAPI More Human.",
     speaker: "Eeshan Sawant",
     org: "ONLYOFFICE",
     date: "Sept 21, 2025",
     duration: "20 Min",
-    overview: "",
-    category: "Main Event"
+    overview: "Beyond the Spec – Making OpenAPI More Human.",
+    category: "Lightning Talk"
   },
   {
     start: "04:00",
@@ -178,7 +178,7 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "10 Min",
     overview: "Closing Note",
-    category: "Main Event"
+    category: "Remarks"
   },
 ];
 
@@ -455,11 +455,6 @@ export default function Agenda() {
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-gray-900 mb-4">
             Agenda
           </h1>
-          <p className="text-lg text-gray-600 mb-10">
-            Follow code demonstrations by our expert speakers on different
-            tracks. Check out the schedule below and don&apos;t forget to mark
-            your calendar so that you don&apos;t miss out on any sessions.
-          </p>
         </div>
 
         <div className="max-w-3xl mx-auto">
