@@ -2,13 +2,16 @@
 
 import { useMemo, useState, useCallback, memo } from "react";
 import Footer from "./Footer";
+import { Speaker } from "lucide-react";
+import { title } from "process";
 
 const EVENT_TIMELINE = [
   { 
     start: "10:00", 
-    end: "10:20", 
-    title: "Megha Arora", 
-    room: "Main Stage",
+    end: "10:20",
+    title: "Agentic AI for developer, communites & everything in between" ,
+    speaker: "Megha Arora",
+    org: "DevRelSquad",
     date: "Sept 21, 2025",
     duration: "20 Min",
     overview: "Agentic AI for developer, communites & everything in between",
@@ -17,21 +20,20 @@ const EVENT_TIMELINE = [
   {
     start: "10:20",
     end: "10:45",
-    title:
-      "The AI Catalyst: Transforming SDLC with Agent-driven Efficiency and Accuracy",
+    title: "",
     speaker: "Aanchal Mishra",
-    org: "DhiWise",
-    room: "Main Stage",
+    org: "Postman",
     date: "Sept 21, 2025",
     duration: "25 Min",
-    overview: "Explore how AI agents are revolutionizing software development lifecycle with enhanced efficiency and accuracy.",
+    overview: "",
     category: "Technical Session"
   },
   {
     start: "10:50",
     end: "11:15",
-    title: "Saurav Jain",
-    room: "Main Stage",
+    speaker: "Saurav Jain",
+    title: "Build, Deploy, Monetize: The Future of the Developer Economy with APIFY",
+    org: "Apify",
     date: "Sept 21, 2025",
     duration: "25 Min",
     overview: "Final announcements and closing remarks for DevFest Pune 2024.",
@@ -40,80 +42,178 @@ const EVENT_TIMELINE = [
   {
     start: "11:20",
     end: "11:40",
-    title: "Bhawna Chauhan",
-    room: "Main Stage",
+    title: "Build the Future with AI! Lets Vibe-Code a Web App using GitHub.",
+    speaker: "Bhawna Chauhan",
+    org: "QuillAI Network",
+    date: "Sept 21, 2025",
+    duration: "20 Min",
+    overview: "Final announcements and closing remarks for DevFest Pune 2024.",
+    category: "Main Event"
+  },
+  {
+    start: "11:40",
+    end: "12:00",
+    title: "Lightning Talks",
+    speaker: "Sakshi Nasha",
+    org: "Cohesity",
+    date: "Sept 21, 2025",
+    duration: "20 Min",
+    overview: "",
+    category: "Main Event"
+  },
+  {
+    start: "12:00",
+    end: "01:15",
+    title: "LUNCH",
+    speaker: "",
+    org: "",
+    date: "Sept 21, 2025",
+    duration: "1hr 15 Min",
+    overview: "",
+    category: "Lunch"
+  },
+  {
+    start: "01:20",
+    end: "01:50",
+    title: "",
+    speaker: "Simon Hansford",
+    org: "Civo",
+    date: "Sept 21, 2025",
+    duration: "30 Min",
+    overview: "",
+    category: "Main Event"
+  },
+  {
+    start: "01:50",
+    end: "20:00",
+    title: "Quiz Konfhub",
+    speaker: "",
+    org: "Konfhub",
+    date: "Sept 21, 2025",
+    duration: "10 Min",
+    overview: "",
+    category: "Fun Event"
+  },
+  {
+    start: "02:00",
+    end: "02:25",
+    title: "Spiritual design patterns for APIs: Applying Ancient Wisdom to modern interfaces",
+    speaker: "Savinder Puri",
+    org: "Zensar Technologies UK",
     date: "Sept 21, 2025",
     duration: "25 Min",
-    overview: "Final announcements and closing remarks for DevFest Pune 2024.",
+    overview: "Spiritual design patterns for APIs: Applying Ancient Wisdom to modern interfaces",
+    category: "Main Event"
+  },
+  {
+    start: "02:30",
+    end: "02:50",
+    title: "AI Agents with self-managing memory",
+    speaker: "Nikhlesh Tayal",
+    org: "AIMLetc.com",
+    date: "Sept 21, 2025",
+    duration: "25 Min",
+    overview: "AI Agents with self-managing memory",
+    category: "Main Event"
+  },
+  {
+    start: "02:55",
+    end: "03:15",
+    title: "Long-term memory in LLMs.",
+    speaker: "Ali Mustafa",
+    org: "Pieces for Developers",
+    date: "Sept 21, 2025",
+    duration: "20 Min",
+    overview: "Long-term memory in LLMs.",
+    category: "Main Event"
+  },
+  {
+    start: "03:20",
+    end: "03:40",
+    title: "Building Resilient APIs: Automated Testing and Monitoring in Cloud-Native Environments.",
+    speaker: "Saurabh Mishra",
+    org: "TSYS",
+    date: "Sept 21, 2025",
+    duration: "20 Min",
+    overview: "Building Resilient APIs: Automated Testing and Monitoring in Cloud-Native Environments.",
+    category: "Main Event"
+  },
+  {
+    start: "03:40",
+    end: "04:00",
+    title: "",
+    speaker: "Eeshan Sawant",
+    org: "ONLYOFFICE",
+    date: "Sept 21, 2025",
+    duration: "20 Min",
+    overview: "",
+    category: "Main Event"
+  },
+  {
+    start: "04:00",
+    end: "04:40",
+    title: "Snack & Networking",
+    speaker: "",
+    org: "",
+    date: "Sept 21, 2025",
+    duration: "40 Min",
+    overview: "",
+    category: "Social Networking"
+  },
+  {
+    start: "04:45",
+    end: "05:30",
+    title: "Panel Discussion",
+    speaker: "",
+    org: "",
+    date: "Sept 21, 2025",
+    duration: "45 Min",
+    overview: "Host - Mahaveer Muttha, Panelist - Megha Arora, Savinder Puri, Pranoti Nandurkar, Simon Hansford",
+    category: "Main Event"
+  },
+  {
+    start: "05:35",
+    end: "05:45",
+    title: "Closing Note",
+    speaker: "",
+    org: "The API Community",
+    date: "Sept 21, 2025",
+    duration: "10 Min",
+    overview: "Closing Note",
     category: "Main Event"
   },
 ];
 
+
 const TRACK_1 = [
   {
-    start: "11:15",
-    end: "12:00",
-    title: "Session A",
-    room: "Track 1",
-    speaker: "TBA",
-    date: "Nov 30, 2024",
+    start: "02:30",
+    end: "03:15",
+    title: "",
+    room: "Workshop Room A",
+    speaker: "Shagufta Bangi",
+    org: "Google",
+    date: "Sept 21, 2025",
     duration: "45 Min",
-    overview: "Track 1 session details coming soon.",
-    category: "Track Session"
+    overview: "Hands-on workshop covering API development using Postman Collections. Learn to create, organize, and automate API workflows with practical exercises.",
+    category: "Workshop"
   },
 ];
 const TRACK_2 = [
   {
-    start: "12:15",
-    end: "13:00",
-    title: "Session B",
-    room: "Track 2",
-    speaker: "TBA",
-    date: "Nov 30, 2024",
+    start: "03:15",
+    end: "04:00",
+    title: "",
+    room: "Workshop Room B",
+    speaker: "Sristi Rajbhoge",
+    org: "AIMLetc.com",
+    date: "Sept 21, 2025",
     duration: "45 Min",
-    overview: "Track 2 session details coming soon.",
-    category: "Track Session"
+    overview: "Explore how AI can enhance API development workflows. Learn to leverage AI tools for code generation, testing, and documentation.",
+    category: "Workshop"
   },
 ];
-const TRACK_3 = [
-  {
-    start: "14:00",
-    end: "14:45",
-    title: "Session C",
-    room: "Track 3",
-    speaker: "TBA",
-    date: "Nov 30, 2024",
-    duration: "45 Min",
-    overview: "Track 3 session details coming soon.",
-    category: "Track Session"
-  },
-];
-const LIGHTNING_TALKS = [
-  {
-    start: "15:00",
-    end: "16:00",
-    title: "Lightning Talks Round",
-    room: "Lightning Talks",
-    speaker: "Multiple",
-    date: "Nov 30, 2024",
-    duration: "60 Min",
-    overview: "Quick-fire presentations from multiple speakers on various topics.",
-    category: "Lightning Talk"
-  },
-];
-const CAREER_COMPASS = [
-  {
-    start: "16:15",
-    end: "17:00",
-    title: "Career Compass: AMA",
-    room: "Career Compass",
-    speaker: "TBA",
-    date: "Nov 30, 2024",
-    duration: "45 Min",
-    overview: "Ask Me Anything session focused on career guidance and development.",
-    category: "Career Session"
-  },
-];
+
 
 type ScheduleItem = {
   start: string;
@@ -130,19 +230,13 @@ type ScheduleItem = {
 };
 
 const TABS: { key: TabKey; label: string }[] = [
-  { key: "track1", label: "Track 1" },
-  { key: "track2", label: "Track 2" },
-  { key: "track3", label: "Track 3" },
-  { key: "lightning", label: "Lightning Talks" },
-  { key: "career", label: "Career Compass" },
+  { key: "track1", label: "Google Workshop" },
+  { key: "track2", label: "Postman Workshop" },
 ];
 
 const SCHEDULES = {
   track1: TRACK_1,
   track2: TRACK_2,
-  track3: TRACK_3,
-  lightning: LIGHTNING_TALKS,
-  career: CAREER_COMPASS,
 };
 
 type TabKey = keyof typeof SCHEDULES;
@@ -271,13 +365,13 @@ const TimelineItem = memo(({
           className="rounded-xl border border-gray-200 bg-white p-4 md:p-5 shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer hover:scale-[1.02]"
           onClick={handleClick}
         >
-          <div className="flex flex-wrap items-center gap-2">
+          {/* <div className="flex flex-wrap items-center gap-2">
             {item.room && (
               <span className="inline-flex items-center rounded-full bg-orange-50 text-orange-700 border border-orange-200 px-2.5 py-1 text-[10px] md:text-xs font-medium">
                 {item.room}
               </span>
             )}
-          </div>
+          </div> */}
           <h3 className="mt-2 text-base md:text-lg font-semibold text-gray-900">
             {item.title}
           </h3>
@@ -367,8 +461,8 @@ export default function Agenda() {
           </h1>
           <p className="text-lg text-gray-600 mb-10">
             Follow code demonstrations by our expert speakers on different
-            tracks. Check out the schedule below and don&apos;t forget to mark
-            your calendar so that you don&apos;t miss out on any sessions.
+            tracks. Check out the schedule below and don't forget to mark
+            your calendar so that you don't miss out on any sessions.
           </p>
         </div>
 
@@ -384,14 +478,14 @@ export default function Agenda() {
           <Timeline items={EVENT_TIMELINE} onItemClick={handleEventClick} />
         </div>
 
-        {/* <div className="max-w-4xl mx-auto mt-12">
+        <div className="max-w-4xl mx-auto mt-12">
           <h3 className="text-lg font-semibold text-gray-900 mb-3 text-start">
-            Tracks
+            Workshop Tracks
           </h3>
 
           <div
             role="tablist"
-            aria-label="Agenda tracks"
+            aria-label="Workshop tracks"
             className="mb-6 inline-flex flex-wrap gap-2 rounded-full bg-gray-100 p-1 w-full justify-center"
           >
             {TABS.map((t) => {
@@ -424,7 +518,7 @@ export default function Agenda() {
           >
             <Timeline items={activeItems} onItemClick={handleEventClick} />
           </div>
-        </div> */}
+        </div>
       </section>
 
       <EventDetailDialog
