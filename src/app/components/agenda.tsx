@@ -4,27 +4,29 @@ import { useMemo, useState, useCallback, memo } from "react";
 import Footer from "./Footer";
 
 const EVENT_TIMELINE = [
-  { 
-    start: "09:45", 
+  {
+    start: "09:45",
     end: "10:00",
-    title: "Welcome Note" ,
+    title: "Welcome Note",
     speaker: "Organizers",
     org: "The API Community",
     date: "Sept 21, 2025",
     duration: "15 Min",
     overview: "Welcome Note",
-    category: "Opening Remarks"
+    category: "Opening Remarks",
+    room: "Opening Remarks"
   },
-  { 
-    start: "10:00", 
+  {
+    start: "10:00",
     end: "10:20",
-    title: "Agentic AI for developer, communites & everything in between" ,
+    title: "Agentic AI for developer, communites & everything in between",
     speaker: "Megha Arora",
     org: "DevRelSquad",
     date: "Sept 21, 2025",
     duration: "20 Min",
     overview: "Agentic AI for developer, communites & everything in between",
-    category: "Session"
+    category: "Session",
+    room: "Session"
   },
   {
     start: "10:20",
@@ -35,7 +37,8 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "25 Min",
     overview: "You Can’t Do AI Without Quality APIs: The MCP Evolution with Postman.",
-    category: "Session"
+    category: "Session",
+    room: "Session"
   },
   {
     start: "10:50",
@@ -46,7 +49,8 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "25 Min",
     overview: "Build, Deploy, Monetize: The Future of the Developer Economy with APIFY",
-    category: "Session"
+    category: "Session",
+    room: "Session"
   },
   {
     start: "11:20",
@@ -57,7 +61,8 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "20 Min",
     overview: "Build the Future with AI! Lets Vibe-Code a Web App using GitHub.",
-    category: "Session"
+    category: "Session",
+    room: "Session"
   },
   {
     start: "11:40",
@@ -68,7 +73,8 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "20 Min",
     overview: "From Spec to Visuals: Rapid API Testing with Postman",
-    category: "Lightning Talk"
+    category: "Lightning Talk",
+    room: "Lightning Talk"
   },
   {
     start: "12:00",
@@ -79,7 +85,8 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "1hr 15 Min",
     overview: "",
-    category: "Lunch"
+    category: "Lunch",
+    room: "Lunch"
   },
   {
     start: "01:15",
@@ -90,7 +97,8 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "30 Min",
     overview: "Building Smarter Apps with RelaxAI API – Practical Use Cases and Multi-LLM Examples.",
-    category: "Session"
+    category: "Session",
+    room: "Session"
   },
   {
     start: "01:45",
@@ -101,7 +109,8 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "25 Min",
     overview: "Inside the Mcp server understanding the model context protocols.",
-    category: "Session"
+    category: "Session",
+    room: "Session"
   },
   {
     start: "02:10",
@@ -112,7 +121,8 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "10 Min",
     overview: "",
-    category: "Fun Event"
+    category: "Fun Event",
+    room: "Fun Event"
   },
   {
     start: "02:25",
@@ -123,7 +133,8 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "30 Min",
     overview: "Spiritual design patterns for APIs: Applying Ancient Wisdom to modern interfaces",
-    category: "Session"
+    category: "Session",
+    room: "Session"
   },
   {
     start: "03:00",
@@ -134,7 +145,8 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "20 Min",
     overview: "AI Agents with self-managing memory",
-    category: "Session"
+    category: "Session",
+    room: "Session"
   },
   {
     start: "03:25",
@@ -145,7 +157,8 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "20 Min",
     overview: "Long-term memory in LLMs.",
-    category: "Lightning Talk"
+    category: "Lightning Talk",
+    room: "Lightning Talk"
   },
   {
     start: "03:50",
@@ -156,7 +169,8 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "25 Min",
     overview: "Building Resilient APIs: Automated Testing and Monitoring in Cloud-Native Environments.",
-    category: "Lightning Talk"
+    category: "Lightning Talk",
+    room: "Lightning Talk"
   },
   {
     start: "04:15",
@@ -167,7 +181,8 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "20 Min",
     overview: "Beyond the Spec – Making OpenAPI More Human.",
-    category: "Lightning Talk"
+    category: "Lightning Talk",
+    room: "Lightning Talk"
   },
   {
     start: "04:35",
@@ -178,7 +193,8 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "25 Min",
     overview: "",
-    category: "Social Networking"
+    category: "Social Networking",
+    room: "Social Networking"
   },
   {
     start: "05:00",
@@ -189,7 +205,8 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "20 Min",
     overview: "APIs, Advocacy & Open Source – Driving Real Engagement Through Real-World OSS Projects.",
-    category: "Session"
+    category: "Session",
+    room: "Session"
   },
   {
     start: "05:20",
@@ -200,7 +217,8 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "40 Min",
     overview: "Host - Mahaveer Muttha, Panelist - Megha Arora, Savinder Puri, Pranoti Nandurkar, Simon Hansford",
-    category: "Main Event"
+    category: "Panel Discussion",
+    room: "Panel Discussion"
   },
   {
     start: "06:00",
@@ -211,7 +229,8 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "15 Min",
     overview: "Closing Note",
-    category: "Remarks"
+    category: "Remarks",
+    room: "Remarks"
   },
 ];
 
@@ -270,37 +289,35 @@ const SCHEDULES = {
 
 type TabKey = keyof typeof SCHEDULES;
 
-const EventDetailDialog = memo(({ 
-  item, 
-  isOpen, 
-  onClose 
-}: { 
-  item: ScheduleItem | null; 
-  isOpen: boolean; 
-  onClose: () => void; 
+const EventDetailDialog = memo(({
+  item,
+  isOpen,
+  onClose
+}: {
+  item: ScheduleItem | null;
+  isOpen: boolean;
+  onClose: () => void;
 }) => {
   if (!item || !isOpen) return null;
 
   return (
     <>
-      <div 
-        className={`fixed inset-0 bg-black/20 backdrop-blur-sm z-50 transition-opacity duration-300 ${
-          isOpen ? 'opacity-100' : 'opacity-0'
-        }`}
+      <div
+        className={`fixed inset-0 bg-black/20 backdrop-blur-sm z-50 transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0'
+          }`}
         onClick={onClose}
       />
-      
-      <div 
-        className={`fixed inset-0 z-50 flex items-center justify-center p-4 transition-all duration-300 ${
-          isOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
-        }`}
+
+      <div
+        className={`fixed inset-0 z-50 flex items-center justify-center p-4 transition-all duration-300 ${isOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+          }`}
       >
         <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto">
           <div className="p-6 border-b border-gray-100">
             <h2 className="text-xl font-bold text-gray-900 mb-4">
               {item.title} Details
             </h2>
-            
+
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -308,7 +325,7 @@ const EventDetailDialog = memo(({
                 </svg>
                 <span className="text-sm text-gray-700">{item.date}</span>
               </div>
-              
+
               <div className="flex items-center gap-3">
                 <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -317,26 +334,26 @@ const EventDetailDialog = memo(({
                   {item.start} to {item.end} (GMT +05:30)
                 </span>
               </div>
-              
+
               <div className="text-sm text-gray-600 font-medium">
                 {item.duration}
               </div>
             </div>
           </div>
-          
+
           <div className="p-6">
             <div className="mb-4">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Overview</h3>
               <p className="text-gray-700">{item.overview}</p>
             </div>
-            
+
             <div className="inline-block">
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
                 {item.category}
               </span>
             </div>
           </div>
-          
+
           <div className="p-6 border-t border-gray-100 flex justify-end">
             <button
               onClick={onClose}
@@ -381,26 +398,25 @@ const TimelineItem = memo(({
       </div>
       <div className="relative pb-8">
         <div
-          className={`absolute -left-4 md:-left-6 top-0 h-full w-px ${
-            isLast
+          className={`absolute -left-4 md:-left-6 top-0 h-full w-px ${isLast
               ? "bg-gradient-to-b from-orange-300 to-transparent"
               : "bg-gradient-to-b from-orange-300 via-orange-400 to-orange-300"
-          }`}
+            }`}
         />
         <div className="absolute -left-[18px] md:-left-[26px] top-1 h-3 w-3 md:h-3.5 md:w-3.5 rounded-full bg-white ring-4 ring-orange-200 shadow-sm">
           <div className="h-full w-full rounded-full bg-orange-500" />
         </div>
-        <div 
+        <div
           className="rounded-xl border border-gray-200 bg-white p-4 md:p-5 shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer hover:scale-[1.02]"
           onClick={handleClick}
         >
-          {/* <div className="flex flex-wrap items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             {item.room && (
               <span className="inline-flex items-center rounded-full bg-orange-50 text-orange-700 border border-orange-200 px-2.5 py-1 text-[10px] md:text-xs font-medium">
                 {item.room}
               </span>
             )}
-          </div> */}
+          </div>
           <h3 className="mt-2 text-base md:text-lg font-semibold text-gray-900">
             {item.title}
           </h3>
@@ -465,7 +481,7 @@ export default function Agenda() {
   const [activeTab, setActiveTab] = useState<TabKey>("track1");
   const [selectedEvent, setSelectedEvent] = useState<ScheduleItem | null>(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-  
+
   const activeItems = useMemo<ScheduleItem[]>(
     () => SCHEDULES[activeTab] ?? [],
     [activeTab]
