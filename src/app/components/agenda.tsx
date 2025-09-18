@@ -5,6 +5,17 @@ import Footer from "./Footer";
 
 const EVENT_TIMELINE = [
   { 
+    start: "09:45", 
+    end: "10:00",
+    title: "Welcome Note" ,
+    speaker: "Organizers",
+    org: "The API Community",
+    date: "Sept 21, 2025",
+    duration: "15 Min",
+    overview: "Welcome Note",
+    category: "Opening Remarks"
+  },
+  { 
     start: "10:00", 
     end: "10:20",
     title: "Agentic AI for developer, communites & everything in between" ,
@@ -13,7 +24,7 @@ const EVENT_TIMELINE = [
     date: "Sept 21, 2025",
     duration: "20 Min",
     overview: "Agentic AI for developer, communites & everything in between",
-    category: "Opening Keynote"
+    category: "Session"
   },
   {
     start: "10:20",
@@ -71,8 +82,8 @@ const EVENT_TIMELINE = [
     category: "Lunch"
   },
   {
-    start: "01:20",
-    end: "01:50",
+    start: "01:15",
+    end: "01:45",
     title: "Building Smarter Apps with RelaxAI API – Practical Use Cases and Multi-LLM Examples.",
     speaker: "Simon Hansford",
     org: "Civo",
@@ -82,8 +93,19 @@ const EVENT_TIMELINE = [
     category: "Session"
   },
   {
-    start: "01:50",
-    end: "20:00",
+    start: "01:45",
+    end: "02:10",
+    title: "Inside the Mcp server understanding the model context protocols.",
+    speaker: "Pranoti Nandurkar",
+    org: "Technical Architect",
+    date: "Sept 21, 2025",
+    duration: "25 Min",
+    overview: "Inside the Mcp server understanding the model context protocols.",
+    category: "Session"
+  },
+  {
+    start: "02:10",
+    end: "02:20",
     title: "Quiz Konfhub",
     speaker: "",
     org: "Konfhub",
@@ -93,30 +115,30 @@ const EVENT_TIMELINE = [
     category: "Fun Event"
   },
   {
-    start: "02:00",
-    end: "02:25",
+    start: "02:25",
+    end: "02:55",
     title: "Spiritual design patterns for APIs: Applying Ancient Wisdom to modern interfaces",
     speaker: "Savinder Puri",
     org: "Zensar Technologies UK",
     date: "Sept 21, 2025",
-    duration: "25 Min",
+    duration: "30 Min",
     overview: "Spiritual design patterns for APIs: Applying Ancient Wisdom to modern interfaces",
     category: "Session"
   },
   {
-    start: "02:30",
-    end: "02:50",
+    start: "03:00",
+    end: "03:20",
     title: "AI Agents with self-managing memory",
     speaker: "Nikhlesh Tayal",
     org: "AIMLetc.com",
     date: "Sept 21, 2025",
-    duration: "25 Min",
+    duration: "20 Min",
     overview: "AI Agents with self-managing memory",
     category: "Session"
   },
   {
-    start: "02:55",
-    end: "03:15",
+    start: "03:25",
+    end: "03:45",
     title: "Long-term memory in LLMs.",
     speaker: "Ali Mustafa",
     org: "Pieces for Developers",
@@ -126,19 +148,19 @@ const EVENT_TIMELINE = [
     category: "Lightning Talk"
   },
   {
-    start: "03:20",
-    end: "03:40",
+    start: "03:50",
+    end: "04:15",
     title: "Building Resilient APIs: Automated Testing and Monitoring in Cloud-Native Environments.",
     speaker: "Saurabh Mishra",
     org: "TSYS",
     date: "Sept 21, 2025",
-    duration: "20 Min",
+    duration: "25 Min",
     overview: "Building Resilient APIs: Automated Testing and Monitoring in Cloud-Native Environments.",
     category: "Lightning Talk"
   },
   {
-    start: "03:40",
-    end: "04:00",
+    start: "04:15",
+    end: "04:35",
     title: "Beyond the Spec – Making OpenAPI More Human.",
     speaker: "Eeshan Sawant",
     org: "ONLYOFFICE",
@@ -148,35 +170,46 @@ const EVENT_TIMELINE = [
     category: "Lightning Talk"
   },
   {
-    start: "04:00",
-    end: "04:40",
+    start: "04:35",
+    end: "05:00",
     title: "Snack & Networking",
     speaker: "",
     org: "",
     date: "Sept 21, 2025",
-    duration: "40 Min",
+    duration: "25 Min",
     overview: "",
     category: "Social Networking"
   },
   {
-    start: "04:45",
-    end: "05:30",
+    start: "05:00",
+    end: "05:20",
+    title: "APIs, Advocacy & Open Source – Driving Real Engagement Through Real-World OSS Projects.",
+    speaker: "Abhishek Mankhuskar",
+    org: "SWOC",
+    date: "Sept 21, 2025",
+    duration: "20 Min",
+    overview: "APIs, Advocacy & Open Source – Driving Real Engagement Through Real-World OSS Projects.",
+    category: "Session"
+  },
+  {
+    start: "05:20",
+    end: "06:00",
     title: "Panel Discussion",
     speaker: "",
     org: "",
     date: "Sept 21, 2025",
-    duration: "45 Min",
+    duration: "40 Min",
     overview: "Host - Mahaveer Muttha, Panelist - Megha Arora, Savinder Puri, Pranoti Nandurkar, Simon Hansford",
     category: "Main Event"
   },
   {
-    start: "05:35",
-    end: "05:45",
+    start: "06:00",
+    end: "06:15",
     title: "Closing Note",
     speaker: "",
     org: "The API Community",
     date: "Sept 21, 2025",
-    duration: "10 Min",
+    duration: "15 Min",
     overview: "Closing Note",
     category: "Remarks"
   },
