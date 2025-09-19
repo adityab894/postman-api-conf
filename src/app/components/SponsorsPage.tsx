@@ -63,11 +63,11 @@ const sponsorTiers = [
         img: "/api-conf/pieces.png",
         url: "https://pieces.app/"
       },
-      { 
-        name: "Keploy",
-        img: "/api-conf/keploy.png",
-        url: "https://keploy.io/"
-      }
+      // { 
+      //   name: "Keploy",
+      //   img: "/api-conf/keploy.png",
+      //   url: "https://keploy.io/"
+      // }
     ]
   },
   {
@@ -101,10 +101,15 @@ const sponsorTiers = [
         url: "https://www.civo.com/"
       },
       { 
-        name: "We Make Devs",
-        img: "/api-conf/WeMakeDevs.png",
-        url: "https://wemakedevs.org/"
+        name: "GitHub",
+        img: "/api-conf/GitHub1.png",
+        url: "https://github.com/"
       },
+      // { 
+      //   name: "We Make Devs",
+      //   img: "/api-conf/WeMakeDevs.png",
+      //   url: "https://wemakedevs.org/"
+      // },
       { 
         name: "Apify",
         img: "/api-conf/apify.png",
