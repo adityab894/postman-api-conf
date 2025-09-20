@@ -127,6 +127,11 @@ const sponsorTiers = [
     tier: "community",
     sponsors: [
       { 
+        name: "We Make Devs",
+        img: "/api-conf/WeMakeDevs.png",
+        url: "https://wemakedevs.org/"
+      },
+      { 
         name: "AWS User Group Pune",
         img: "/api-conf/aws.jpg",
         url: "https://www.linkedin.com/company/aws-user-group-pune/"
