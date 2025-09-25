@@ -114,10 +114,11 @@ export default function Home() {
         </div>
       </section>
 
-      <EventCountdown targetDate="2025-09-21T09:00:00" title="The API Conf Countdown" />
+      {/* <EventCountdown targetDate="2025-09-21T09:00:00" title="The API Conf Countdown" /> */}
 
       {/* Bento Grid Section */}
       <BentoGrid />
+
 
       <Footer />
     </div>
