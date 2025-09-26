@@ -84,13 +84,13 @@ const Footer = () => (
             >
               Agenda
             </Link>
-            <Link
+            {/* <Link
               href="/memories"
               className="text-sm font-semibold hover:underline"
               style={{ color: "black" }}
             >
               Memories
-            </Link>
+            </Link> */}
             <Link
               href="/contact"
               className="text-sm font-semibold hover:underline"
