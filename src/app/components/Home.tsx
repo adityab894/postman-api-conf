@@ -163,7 +163,7 @@ function MemoriesLoop() {
 
       <style jsx>{`
         .animate-marquee {
-          animation: marquee 40s linear infinite;
+          animation: marquee 80s linear infinite;
         }
         @keyframes marquee {
           0% { transform: translateX(0); }
