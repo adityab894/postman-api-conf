@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "./Footer";
 import { BentoGrid } from "./BentoGrid";
-import EventCountdown from "./EventCountdown";
+import React, { useMemo, useState } from "react";
+import { memories2025 } from "@/data/memories/2025";
 
 export default function Home() {
   return (
@@ -115,12 +116,60 @@ export default function Home() {
       </section>
 
       {/* <EventCountdown targetDate="2025-09-21T09:00:00" title="The API Conf Countdown" /> */}
+      {/* Memories Carousel CTA */}
+      <section className="px-4 sm:px-6 lg:px-10 py-12">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-extrabold text-gray-900 mb-6">API Conf 2025 Highlights</h2>
+          <MemoriesLoop />
+        </div>
+      </section>
 
       {/* Bento Grid Section */}
       <BentoGrid />
 
 
       <Footer />
+    </div>
+  );
+}
+
+// CSS marquee showing multiple images in an infinite loop
+function MemoriesLoop() {
+  // Take all images
+  const items = useMemo(() => [...memories2025, ...memories2025], []);
+
+  return (
+    <div className="relative w-full overflow-hidden rounded-2xl">
+      <div className="absolute inset-0 pointer-events-none z-10" />
+
+      <div className="flex w-max animate-marquee">
+        {items.map((s, i) => (
+          <div
+            key={`${s.id}-${i}`}
+            className="relative h-56 sm:h-64 md:h-80 lg:h-96 w-80 sm:w-[28rem] lg:w-[32rem] flex-shrink-0 p-4 rounded-2xl"
+          >
+            <div className="relative h-full w-full bg-gray-100 rounded-2xl shadow-lg overflow-hidden">
+            <Image
+              src={s.src}
+              alt={s.alt}
+              fill
+              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 80vw"
+              className="object-cover p-4"
+            />
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <style jsx>{`
+        .animate-marquee {
+          animation: marquee 40s linear infinite;
+        }
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      `}</style>
     </div>
   );
 }
